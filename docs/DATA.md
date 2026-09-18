@@ -9,6 +9,14 @@ Everything below is open access. Nothing requires dbGaP or a data-use agreement.
 * `hrdscope stream --strategy Diagnostic --patients data/splits/tcga_ov_dx_patients.txt` downloads each slide with 8 parallel range requests (about 15 MB/s from GDC), verifies the md5, embeds it and deletes it. Use `--strategy Tissue` for frozen slides.
 * Citation: The Cancer Genome Atlas Research Network, Integrated genomic analyses of ovarian carcinoma, Nature 2011. GDC data are open under the NIH Genomic Data Sharing policy.
 
+## Offline processing with a local cache
+
+Downloading and embedding are decoupled so that a machine can keep embedding without network access. `hrdscope fetch --cache /path/to/big/disk` downloads every slide listed in a plan (`data/plans/tcga_ov_midnight.json`: remaining TCGA-OV diagnostic slides from GDC, TCGA-OV frozen tumour slides from IDC, then PTRC-HGSOC from PathDB) into the cache while the network is up, keeping a configurable amount of free space, and marks each finished slide with a JSON file. `hrdscope work --cache ... --staging data/raw/staging` embeds marked slides in plan order, copying each one to a fast local disk first, and deletes it afterwards. It needs no network once the Hugging Face weights are cached (`HF_HUB_OFFLINE=1`). Normal-tissue TCGA slides (sample codes 10 to 19, 163 of the 1,374 frozen slides) are excluded by default because the HRD label describes the tumour.
+
+## TCGA-OV slides as DICOM (NCI Imaging Data Commons)
+
+The same 1,481 TCGA-OV slides are distributed by IDC as DICOM whole-slide images from a public cloud bucket, license CC BY 3.0. `scripts/make_idc_manifest.py` writes `data/manifests/tcga_ov_slides_idc.tsv` with the series UID, slide barcode, sample type and the IDC data release (v24). Download throughput measured 26 MB/s against about 15 MB/s from GDC, and OpenSlide 4 reads the DICOM pyramid directly with the correct pixel spacing. Citation: Fedorov A et al., National Cancer Institute Imaging Data Commons, RadioGraphics 2023.
+
 ## Knijnenburg et al. 2018 HRD scores (validation of our scar scores)
 
 * `TCGA_DDR_Data_Resources.zip` from https://gdc.cancer.gov/about-data/publications/PanCan-DDR-2018 (open). `DDRscores.tsv` rows match `Samples.tsv`; columns match `Scores.tsv` (HRD_TAI, HRD_LST, HRD_LOH, HRD_Score). The ovarian subset is committed as `data/manifests/knijnenburg2018_ov_hrd.tsv`.

@@ -86,7 +86,7 @@ class Backbone:
 
 def embed_slide(slide_path: str | Path, out_path: str | Path, backbone: Backbone, tile_px: int = 224,
                 tile_mpp: float = 0.5, batch_size: int = 32, max_tiles: int | None = None,
-                mpp: float | None = None, seed: int = 0, read_threads: int = 8) -> dict:
+                mpp: float | None = None, seed: int = 0, read_threads: int = 8, slide_name: str | None = None) -> dict:
     import concurrent.futures as cf
 
     slide_path, out_path = Path(slide_path), Path(out_path)
@@ -116,10 +116,11 @@ def embed_slide(slide_path: str | Path, out_path: str | Path, backbone: Backbone
         h5.create_dataset("coords", data=coords)
         h5.create_dataset("tissue_frac", data=fracs)
         h5.attrs.update({
-            "slide": slide_path.name, "backbone": backbone.name, "hf_id": backbone.cfg["hf"],
+            "slide": slide_name or slide_path.name, "backbone": backbone.name, "hf_id": backbone.cfg["hf"],
             "tile_px": tile_px, "tile_mpp": tile_mpp, "tile_size0": size0, "mpp0": mpp or slide_mpp(slide),
             "n_tiles_total": n_total, "n_tiles": len(tiles), "hrdscope_version": __version__,
             "seconds": round(time.time() - t0, 1),
         })
     slide.close()
-    return {"slide": slide_path.name, "n_tiles_total": n_total, "n_tiles": len(tiles), "seconds": round(time.time() - t0, 1)}
+    return {"slide": slide_name or slide_path.name, "n_tiles_total": n_total, "n_tiles": len(tiles),
+            "seconds": round(time.time() - t0, 1)}

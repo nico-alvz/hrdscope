@@ -59,9 +59,10 @@ def cmd_stream(args: argparse.Namespace) -> None:
     is being embedded, so the GPU rarely waits for the network."""
     import csv
     import json
+    import shutil
     import threading
 
-    from .download import download_url
+    from .download import IDC_HOST, download_idc, download_url
     from .embed import Backbone, embed_slide
 
     bb = Backbone(args.backbone, device=args.device)
@@ -71,6 +72,10 @@ def cmd_stream(args: argparse.Namespace) -> None:
     if args.patients:
         keep = set(Path(args.patients).read_text().split())
         rows = [r for r in rows if r["patient"] in keep]
+    if not args.include_normal:
+        from .queue import is_tumour_sample
+
+        rows = [r for r in rows if is_tumour_sample(r["file_name"])]
     rows.sort(key=lambda r: int(r.get("file_size", 0) or 0))
     out_dir, tmp_dir = Path(args.out_dir) / bb.name, Path(args.tmp_dir)
     tmp_dir.mkdir(parents=True, exist_ok=True)
@@ -91,12 +96,17 @@ def cmd_stream(args: argparse.Namespace) -> None:
         import time
         from urllib.parse import urlparse
 
-        url = r.get("url") or "https://api.gdc.cancer.gov/data/" + r["file_id"]
-        host = urlparse(url).hostname or "api.gdc.cancer.gov"
+        if r.get("series_uid"):
+            host = IDC_HOST
+        else:
+            url = r.get("url") or "https://api.gdc.cancer.gov/data/" + r["file_id"]
+            host = urlparse(url).hostname or "api.gdc.cancer.gov"
         for attempt in range(3):
             while not online(host):  # network outage: wait instead of failing through the manifest
                 time.sleep(60)
             try:
+                if r.get("series_uid"):
+                    return download_idc(r["series_uid"], tmp_dir / Path(r["file_name"]).stem)
                 return download_url(url, tmp_dir / r["file_name"], int(r.get("file_size", 0) or 0) or None,
                                     r.get("md5") or None, workers=args.workers)
             except Exception:
@@ -129,13 +139,17 @@ def cmd_stream(args: argparse.Namespace) -> None:
             if cur.error:
                 raise cur.error
             info = embed_slide(slide, out, bb, tile_px=args.tile_px, tile_mpp=args.tile_mpp,
-                               batch_size=args.batch_size, max_tiles=args.max_tiles)
-            info.update(patient=r.get("patient"), file_id=r.get("file_id", r.get("image_id")), i=i, n=len(rows))
+                               batch_size=args.batch_size, max_tiles=args.max_tiles, slide_name=r["file_name"])
+            info.update(patient=r.get("patient"), file_id=r.get("file_id") or r.get("series_uid") or r.get("image_id"),
+                        i=i, n=len(rows))
         except Exception as exc:  # keep going, record the failure
             info = {"slide": r["file_name"], "error": repr(exc), "i": i, "n": len(rows)}
         finally:
             if slide and slide.exists() and not args.keep:
-                slide.unlink()
+                if r.get("series_uid"):
+                    shutil.rmtree(tmp_dir / Path(r["file_name"]).stem, ignore_errors=True)
+                else:
+                    slide.unlink()
         print(json.dumps(info), flush=True)
         log.write(json.dumps(info) + "\n")
         log.flush()
@@ -189,6 +203,24 @@ def cmd_predict(args: argparse.Namespace) -> None:
     print(json.dumps(summary, indent=2))
 
 
+def cmd_fetch(args: argparse.Namespace) -> None:
+    import json
+
+    from .queue import fetch
+
+    plan = json.loads(Path(args.plan).read_text())
+    fetch(plan, Path(args.cache), backbone=args.backbone, min_free_gb=args.min_free_gb, workers=args.workers,
+          log=lambda line: print(line, flush=True))
+
+
+def cmd_work(args: argparse.Namespace) -> None:
+    from .queue import work
+
+    work(Path(args.cache), Path(args.staging), backbone_name=args.backbone, device=args.device,
+         batch_size=args.batch_size, tile_px=args.tile_px, tile_mpp=args.tile_mpp, max_tiles=args.max_tiles,
+         log_path=Path(args.log) if args.log else None, wait=not args.no_wait)
+
+
 def _add_embed_args(s: argparse.ArgumentParser) -> None:
     s.add_argument("--backbone", default="midnight", choices=["midnight", "hibou-b", "h-optimus"])
     s.add_argument("--device", default=None, help="cuda or cpu (default: cuda when available)")
@@ -226,6 +258,7 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--tmp-dir", default=str(DATA / "raw" / "slides"))
     s.add_argument("--keep", action="store_true", help="do not delete slides after embedding")
     s.add_argument("--workers", type=int, default=6, help="parallel HTTP range requests per slide")
+    s.add_argument("--include-normal", action="store_true", help="also embed TCGA normal-tissue slides (sample codes 10-19)")
     _add_embed_args(s)
     s.set_defaults(func=cmd_stream)
 
@@ -267,6 +300,22 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--batch-size", type=int, default=16)
     s.add_argument("--mpp", type=float, default=None)
     s.set_defaults(func=cmd_predict)
+
+    s = sub.add_parser("fetch", help="download the slides of a plan into a local cache while the network is up")
+    s.add_argument("--plan", default=str(DATA / "plans" / "tcga_ov_midnight.json"))
+    s.add_argument("--cache", default=str(DATA / "raw" / "cache"))
+    s.add_argument("--backbone", default="midnight")
+    s.add_argument("--min-free-gb", type=float, default=12.0)
+    s.add_argument("--workers", type=int, default=6)
+    s.set_defaults(func=cmd_fetch)
+
+    s = sub.add_parser("work", help="embed cached slides without network access, deleting each after embedding")
+    s.add_argument("--cache", default=str(DATA / "raw" / "cache"))
+    s.add_argument("--staging", default=str(DATA / "raw" / "staging"), help="fast local disk for the slide being read")
+    s.add_argument("--log", default=None)
+    s.add_argument("--no-wait", action="store_true", help="exit when the cache is empty instead of waiting for fetch")
+    _add_embed_args(s)
+    s.set_defaults(func=cmd_work)
 
     args = p.parse_args(argv)
     args.func(args)

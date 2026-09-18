@@ -1,0 +1,7 @@
+[
+  {"name": "tcga_ov_dx", "manifest": "data/manifests/tcga_ov_slides.tsv", "strategy": "Diagnostic",
+   "patients": "data/splits/tcga_ov_dx_patients.txt", "out_dir": "data/features"},
+  {"name": "tcga_ov_ts", "manifest": "data/manifests/tcga_ov_slides_idc.tsv", "strategy": "Tissue",
+   "patients": "data/splits/tcga_ov_ts_patients.txt", "out_dir": "data/features_ts"},
+  {"name": "ptrc_hgsoc", "manifest": "data/manifests/ptrc_hgsoc_slides.tsv", "out_dir": "data/features_ptrc"}
+]

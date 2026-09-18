@@ -10,6 +10,26 @@ import urllib.request
 from pathlib import Path
 
 GDC_DATA = "https://api.gdc.cancer.gov/data/"
+IDC_HOST = "idc-open-data.s3.amazonaws.com"
+_IDC_CLIENT = None
+
+
+def download_idc(series_uid: str, dest_dir: Path) -> Path:
+    """Download one DICOM whole-slide series from NCI Imaging Data Commons (public S3, no credentials).
+
+    Returns the path of one instance; OpenSlide opens the whole pyramid from the files in its directory."""
+    global _IDC_CLIENT
+    from idc_index import IDCClient
+
+    if _IDC_CLIENT is None:
+        _IDC_CLIENT = IDCClient()
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    _IDC_CLIENT.download_from_selection(seriesInstanceUID=[series_uid], downloadDir=str(dest_dir), dirTemplate=None,
+                                        quiet=True, show_progress_bar=False)
+    files = sorted(p for p in dest_dir.rglob("*.dcm"))
+    if not files:
+        raise OSError(f"IDC returned no DICOM files for {series_uid}")
+    return files[0]
 
 
 def _size(url: str, retries: int = 6) -> int:

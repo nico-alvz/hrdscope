@@ -25,8 +25,8 @@ def main():
         fo.write("file_id\tfile_name\tfile_size\tstrategy\tpatient\tmd5\n")
         for h in sorted(slides, key=lambda h: h["file_name"]):
             fo.write(f"{h['file_id']}\t{h['file_name']}\t{h['file_size']}\t{h['experimental_strategy']}\t{h['cases'][0]['submitter_id']}\t{h['md5sum']}\n")
-    ascn = query({"op": "and", "content": [ov, in_("data_type", ["Allele-specific Copy Number Segment"]), in_("access", ["open"]),
-                                           in_("analysis.workflow_type", ["ASCAT3"])]},
+    ascn = query({"op": "and", "content": [ov, in_("data_type", ["Allele-specific Copy Number Segment"]),
+                                           in_("access", ["open"]), in_("analysis.workflow_type", ["ASCAT3"])]},
                  "file_id,file_name,cases.submitter_id,cases.samples.sample_type,analysis.workflow_type")
     with open(OUT / "tcga_ov_ascat3.tsv", "w") as fo:
         fo.write("file_id\tfile_name\tpatient\tsample_type\tworkflow\n")
