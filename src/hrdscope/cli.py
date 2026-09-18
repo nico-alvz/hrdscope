@@ -70,6 +70,7 @@ def cmd_stream(args: argparse.Namespace) -> None:
     rows.sort(key=lambda r: int(r.get("file_size", 0)))
     out_dir, tmp_dir = Path(args.out_dir) / bb.name, Path(args.tmp_dir)
     tmp_dir.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     log = open(Path(args.out_dir) / f"stream_{bb.name}.jsonl", "a")
     for i, r in enumerate(rows):
         out = out_dir / (Path(r["file_name"]).stem + ".h5")
@@ -92,6 +93,26 @@ def cmd_stream(args: argparse.Namespace) -> None:
         print(json.dumps(info), flush=True)
         log.write(json.dumps(info) + "\n")
         log.flush()
+
+
+def cmd_splits(args: argparse.Namespace) -> None:
+    from .splits import make_folds
+
+    for domain in ("dx", "ts"):
+        rows = make_folds(Path(args.labels), DATA / "splits" / f"tcga_ov_{domain}_folds.tsv", domain=domain,
+                          n_folds=args.folds, seed=args.seed, threshold=args.threshold)
+        pos = sum(int(r[f"hrd_ge{args.threshold}"]) for r in rows)
+        print(f"{domain}: {len(rows)} patients, {pos} HRD-high at >= {args.threshold}, {args.folds} folds")
+
+
+def cmd_benchmark(args: argparse.Namespace) -> None:
+    import json
+
+    from .benchmark import run_cv
+
+    report = run_cv(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir),
+                    seeds=tuple(args.seeds), max_tiles=args.max_tiles, device=args.device, epochs=args.epochs)
+    print(json.dumps(report, indent=2))
 
 
 def _add_embed_args(s: argparse.ArgumentParser) -> None:
@@ -132,6 +153,24 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--keep", action="store_true", help="do not delete slides after embedding")
     _add_embed_args(s)
     s.set_defaults(func=cmd_stream)
+
+    s = sub.add_parser("splits", help="write fixed patient-level stratified folds for the benchmark")
+    s.add_argument("--labels", default=str(DATA / "labels" / "tcga_ov_hrd.tsv"))
+    s.add_argument("--folds", type=int, default=5)
+    s.add_argument("--seed", type=int, default=20260918)
+    s.add_argument("--threshold", type=int, default=42)
+    s.set_defaults(func=cmd_splits)
+
+    s = sub.add_parser("benchmark", help="cross-validated attention-MIL benchmark on the fixed splits")
+    s.add_argument("--features", default=str(DATA / "features" / "midnight"))
+    s.add_argument("--labels", default=str(DATA / "labels" / "tcga_ov_hrd.tsv"))
+    s.add_argument("--splits", default=str(DATA / "splits" / "tcga_ov_dx_folds.tsv"))
+    s.add_argument("--out-dir", default="runs/dx_midnight")
+    s.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
+    s.add_argument("--max-tiles", type=int, default=4000)
+    s.add_argument("--epochs", type=int, default=40)
+    s.add_argument("--device", default=None)
+    s.set_defaults(func=cmd_benchmark)
 
     args = p.parse_args(argv)
     args.func(args)
