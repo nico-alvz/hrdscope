@@ -80,7 +80,7 @@ def build_label_table(ascat_manifest: Path, ascat_dir: Path, arms_path: Path,
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), delimiter="\t")
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), delimiter="\t", lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     return rows

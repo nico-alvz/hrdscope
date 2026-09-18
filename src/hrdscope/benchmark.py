@@ -101,7 +101,7 @@ def run_cv(feature_dir: Path, label_path: Path, split_path: Path, out_dir: Path,
         report[f"ge{t}"] = {"prevalence": float(y.mean()), "auroc_binary_head": [auc, lo, hi],
                             "auroc_regression_head": [auc_r, lo_r, hi_r], "triage_binary_head": triage_points(y, pb)}
     with open(out_dir / "oof_predictions.tsv", "w", newline="") as fh:
-        w = csv.writer(fh, delimiter="\t")
+        w = csv.writer(fh, delimiter="\t", lineterminator="\n")
         w.writerow(["patient", "hrd_sum", "hrd_sum_pred"] + [f"prob_ge{t}" for t in THRESHOLDS])
         for p, ys, ps in zip(pats, y_sum, p_sum):
             w.writerow([p, ys, round(float(ps), 2)] + [round(float(np.mean(oof[p][f"ge{t}"])), 4) for t in THRESHOLDS])

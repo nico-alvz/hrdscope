@@ -28,7 +28,7 @@ def make_folds(label_path: Path, out_path: Path, domain: str = "dx", n_folds: in
     out.sort(key=lambda r: r["patient"])
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(out[0].keys()), delimiter="\t")
+        w = csv.DictWriter(fh, fieldnames=list(out[0].keys()), delimiter="\t", lineterminator="\n")
         w.writeheader()
         w.writerows(out)
     return out
