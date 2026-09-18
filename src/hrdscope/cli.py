@@ -78,16 +78,29 @@ def cmd_stream(args: argparse.Namespace) -> None:
     rows = [r for r in rows if not (out_dir / (Path(r["file_name"]).stem + ".h5")).exists()]
     log = open(Path(args.out_dir) / f"stream_{bb.name}.jsonl", "a")
 
+    def online(host: str) -> bool:
+        import socket
+
+        try:
+            socket.create_connection((host, 443), timeout=10).close()
+            return True
+        except OSError:
+            return False
+
     def download(r: dict) -> Path:
         import time
+        from urllib.parse import urlparse
 
         url = r.get("url") or "https://api.gdc.cancer.gov/data/" + r["file_id"]
+        host = urlparse(url).hostname or "api.gdc.cancer.gov"
         for attempt in range(3):
+            while not online(host):  # network outage: wait instead of failing through the manifest
+                time.sleep(60)
             try:
                 return download_url(url, tmp_dir / r["file_name"], int(r.get("file_size", 0) or 0) or None,
                                     r.get("md5") or None, workers=args.workers)
             except Exception:
-                if attempt == 2:
+                if attempt == 2 and online(host):
                     raise
                 time.sleep(30 * (attempt + 1))
         raise OSError("unreachable")
