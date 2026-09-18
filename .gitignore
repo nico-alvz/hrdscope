@@ -1,0 +1,14 @@
+data/raw/
+data/features/
+data/labels/*.tsv
+!data/labels/README.md
+runs/
+*.svs
+*.h5
+*.pt
+*.pth
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/

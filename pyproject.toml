@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hrdscope"
+version = "0.1.0"
+description = "Open, reproducible homologous recombination deficiency (HRD) triage from routine H&E slides in ovarian cancer"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "nico-alvz"}]
+keywords = ["computational pathology", "ovarian cancer", "HRD", "PARP inhibitors", "whole slide images"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+slides = ["torch>=2.1", "timm>=0.9", "transformers>=4.40", "huggingface_hub", "openslide-python", "openslide-bin", "h5py", "pillow", "scikit-learn", "tqdm"]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+hrdscope = "hrdscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
