@@ -1,5 +1,7 @@
 # hrdscope
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22827123.svg)](https://doi.org/10.5281/zenodo.22827123) [![ci](https://github.com/nico-alvz/hrdscope/actions/workflows/ci.yml/badge.svg)](https://github.com/nico-alvz/hrdscope/actions/workflows/ci.yml)
+
 Open, reproducible homologous recombination deficiency (HRD) triage from routine H&E whole-slide images in ovarian cancer. MIT licensed, built only on open data and open-weight models.
 
 About half of high-grade serous ovarian carcinomas are HRD-positive and respond to PARP inhibitors, but the genomic assays that establish HRD status are expensive and unavailable in most of the world. `hrdscope` aims to turn the H&E slide every patient already has into a calibrated triage signal, so that scarce sequencing can be directed to the patients who need it.
@@ -34,6 +36,10 @@ hrdscope labels                  # writes data/labels/tcga_ov_hrd.tsv
 * Knijnenburg et al. 2018, Cell Reports, TCGA DDR data resource (HRD scores used for validation).
 * PTRC-HGSOC slides and clinical data: The Cancer Imaging Archive, CC BY 4.0.
 * Chromosome arms: UCSC hg38 cytoBand.
+
+## Citation
+
+Álvarez Díaz NA. hrdscope: open, reproducible HRD triage from routine H&E slides in ovarian cancer. Zenodo, 2026. https://doi.org/10.5281/zenodo.22827123 (concept DOI, resolves to the latest version; v0.1.0 is 10.5281/zenodo.22827124).
 
 ## License
 

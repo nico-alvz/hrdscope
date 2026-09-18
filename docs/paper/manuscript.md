@@ -69,7 +69,7 @@ Tables: label concordance; benchmark by backbone and threshold; triage operating
 
 ## 5. Data and code availability
 
-GitHub (MIT), Zenodo DOIs for code, labels, embeddings and weights; Hugging Face for weights; all inputs are open access (GDC, TCIA CC BY 4.0, Cell Reports supplement).
+Code is on GitHub under MIT (https://github.com/nico-alvz/hrdscope) and archived on Zenodo (concept DOI 10.5281/zenodo.22827123); labels, embeddings and weights receive their own Zenodo DOIs at each release; Hugging Face for weights; all inputs are open access (GDC, TCIA CC BY 4.0, Cell Reports supplement).
 
 ## References
 
