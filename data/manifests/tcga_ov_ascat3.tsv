@@ -1,0 +1,556 @@
+file_id	file_name	patient	sample_type	workflow
+036cb589-8207-40c1-9462-f4beab47fe61	TCGA-OV.4f153dda-e919-4502-aa9f-0d52487e60eb.ascat3.allelic_specific.seg.txt	TCGA-29-1691	Blood Derived Normal	ASCAT3
+1824814a-3c53-4ae2-b6f5-c16551d708c5	TCGA-OV.234848ba-4be8-4507-8ec0-462398e50a26.ascat3.allelic_specific.seg.txt	TCGA-61-1730	Primary Tumor	ASCAT3
+f645f038-65b4-4f07-8dc5-3f5ab5287a03	TCGA-OV.a7cf51ba-a017-4de1-ad5f-021d1369eb80.ascat3.allelic_specific.seg.txt	TCGA-13-1817	Primary Tumor	ASCAT3
+57da150b-712d-4228-a57f-98ba68732312	TCGA-OV.0f90bddb-ac68-44ad-a48a-6293e7529aa1.ascat3.allelic_specific.seg.txt	TCGA-61-2095	Solid Tissue Normal	ASCAT3
+cd9d6f59-f46c-4dab-b506-ff9efaa0d744	TCGA-OV.9b422094-dde1-4ed5-9431-cb15e6d90b35.ascat3.allelic_specific.seg.txt	TCGA-24-2298	Solid Tissue Normal	ASCAT3
+98101134-588c-4c4e-b045-294b23cccd06	TCGA-OV.5e6dcf92-01c3-4eb2-8c8a-5bbeda37fc37.ascat3.allelic_specific.seg.txt	TCGA-24-1852	Primary Tumor	ASCAT3
+1bcb087d-ea6d-4d26-8d75-e817c0a60dd5	TCGA-OV.6182c67e-8016-470c-a817-322d3c7f37d4.ascat3.allelic_specific.seg.txt	TCGA-29-1707	Blood Derived Normal	ASCAT3
+4744045e-2eae-4432-849e-a7935cd9f0ec	TCGA-OV.3fbc2630-ca7b-44f2-b331-bcf6dfbf6982.ascat3.allelic_specific.seg.txt	TCGA-24-1928	Primary Tumor	ASCAT3
+ead27ae6-a22a-464c-b6aa-ced56b76ab4f	TCGA-OV.b56919c1-4fde-47bb-9b85-cf3b41fb51ce.ascat3.allelic_specific.seg.txt	TCGA-20-1686	Primary Tumor	ASCAT3
+4e1efd00-cde2-4e50-be83-5061de5d36d0	TCGA-OV.54c64bfb-98e2-4161-bb35-d03295584bd3.ascat3.allelic_specific.seg.txt	TCGA-42-2588	Blood Derived Normal	ASCAT3
+b7df9ad8-433e-4f24-9c00-b2a6f9d8f2bc	TCGA-OV.70d07271-15ef-4a45-aa05-421a65f61846.ascat3.allelic_specific.seg.txt	TCGA-20-1687	Primary Tumor	ASCAT3
+4d140c9c-be93-4bfb-ba38-7623a3f5e6e0	TCGA-OV.4524d67a-604f-44a9-8638-dd472da98b91.ascat3.allelic_specific.seg.txt	TCGA-29-1699	Blood Derived Normal	ASCAT3
+841f4c45-1e4e-48ec-a655-1495e04187e1	TCGA-OV.0e9b8ff9-e998-4185-b8ce-d9446630383e.ascat3.allelic_specific.seg.txt	TCGA-13-2065	Blood Derived Normal	ASCAT3
+0d61978f-a7b9-4dcf-8adc-3370506eed11	TCGA-OV.da6176df-e670-4160-885f-d7a5dd04d852.ascat3.allelic_specific.seg.txt	TCGA-36-2543	Primary Tumor	ASCAT3
+103093eb-9386-4646-bcc6-dfcbfcd850d2	TCGA-OV.46625639-1e23-44ed-8180-b609dc357e71.ascat3.allelic_specific.seg.txt	TCGA-13-1411	Primary Tumor	ASCAT3
+c63ff8c1-0744-4516-a3ae-0bd578a88e04	TCGA-OV.41386f0c-6c92-4ae3-9b7a-fc2b98108e4f.ascat3.allelic_specific.seg.txt	TCGA-04-1347	Primary Tumor	ASCAT3
+58f9e6ea-0182-4064-9b5a-0cf0adb7b80a	TCGA-OV.efb6506d-f0d6-49e8-8e5f-35780806bc66.ascat3.allelic_specific.seg.txt	TCGA-OY-A56P	Primary Tumor	ASCAT3
+d0a2ebb6-4cc6-4f2f-adcc-894dc3e13ab6	TCGA-OV.7c508788-0de6-4512-991b-06ee5b1bd847.ascat3.allelic_specific.seg.txt	TCGA-09-2055	Primary Tumor	ASCAT3
+acd6b47c-1223-4eeb-bf2f-b25a3e9c5e25	TCGA-OV.0056b0fa-8cd7-4e78-a76b-9c616246f9c2.ascat3.allelic_specific.seg.txt	TCGA-61-1899	Solid Tissue Normal	ASCAT3
+5af6ebee-d0dd-4fcb-b439-a2c77fe7ec9d	TCGA-OV.2f63f98f-8eb2-4bce-89c5-b5a7e9b6218c.ascat3.allelic_specific.seg.txt	TCGA-36-2544	Primary Tumor	ASCAT3
+89a3d700-32c7-4e74-860c-562c174ec059	TCGA-OV.1062384d-2437-4f50-9f5f-ec5630d1b710.ascat3.allelic_specific.seg.txt	TCGA-13-0893	Blood Derived Normal	ASCAT3
+02348ba6-eff8-4def-aa5d-661cb9e24634	TCGA-OV.e8c8377f-2037-4b8b-a915-cfdc8d12cfd7.ascat3.allelic_specific.seg.txt	TCGA-24-1850	Primary Tumor	ASCAT3
+a6d08a00-3f68-4fb7-95f9-ea690db1495a	TCGA-OV.86294b03-0b4e-432d-8fd1-7529422f0e7e.ascat3.allelic_specific.seg.txt	TCGA-36-2548	Blood Derived Normal	ASCAT3
+1718ae5a-8942-4e2e-b08a-12c9ffa9f971	TCGA-OV.051e9b48-2d5e-4585-96de-9fae27f59ac7.ascat3.allelic_specific.seg.txt	TCGA-13-0803	Primary Tumor	ASCAT3
+665a1e99-8e93-4f39-b6db-84a5a5b55eb6	TCGA-OV.fb06147a-5892-4f9f-9698-4d71896fa8e7.ascat3.allelic_specific.seg.txt	TCGA-61-1743	Primary Tumor	ASCAT3
+a30513bf-4ff6-40cc-a0e9-6e564615be7b	TCGA-OV.1f1208d3-3643-4854-96c4-987e0d1068fd.ascat3.allelic_specific.seg.txt	TCGA-61-2018	Solid Tissue Normal	ASCAT3
+e1307976-543a-4dcd-b959-0aac39b02d30	TCGA-OV.a1cff263-34f4-4b99-b038-3089c69c120f.ascat3.allelic_specific.seg.txt	TCGA-61-1900	Solid Tissue Normal	ASCAT3
+e14d5b4e-4ebf-438e-afe8-686eaf2aa5a5	TCGA-OV.568acf95-5e03-406b-ac0d-4d0e7d6855eb.ascat3.allelic_specific.seg.txt	TCGA-25-1313	Primary Tumor	ASCAT3
+660ebbc1-50b6-4f3a-b4ff-630e740d6256	TCGA-OV.e0743db2-35b3-4a03-ad31-c7851b495a23.ascat3.allelic_specific.seg.txt	TCGA-24-1463	Primary Tumor	ASCAT3
+d83c0b21-f4ee-4f73-8ad6-f8ba47250ca3	TCGA-OV.2612e023-e918-4aac-9ca0-422c52efe0bc.ascat3.allelic_specific.seg.txt	TCGA-59-A5PD	Primary Tumor	ASCAT3
+047b8d1b-bc90-475d-9c76-02334c005ae1	TCGA-OV.1799e1a3-740c-4f31-8278-9d80c60f699e.ascat3.allelic_specific.seg.txt	TCGA-29-1784	Blood Derived Normal	ASCAT3
+97871e6e-9f4b-4c23-9b42-ec5f47c28964	TCGA-OV.61a93ace-fc9c-44c5-a6fd-341bbc767f25.ascat3.allelic_specific.seg.txt	TCGA-24-2019	Blood Derived Normal	ASCAT3
+a8f03962-ea1c-4e4c-8820-a6f6580ed423	TCGA-OV.8fee54d4-4bfb-487a-94b3-be40b1e5f416.ascat3.allelic_specific.seg.txt	TCGA-04-1338	Solid Tissue Normal	ASCAT3
+5bc7d8dd-3110-452b-9bb7-5a42d2806bdd	TCGA-OV.b3ea5fa8-61c8-462e-b013-0e4d44fec679.ascat3.allelic_specific.seg.txt	TCGA-24-1435	Blood Derived Normal	ASCAT3
+59a1d55b-3736-4e50-abcc-cf73c7e726b5	TCGA-OV.e36080ab-77a2-4c42-91c4-64e38c7a5c49.ascat3.allelic_specific.seg.txt	TCGA-31-1956	Primary Tumor	ASCAT3
+e36c9000-32f2-4b59-8a33-f17172e4eddf	TCGA-OV.572d0ef3-8c5d-48c8-9129-a2397790f0e5.ascat3.allelic_specific.seg.txt	TCGA-36-2533	Primary Tumor	ASCAT3
+c68201e9-fbb1-40e2-a333-ca7289b4c427	TCGA-OV.a059d969-2eb2-44d5-93cd-ed88f5b61719.ascat3.allelic_specific.seg.txt	TCGA-04-1514	Primary Tumor	ASCAT3
+01e3b588-3ca0-411d-9637-28cb64815e0d	TCGA-OV.8ce1744c-f0ff-4e20-8cfd-098a79a9bc7b.ascat3.allelic_specific.seg.txt	TCGA-61-2002	Solid Tissue Normal	ASCAT3
+33cf1acd-37ec-477f-a662-303289ae8cd0	TCGA-OV.fe1cab9b-cff2-4467-ba52-134831acf48d.ascat3.allelic_specific.seg.txt	TCGA-29-1701	Blood Derived Normal	ASCAT3
+6f2d450f-0d87-4a1c-9be1-8ccd67585ba0	TCGA-OV.47e0a74c-6d83-40ba-8d6d-f04add97433b.ascat3.allelic_specific.seg.txt	TCGA-09-2054	Solid Tissue Normal	ASCAT3
+a5adf54c-1d88-4e53-88a6-5c9dc2c21b5b	TCGA-OV.7f9a9102-1105-4cbf-8381-a7f45cb26878.ascat3.allelic_specific.seg.txt	TCGA-04-1654	Primary Tumor	ASCAT3
+6b80e2db-e251-40da-916d-9efd99958f3f	TCGA-OV.eb5ed8b0-d282-45c0-b673-c2822ddff885.ascat3.allelic_specific.seg.txt	TCGA-30-1718	Blood Derived Normal	ASCAT3
+47d817dc-ef0c-4b23-a1ca-c65cc02982d1	TCGA-OV.8b89f646-2877-40ee-b91a-2bb8f843d9e9.ascat3.allelic_specific.seg.txt	TCGA-24-1842	Blood Derived Normal	ASCAT3
+644df947-aeec-4a41-a81a-906683bade67	TCGA-OV.cee2a595-164b-4263-9f5c-fb80463b0675.ascat3.allelic_specific.seg.txt	TCGA-25-1634	Blood Derived Normal	ASCAT3
+e7457921-93f5-43bf-8ebd-e7a5f3531ea2	TCGA-OV.e765cea0-7987-4b98-bbe6-14c21afe6b58.ascat3.allelic_specific.seg.txt	TCGA-24-2038	Primary Tumor	ASCAT3
+b1e93668-74ce-4279-8a76-cd5a7bfd5c42	TCGA-OV.fef20c85-59fd-4c83-a61d-e7cdc277917a.ascat3.allelic_specific.seg.txt	TCGA-29-1766	Blood Derived Normal	ASCAT3
+cb00bd6a-d4ae-43c1-acd5-665e425ff315	TCGA-OV.29c06801-2cc2-4f52-847a-2a31ec7d776b.ascat3.allelic_specific.seg.txt	TCGA-04-1346	Solid Tissue Normal	ASCAT3
+b505e528-18f2-4bbb-9e8c-89f61904c8cb	TCGA-OV.1461657f-a324-4423-8eea-8d284dde4139.ascat3.allelic_specific.seg.txt	TCGA-04-1365	Blood Derived Normal	ASCAT3
+02410201-f2da-4b0d-a19d-31684fbbe5bb	TCGA-OV.9c67fe94-0cb2-4fc5-8349-5fb77875ce28.ascat3.allelic_specific.seg.txt	TCGA-24-2262	Solid Tissue Normal	ASCAT3
+a4ac75b1-d316-4440-b496-d690f1be571b	TCGA-OV.351e95b2-e001-4804-974d-fdac83240259.ascat3.allelic_specific.seg.txt	TCGA-20-1685	Blood Derived Normal	ASCAT3
+531efd01-b38b-44a5-b9e0-f494895b1a22	TCGA-OV.a7bcf22d-826a-4d23-a17f-4d6ad5c14666.ascat3.allelic_specific.seg.txt	TCGA-13-0757	Blood Derived Normal	ASCAT3
+f4559ebf-6e65-40bd-af4c-91160be4cdbe	TCGA-OV.7a40175f-a23d-4540-a3b2-5a147430ffc7.ascat3.allelic_specific.seg.txt	TCGA-29-1777	Blood Derived Normal	ASCAT3
+bf8cd650-1bb3-4a75-bd4d-b8608c09b3ca	TCGA-OV.77b5d8df-a1b5-4cb2-90aa-26878994b48d.ascat3.allelic_specific.seg.txt	TCGA-24-1924	Primary Tumor	ASCAT3
+d8afa832-f797-4722-913f-21c68d0d6f5c	TCGA-OV.841485f0-4b77-4204-b84a-315f8c1fb560.ascat3.allelic_specific.seg.txt	TCGA-61-1914	Solid Tissue Normal	ASCAT3
+76efcb3c-1de9-470e-95c7-549c4d9fbada	TCGA-OV.e9a6932d-2457-47a1-92ef-db2d0c3638e4.ascat3.allelic_specific.seg.txt	TCGA-57-1582	Solid Tissue Normal	ASCAT3
+35b352f5-70f7-417f-996c-dc8d2f95877e	TCGA-OV.3bb6dd39-dd32-4fc2-bf84-38ffa683b75a.ascat3.allelic_specific.seg.txt	TCGA-13-0755	Primary Tumor	ASCAT3
+73cd4972-d620-4afe-82ef-db9d31762384	TCGA-OV.ca2c5fe5-72fc-4cb1-b26c-708e72bf03a0.ascat3.allelic_specific.seg.txt	TCGA-13-1405	Blood Derived Normal	ASCAT3
+702d6584-2bc3-40af-a9d5-1a50b1d530c4	TCGA-OV.99d32dd3-0594-46be-96ba-6a981950aa0f.ascat3.allelic_specific.seg.txt	TCGA-29-1761	Primary Tumor	ASCAT3
+db3ef491-3f3a-4946-91d8-270c908f8501	TCGA-OV.be50c3a9-64cd-4044-a3db-de08e59d9e64.ascat3.allelic_specific.seg.txt	TCGA-13-0807	Primary Tumor	ASCAT3
+8ed2d938-82aa-422c-ba66-e8c93c281650	TCGA-OV.f9fc5722-4216-43f8-b7bb-95752acc78f6.ascat3.allelic_specific.seg.txt	TCGA-57-1583	Primary Tumor	ASCAT3
+6fd0ca33-df9f-43e5-a390-0b34b693325c	TCGA-OV.308919de-3238-4f7a-a68c-97bcae3252a9.ascat3.allelic_specific.seg.txt	TCGA-24-1550	Primary Tumor	ASCAT3
+f098787b-78b8-43ec-8854-e17cd60e926e	TCGA-OV.dbcc180d-1916-4914-8ca8-44ba79083add.ascat3.allelic_specific.seg.txt	TCGA-61-1740	Primary Tumor	ASCAT3
+841b8abd-2c8e-4ce9-bc40-5c7f8e4dd8b2	TCGA-OV.4ef881f1-e35b-4d60-bf1d-384a637384af.ascat3.allelic_specific.seg.txt	TCGA-13-0891	Primary Tumor	ASCAT3
+537022de-d98d-4aae-8c93-08c9aae14cfc	TCGA-OV.a9ad6ed4-b513-48c6-ac3c-334d60dfaf34.ascat3.allelic_specific.seg.txt	TCGA-61-2610	Solid Tissue Normal	ASCAT3
+b6a658c2-d089-4bd8-abb3-35353cb2b048	TCGA-OV.964da6cb-96ff-4da6-a8ea-20438f061d78.ascat3.allelic_specific.seg.txt	TCGA-24-1427	Blood Derived Normal	ASCAT3
+cc5ebcee-0f64-4e26-975f-162b57bcf917	TCGA-OV.376e5a23-7824-4935-b63c-454fc1c99627.ascat3.allelic_specific.seg.txt	TCGA-25-1318	Primary Tumor	ASCAT3
+87052c32-271c-46b2-b023-96921586fdbd	TCGA-OV.311c8442-9ccd-451d-bdfb-c7f99ad48253.ascat3.allelic_specific.seg.txt	TCGA-13-0751	Primary Tumor	ASCAT3
+7338659e-322a-43b5-8e34-37badb473e7f	TCGA-OV.d38cff49-cc65-4b8d-87f7-6a5e3deeaf69.ascat3.allelic_specific.seg.txt	TCGA-29-1694	Primary Tumor	ASCAT3
+5a60a40d-7bf8-434e-a75c-5873b161f324	TCGA-OV.bf96a59e-7403-42f6-99b2-e56a1010cdc7.ascat3.allelic_specific.seg.txt	TCGA-13-0921	Blood Derived Normal	ASCAT3
+ba68de08-6fe7-4dd4-ab3c-170c4d42453f	TCGA-OV.85c10346-60f7-45e9-9948-a150ef623db1.ascat3.allelic_specific.seg.txt	TCGA-29-1695	Primary Tumor	ASCAT3
+afa47e92-a6d9-4a46-86ac-7726bfaf07e4	TCGA-OV.886193e0-afe4-4d1b-9e48-7dd97ec354ce.ascat3.allelic_specific.seg.txt	TCGA-13-1501	Primary Tumor	ASCAT3
+4fb84e34-7172-4fb4-b755-65c312338d3e	TCGA-OV.050b0445-dde0-48c6-9a0f-9c041567cf3a.ascat3.allelic_specific.seg.txt	TCGA-23-1029	Primary Tumor	ASCAT3
+b2396cc2-3c9d-45b0-ad37-7156afd2f134	TCGA-OV.a3a9276a-e5be-4e59-8a9c-ffea435ccdc8.ascat3.allelic_specific.seg.txt	TCGA-10-0935	Primary Tumor	ASCAT3
+53b96022-fc38-460d-9c15-16299df60895	TCGA-OV.f3b49cf8-8541-4971-8e5b-960e35ae8686.ascat3.allelic_specific.seg.txt	TCGA-24-1419	Primary Tumor	ASCAT3
+84d3d731-55b0-4917-a8dc-52b32b2ebf1a	TCGA-OV.ceabd0be-fcb9-4fc3-9817-00452e386182.ascat3.allelic_specific.seg.txt	TCGA-13-0883	Blood Derived Normal	ASCAT3
+38f63add-3b96-4efa-b0a8-ff0e6d10a0b2	TCGA-OV.5cfffde5-d299-47e2-8016-f4959d6c88f2.ascat3.allelic_specific.seg.txt	TCGA-61-1910	Primary Tumor	ASCAT3
+513a97e3-a101-498a-90b8-b76f93d91136	TCGA-OV.eb2cd85e-61a9-4180-b953-a8ad5fd9bef0.ascat3.allelic_specific.seg.txt	TCGA-04-1331	Primary Tumor	ASCAT3
+4247fa74-8f26-4d1c-8967-de09469f23cd	TCGA-OV.113a01ed-70f4-4c51-9b01-2c567aa5e9fb.ascat3.allelic_specific.seg.txt	TCGA-24-1548	Primary Tumor	ASCAT3
+f89dab32-bf0a-4bca-a412-05f9dd321dc4	TCGA-OV.ca1b94d2-05a4-48d5-81a1-4cb4da832e25.ascat3.allelic_specific.seg.txt	TCGA-13-0758	Blood Derived Normal	ASCAT3
+9cd80ca4-20e5-49ed-866c-39c431eb8c01	TCGA-OV.9cfb8540-1bc2-479f-b408-d662cdb6b990.ascat3.allelic_specific.seg.txt	TCGA-24-1616	Primary Tumor	ASCAT3
+427a9d5e-e68d-4856-ad3e-0081421210eb	TCGA-OV.5b4a72f9-5cee-49ad-8d8c-1639e20083ce.ascat3.allelic_specific.seg.txt	TCGA-23-1121	Blood Derived Normal	ASCAT3
+8e622e6c-6665-4df6-a4fc-7cb683ffceae	TCGA-OV.0eb9976b-f75f-4763-8954-bdba8c9047a1.ascat3.allelic_specific.seg.txt	TCGA-10-0936	Solid Tissue Normal	ASCAT3
+8da496b1-70db-402f-95df-c46db5774a26	TCGA-OV.26516073-2e76-4c62-aeec-c2b40ae3ae2a.ascat3.allelic_specific.seg.txt	TCGA-13-1512	Primary Tumor	ASCAT3
+613afc65-f6a1-49d4-a016-54ee4261d252	TCGA-OV.c71e4fb2-5a26-45eb-843f-dbe50191f3be.ascat3.allelic_specific.seg.txt	TCGA-29-1768	Blood Derived Normal	ASCAT3
+e5fbe6c6-f245-4bc5-b594-581077b74036	TCGA-OV.5b2ef5e1-b131-4220-9a34-6650e8656e76.ascat3.allelic_specific.seg.txt	TCGA-25-1329	Blood Derived Normal	ASCAT3
+5bd66089-dbc2-4280-a47b-1d797dd24b94	TCGA-OV.92fcc5c5-9d98-49f8-ada9-b4a663d7f2bf.ascat3.allelic_specific.seg.txt	TCGA-24-1560	Primary Tumor	ASCAT3
+dabd1f88-86f2-4bb2-8a38-809877ccd8a5	TCGA-OV.1f062476-2401-45e5-955a-c98a5c418d98.ascat3.allelic_specific.seg.txt	TCGA-10-0925	Solid Tissue Normal	ASCAT3
+03cdcfe0-872f-4d47-9345-3a8885c7bdb1	TCGA-OV.f609b580-4ab3-4dc5-9636-f5562f2324e5.ascat3.allelic_specific.seg.txt	TCGA-13-0724	Primary Tumor	ASCAT3
+c758f521-c046-4545-a56a-f289cae22523	TCGA-OV.504eb58f-bb8f-4171-b8e2-41f3d6dd8f88.ascat3.allelic_specific.seg.txt	TCGA-04-1341	Primary Tumor	ASCAT3
+103f80a7-bdc7-41e2-a5ed-085ea527025b	TCGA-OV.5494acf1-6054-4d4f-8f5e-d39c5e9eafa4.ascat3.allelic_specific.seg.txt	TCGA-20-1684	Blood Derived Normal	ASCAT3
+c21b0512-de15-4c6d-93d9-c98f9153acdd	TCGA-OV.286c3c1e-c00f-4d29-b805-ecd1432a6a78.ascat3.allelic_specific.seg.txt	TCGA-29-1764	Blood Derived Normal	ASCAT3
+bc2f0daf-008e-4b75-9444-3da019c4f0ea	TCGA-OV.eaf70996-ac08-4e56-8747-06a8af702dd5.ascat3.allelic_specific.seg.txt	TCGA-24-1564	Blood Derived Normal	ASCAT3
+01f4994e-eb82-4003-8ea6-06db29a67aa8	TCGA-OV.205f2c4a-d28c-47bc-990e-5c11ff2017cd.ascat3.allelic_specific.seg.txt	TCGA-23-1026	Primary Tumor	ASCAT3
+ee7f4d76-b4ef-4fb9-ac87-e709ea53223d	TCGA-OV.0836cb2f-6a21-463c-9774-4892587f1e84.ascat3.allelic_specific.seg.txt	TCGA-04-1353	Solid Tissue Normal	ASCAT3
+595d5628-2663-41b5-9be1-b94f0b7d5a1f	TCGA-OV.63b975f5-48ad-42ca-b3e8-16c63c7cbcaa.ascat3.allelic_specific.seg.txt	TCGA-23-1120	Primary Tumor	ASCAT3
+f06d0758-7e93-44e5-8de2-48fcdcb82498	TCGA-OV.74c4f7e9-6f7e-41b7-8f57-f4cd0a5312d0.ascat3.allelic_specific.seg.txt	TCGA-04-1519	Solid Tissue Normal	ASCAT3
+d03e797a-bd89-4ddf-868c-816dc0c586db	TCGA-OV.e4726939-32a7-4ecf-bcee-420817d9d234.ascat3.allelic_specific.seg.txt	TCGA-13-0723	Blood Derived Normal	ASCAT3
+d0b35087-1964-46e8-85f3-41e3b5ced44d	TCGA-OV.354d346e-f49a-410e-90fc-073cd4977286.ascat3.allelic_specific.seg.txt	TCGA-24-2020	Solid Tissue Normal	ASCAT3
+ff0abbaf-571d-4670-b26b-a293e9fcae3c	TCGA-OV.c7553a24-4cdc-42d7-9af7-8c4e1dc88e3b.ascat3.allelic_specific.seg.txt	TCGA-30-1887	Primary Tumor	ASCAT3
+17f3e8cc-ef78-4c66-b1d1-45a6f2f0295b	TCGA-OV.71ed9464-f906-4796-9993-2662d32bf372.ascat3.allelic_specific.seg.txt	TCGA-23-2078	Blood Derived Normal	ASCAT3
+8f7e5b20-c70c-496f-a221-39518796c088	TCGA-OV.716c8389-daf4-4b23-9069-4e0862a0db5d.ascat3.allelic_specific.seg.txt	TCGA-57-1584	Primary Tumor	ASCAT3
+429ca1dd-808a-4543-a553-f69a6bb54af1	TCGA-OV.47e05fb0-cbc1-4edd-a8d6-ae4a20ceb7c2.ascat3.allelic_specific.seg.txt	TCGA-13-1483	Blood Derived Normal	ASCAT3
+cbe8699f-1f39-4be0-82cf-c49e0f1f20bf	TCGA-OV.49aff11e-7532-4ca6-9192-b6d8e8b806c1.ascat3.allelic_specific.seg.txt	TCGA-04-1361	Solid Tissue Normal	ASCAT3
+e6718bb6-0809-4318-a074-b0c75ddff4db	TCGA-OV.a3747731-86b6-4f6d-8044-d677000432cd.ascat3.allelic_specific.seg.txt	TCGA-59-2350	Solid Tissue Normal	ASCAT3
+02695cf1-3097-4292-a5c6-cc1a1adf3446	TCGA-OV.217579ca-cc7a-4c54-a669-1b511735f20e.ascat3.allelic_specific.seg.txt	TCGA-61-1738	Solid Tissue Normal	ASCAT3
+2b0cfaea-94b9-4fae-8110-14c77342bd08	TCGA-OV.e1e81ff9-3bdc-4ddb-81d0-dc524d0ef79d.ascat3.allelic_specific.seg.txt	TCGA-13-1409	Blood Derived Normal	ASCAT3
+f6e66b17-8972-450e-931e-0f11084dc6a5	TCGA-OV.20ca8b0a-b561-405f-89d4-5f12f40a5455.ascat3.allelic_specific.seg.txt	TCGA-24-1471	Primary Tumor	ASCAT3
+429caea0-04c7-4858-8faf-79ba7f941da0	TCGA-OV.410b0b1c-c115-4cb6-b896-d1846a8384de.ascat3.allelic_specific.seg.txt	TCGA-36-2540	Blood Derived Normal	ASCAT3
+ec932946-6006-4eb3-98ca-4abc09318261	TCGA-OV.17fad821-42e6-4165-b2ec-55e98864d94b.ascat3.allelic_specific.seg.txt	TCGA-24-0979	Primary Tumor	ASCAT3
+f93b33a5-699a-4949-9492-b001e14f04ea	TCGA-OV.400e0133-bdd9-42b7-85cb-e486303ab5b2.ascat3.allelic_specific.seg.txt	TCGA-61-1724	Solid Tissue Normal	ASCAT3
+7e6ad06d-81a0-40f4-ab00-5e520245e074	TCGA-OV.3c96b2d3-8778-4c9c-8bf9-dc7559292fa9.ascat3.allelic_specific.seg.txt	TCGA-09-2051	Blood Derived Normal	ASCAT3
+e53855c7-1680-4860-b59b-d625e364c10e	TCGA-OV.5d71d039-8fd3-447b-bddd-98aacbfa2582.ascat3.allelic_specific.seg.txt	TCGA-25-1314	Blood Derived Normal	ASCAT3
+fea3fbf8-9a43-49c2-9dd2-a93b05a19d7e	TCGA-OV.292a1f0d-0e96-48ab-b8c3-4a5b98cd9ca4.ascat3.allelic_specific.seg.txt	TCGA-23-1809	Blood Derived Normal	ASCAT3
+3a30d516-1d3f-4ae9-9c0f-9de2897ad889	TCGA-OV.a1704a37-9809-4d75-97f0-97ecb2e298c6.ascat3.allelic_specific.seg.txt	TCGA-13-0720	Blood Derived Normal	ASCAT3
+e1a084fd-4222-4aad-8f29-410755bb41d0	TCGA-OV.70bb7e2f-cb99-4960-a591-32e796c98f2f.ascat3.allelic_specific.seg.txt	TCGA-13-0761	Primary Tumor	ASCAT3
+6771726e-e516-4f98-bafa-94a208f61780	TCGA-OV.63eb62f1-969d-49a9-963a-af10e9e878cf.ascat3.allelic_specific.seg.txt	TCGA-36-1571	Primary Tumor	ASCAT3
+f476113d-4c1f-4245-8617-e3b54df4af10	TCGA-OV.616b58ea-28e5-4d0c-aa5f-0f08a0c587f3.ascat3.allelic_specific.seg.txt	TCGA-13-0887	Primary Tumor	ASCAT3
+1b58fed1-ca36-4fd2-a63e-8169de00ba11	TCGA-OV.5b8c15f0-5635-42d1-849d-66dacecfb6c0.ascat3.allelic_specific.seg.txt	TCGA-29-1702	Blood Derived Normal	ASCAT3
+65990364-d203-4fe2-9c51-7d5d746f7152	TCGA-OV.d92637ed-8213-4983-b661-16563f7ac3d6.ascat3.allelic_specific.seg.txt	TCGA-23-2084	Primary Tumor	ASCAT3
+81ba6e3f-8a44-4c40-8339-75667aaa5775	TCGA-OV.f17ead9c-d1d3-47fa-9f19-292fb6d9cbec.ascat3.allelic_specific.seg.txt	TCGA-13-0730	Blood Derived Normal	ASCAT3
+d96ada5d-3ec0-4d03-b5d5-834a30d1e431	TCGA-OV.51b1e818-3048-4c41-9074-e36212c7dd7e.ascat3.allelic_specific.seg.txt	TCGA-24-1430	Blood Derived Normal	ASCAT3
+b2ef7bb1-d879-4ee5-9c90-ce3413873e10	TCGA-OV.55c015ce-ed2e-4a91-bc96-18e7da55447f.ascat3.allelic_specific.seg.txt	TCGA-09-1664	Primary Tumor	ASCAT3
+9f4f47b4-3b4c-435c-9c90-8eea628ac63b	TCGA-OV.2fcf54e4-1099-4323-b5f1-246aa2cc5aaf.ascat3.allelic_specific.seg.txt	TCGA-09-2050	Primary Tumor	ASCAT3
+a5b66ff8-bcc7-40cd-83f2-172bdedc39c1	TCGA-OV.2633d35a-cf95-4ccd-a5f4-8ef7eda15177.ascat3.allelic_specific.seg.txt	TCGA-13-0802	Primary Tumor	ASCAT3
+5dac73b8-ba13-49d0-878a-23fc47746260	TCGA-OV.522b0524-28c8-4f6b-8170-5d73c8193ada.ascat3.allelic_specific.seg.txt	TCGA-24-1413	Blood Derived Normal	ASCAT3
+424b8798-1126-41f2-8513-3eaa2f188491	TCGA-OV.e67b753d-1406-4186-b8ec-75ea0f01ab93.ascat3.allelic_specific.seg.txt	TCGA-13-0919	Blood Derived Normal	ASCAT3
+ba6f7a56-c1b4-4168-9e27-b21376dfdb65	TCGA-OV.81bfda42-19a0-4b57-9373-556b084db6c4.ascat3.allelic_specific.seg.txt	TCGA-61-1998	Blood Derived Normal	ASCAT3
+446ce7a2-7866-46ee-99f2-36d3f67a92be	TCGA-OV.e7b08df1-ec95-4c9e-93a8-b3d5a4b1bc74.ascat3.allelic_specific.seg.txt	TCGA-09-1670	Blood Derived Normal	ASCAT3
+3436f2ec-e2d7-45d8-91eb-5083d1fc0e0c	TCGA-OV.e112fed6-8e4f-4bc6-9f93-d6c73ba9b223.ascat3.allelic_specific.seg.txt	TCGA-25-1626	Primary Tumor	ASCAT3
+9e7c541e-adfa-4060-979f-b6c2348679d6	TCGA-OV.3658c6e3-6788-43c5-8cd8-0bdaeed8a3f2.ascat3.allelic_specific.seg.txt	TCGA-24-0968	Primary Tumor	ASCAT3
+4cf73188-67c4-407d-b85d-d01cf0085d3e	TCGA-OV.7ae59829-3d0f-44df-819b-0b9bf21a2e9e.ascat3.allelic_specific.seg.txt	TCGA-10-0930	Primary Tumor	ASCAT3
+3543f029-2870-40f2-b8e3-7f929bc880f2	TCGA-OV.563f35f6-fdff-45dd-b1d1-da2622820adc.ascat3.allelic_specific.seg.txt	TCGA-24-1428	Blood Derived Normal	ASCAT3
+48fff7c7-826a-4fde-9c86-b6f393ad880c	TCGA-OV.b0fb393b-8bbd-4af4-97bd-fb5bc61b1edf.ascat3.allelic_specific.seg.txt	TCGA-13-0911	Primary Tumor	ASCAT3
+6bda3219-a164-4a2d-914b-b10e3ce4de4b	TCGA-OV.9b345bb6-89dc-403a-b97b-3d4565942415.ascat3.allelic_specific.seg.txt	TCGA-23-2649	Blood Derived Normal	ASCAT3
+0dd98bc4-0531-4cd8-b22f-4e9e824c646c	TCGA-OV.aa5c6912-345d-432f-a1a7-caf8d6237b9a.ascat3.allelic_specific.seg.txt	TCGA-30-1880	Primary Tumor	ASCAT3
+96dc52a7-cf66-40dd-ae7b-f6e33f0441e8	TCGA-OV.2ea95bbb-00cd-491e-814e-25360d715683.ascat3.allelic_specific.seg.txt	TCGA-04-1343	Primary Tumor	ASCAT3
+946b44a0-18f3-4dbe-9a0b-4edb3e7fb3a8	TCGA-OV.72c6537f-1ae7-47d8-8b7c-43d393dffd3c.ascat3.allelic_specific.seg.txt	TCGA-13-0910	Primary Tumor	ASCAT3
+970df16d-c630-479b-8cf1-5398752c6c68	TCGA-OV.54dedb5e-643b-49fc-8225-4bd46bd46c82.ascat3.allelic_specific.seg.txt	TCGA-30-1867	Blood Derived Normal	ASCAT3
+0e9e63c2-9c05-452a-8259-3e1e42fcf4d2	TCGA-OV.5b3a8dc0-c3ed-4616-8b9d-65673910c222.ascat3.allelic_specific.seg.txt	TCGA-13-0760	Blood Derived Normal	ASCAT3
+d64f153a-8e44-46de-80a1-384c08dbebeb	TCGA-OV.24b8fdc6-d6bc-45ac-be26-b31d4e00b1e8.ascat3.allelic_specific.seg.txt	TCGA-25-2408	Primary Tumor	ASCAT3
+dbc579f6-f446-4b94-acb8-40987bd08b87	TCGA-OV.ef759014-dfd0-4f35-ab00-20f9a884114f.ascat3.allelic_specific.seg.txt	TCGA-24-1565	Blood Derived Normal	ASCAT3
+d239c2f9-b8ab-4caf-b9db-d55001a70fd1	TCGA-OV.7f20859a-904e-4a7b-b57b-20ad49c3eeae.ascat3.allelic_specific.seg.txt	TCGA-10-0926	Primary Tumor	ASCAT3
+54ea0bbb-6286-4e4c-b61d-0adef614c2b3	TCGA-OV.773bff37-5ef8-462d-b742-56db7a09015a.ascat3.allelic_specific.seg.txt	TCGA-23-1028	Blood Derived Normal	ASCAT3
+40f42620-e53e-4803-9f10-43dd905d0c28	TCGA-OV.2805596c-3015-489a-8683-8df919934cb8.ascat3.allelic_specific.seg.txt	TCGA-24-2289	Blood Derived Normal	ASCAT3
+6a1c448e-b63f-41c2-a1c7-79c0790ea776	TCGA-OV.608ac686-8da4-4ca4-937f-a4d23663be6d.ascat3.allelic_specific.seg.txt	TCGA-13-2061	Primary Tumor	ASCAT3
+cd36b9eb-5b69-4e7e-aa9c-fd68976ca4e4	TCGA-OV.5e52d425-00fa-4cd2-a278-8e298d333ce1.ascat3.allelic_specific.seg.txt	TCGA-OY-A56Q	Blood Derived Normal	ASCAT3
+b25feed2-9707-4910-8066-6c840a34166a	TCGA-OV.cd9bfbe4-172b-4168-bdfe-636eff1767d0.ascat3.allelic_specific.seg.txt	TCGA-13-0886	Blood Derived Normal	ASCAT3
+64263525-27d5-4fec-8d2d-358764baa9c3	TCGA-OV.1b084de1-516a-4f05-9153-47c54489b649.ascat3.allelic_specific.seg.txt	TCGA-29-1688	Primary Tumor	ASCAT3
+b0a92f96-352d-4d92-8aac-7d8c8df5c65c	TCGA-OV.d99f3cec-5a1f-451a-b6e2-2de44f57a4ae.ascat3.allelic_specific.seg.txt	TCGA-36-1568	Blood Derived Normal	ASCAT3
+42f2dbce-01ed-4764-99a1-123aa0089338	TCGA-OV.fb6d2d72-8352-495b-96c7-69e45636ad78.ascat3.allelic_specific.seg.txt	TCGA-25-1623	Primary Tumor	ASCAT3
+cd227bc3-02f1-471c-bfb0-6340c185d66b	TCGA-OV.256a9e3d-46f8-465f-8157-354e3b9e47b8.ascat3.allelic_specific.seg.txt	TCGA-24-2271	Primary Tumor	ASCAT3
+91216b2f-8be1-44c1-a17d-6c675528b166	TCGA-OV.8c29ee0e-c6d1-412a-93c3-9bc90c22b16d.ascat3.allelic_specific.seg.txt	TCGA-61-2092	Primary Tumor	ASCAT3
+65820aa0-3ae7-4718-97b6-16a1b5fa9ac3	TCGA-OV.0c0fe76e-4298-462c-9354-f7e92391a135.ascat3.allelic_specific.seg.txt	TCGA-13-0764	Blood Derived Normal	ASCAT3
+3317c6e0-0dbd-426e-9823-e8bef1352edd	TCGA-OV.0fa8feb6-7f0c-4f3e-8f45-efa5baa423bd.ascat3.allelic_specific.seg.txt	TCGA-09-1669	Primary Tumor	ASCAT3
+3492e8e4-3c7f-4fce-8132-34639696a3d1	TCGA-OV.c7485ff7-5733-441c-8496-c28f0056e5b3.ascat3.allelic_specific.seg.txt	TCGA-09-2045	Primary Tumor	ASCAT3
+2ca5e744-e4b5-4e97-99bb-7277a8602403	TCGA-OV.7faa8eaf-a19f-40df-bc1c-2dddd37dac9a.ascat3.allelic_specific.seg.txt	TCGA-24-2024	Solid Tissue Normal	ASCAT3
+cd17407e-540d-42c9-93eb-3f73e42ef9d1	TCGA-OV.8f5395db-eecc-4317-8f7a-eb7b73388676.ascat3.allelic_specific.seg.txt	TCGA-13-0905	Blood Derived Normal	ASCAT3
+73056eb1-cffd-4c04-9e08-737215771c36	TCGA-OV.4613360f-cf63-4836-a12b-c48cb8602417.ascat3.allelic_specific.seg.txt	TCGA-61-2614	Primary Tumor	ASCAT3
+28e49e2f-f345-4abf-a4dd-32fa13b8cc46	TCGA-OV.53d6550d-4d80-4e28-accb-fd3a46abcdd5.ascat3.allelic_specific.seg.txt	TCGA-10-0928	Solid Tissue Normal	ASCAT3
+60d79a01-3185-4f2b-8d0f-57f5d0dda782	TCGA-OV.f043caa4-0483-42a6-8627-e161e1941695.ascat3.allelic_specific.seg.txt	TCGA-36-2529	Primary Tumor	ASCAT3
+ef81501b-e876-4121-bd14-9c6f43eb6366	TCGA-OV.4b634cdf-e7d6-4ac5-8128-d29baeb34bf8.ascat3.allelic_specific.seg.txt	TCGA-61-2012	Primary Tumor	ASCAT3
+bf49e359-9f5a-4b6f-b369-692b3f57931d	TCGA-OV.e4f66c8d-3cf1-4e33-b49e-98b6ee4b98f2.ascat3.allelic_specific.seg.txt	TCGA-13-0714	Blood Derived Normal	ASCAT3
+ad22e923-55d4-4a5b-9409-6a2ae4d4883f	TCGA-OV.5e521fd3-5489-4e99-92db-70c6bb30d44f.ascat3.allelic_specific.seg.txt	TCGA-04-1517	Primary Tumor	ASCAT3
+1db572a1-6460-4225-b532-4b9bbb44550f	TCGA-OV.05fd7ce0-b787-48fa-baa6-3bfe9647f4ec.ascat3.allelic_specific.seg.txt	TCGA-20-0991	Primary Tumor	ASCAT3
+e19900c0-02d1-4de7-ad54-00dce204385c	TCGA-OV.ea9edd51-f159-4f8d-8d59-3a6256dd4e33.ascat3.allelic_specific.seg.txt	TCGA-13-0923	Primary Tumor	ASCAT3
+f36e4210-7bf6-4f91-99d6-ec886cbab437	TCGA-OV.49926024-a499-4744-9ea6-5dc05da705e8.ascat3.allelic_specific.seg.txt	TCGA-13-0726	Primary Tumor	ASCAT3
+1d55b7e6-fed5-4eb7-9e70-d08c34e42205	TCGA-OV.90a5754c-687f-4aeb-b600-b4dcc28c870c.ascat3.allelic_specific.seg.txt	TCGA-09-2043	Solid Tissue Normal	ASCAT3
+6b3bf3fb-9470-4892-adea-aaf54e7c406c	TCGA-OV.1b88b21c-f2cc-45aa-b55a-ad0cc299124f.ascat3.allelic_specific.seg.txt	TCGA-24-1549	Blood Derived Normal	ASCAT3
+adfd510d-d173-43ad-af0d-b329a1fea002	TCGA-OV.c5ca843c-5bcf-4d73-adba-4c40036f1c67.ascat3.allelic_specific.seg.txt	TCGA-24-2288	Blood Derived Normal	ASCAT3
+cea0d1d1-a69c-4968-98be-e5102f065e20	TCGA-OV.b31aaae9-a48c-4344-8b6e-69b5dbdc6c2c.ascat3.allelic_specific.seg.txt	TCGA-13-0725	Blood Derived Normal	ASCAT3
+a15b6085-bd67-4ac5-b66e-110cf1658705	TCGA-OV.3ac1c2dd-76bc-4769-af18-b8e952e78513.ascat3.allelic_specific.seg.txt	TCGA-29-1778	Primary Tumor	ASCAT3
+9bee27a1-349b-4973-aea1-7dc89d5722d3	TCGA-OV.a34ce5b9-fc4a-44ce-b89c-e8bcba934913.ascat3.allelic_specific.seg.txt	TCGA-13-0762	Primary Tumor	ASCAT3
+dc82bf6d-b50b-47cc-9199-92cc14406dac	TCGA-OV.afd657cb-1c27-4a3c-a8a6-9f5ccd3bb3d7.ascat3.allelic_specific.seg.txt	TCGA-10-0934	Primary Tumor	ASCAT3
+0130cba1-1497-46e5-b6fe-ca8cfa5275ed	TCGA-OV.7575e343-6f72-42a9-9011-2b7e02cf01cc.ascat3.allelic_specific.seg.txt	TCGA-24-1555	Primary Tumor	ASCAT3
+d0b075e3-4b2a-4802-8c9f-acf391aee31e	TCGA-OV.b17d54a4-6801-452e-bb62-a9c403db4e92.ascat3.allelic_specific.seg.txt	TCGA-13-0804	Blood Derived Normal	ASCAT3
+9337729c-3283-43c8-aadd-a854357b77bc	TCGA-OV.3ad89fc4-fa3f-4090-a41c-a46b6aa68cd5.ascat3.allelic_specific.seg.txt	TCGA-09-0364	Blood Derived Normal	ASCAT3
+53ae9b30-212b-444a-8213-237aaa526a09	TCGA-OV.ba336da3-a3ac-4707-a55b-71fa7068a4e4.ascat3.allelic_specific.seg.txt	TCGA-24-1552	Primary Tumor	ASCAT3
+bcb109d7-0497-44f9-8787-deaac7d39efc	TCGA-OV.3a1d29f8-0300-4798-9b2e-d0bed27dcd45.ascat3.allelic_specific.seg.txt	TCGA-25-2042	Blood Derived Normal	ASCAT3
+2f9e4b80-4495-449d-9a09-476d44a1c025	TCGA-OV.dcc7bdda-71fa-4e79-8a0e-28259dc2cdaf.ascat3.allelic_specific.seg.txt	TCGA-25-2393	Blood Derived Normal	ASCAT3
+772f9ebc-2f0d-43a3-b6cc-c32db2f8b657	TCGA-OV.0afd6963-4ee0-474d-89b9-4fa151d8f1b4.ascat3.allelic_specific.seg.txt	TCGA-10-0927	Primary Tumor	ASCAT3
+3034cd85-ccdc-4a1d-815f-db3bfc9c2b06	TCGA-OV.5aac8bab-59bb-4789-8428-432e23a3d1ce.ascat3.allelic_specific.seg.txt	TCGA-13-0900	Blood Derived Normal	ASCAT3
+18bdca99-1dea-4f7c-9fa4-c8a742ff2d2f	TCGA-OV.54cb8511-36a0-4af7-84eb-274263af1f05.ascat3.allelic_specific.seg.txt	TCGA-13-0727	Primary Tumor	ASCAT3
+65dce017-8e0c-41c0-a428-fc9561391f43	TCGA-OV.e2790b61-5daa-40de-85fa-763cb86fcfc4.ascat3.allelic_specific.seg.txt	TCGA-24-1843	Primary Tumor	ASCAT3
+21335d32-d756-418d-a1a1-01d167fc86a7	TCGA-OV.4d9a4714-924f-42b5-881d-f6223a34852b.ascat3.allelic_specific.seg.txt	TCGA-24-1849	Primary Tumor	ASCAT3
+782fa58f-5af3-4863-af16-9f376554b113	TCGA-OV.54231a5f-a9b2-471b-88c8-05cf5e04dca1.ascat3.allelic_specific.seg.txt	TCGA-20-0990	Primary Tumor	ASCAT3
+a4e44663-fcf3-433c-aeb5-73962970e46f	TCGA-OV.15fec2b6-ee7a-4675-b551-fd523a5612c6.ascat3.allelic_specific.seg.txt	TCGA-36-1577	Blood Derived Normal	ASCAT3
+47ba2c2e-2d16-4081-a67b-790e1d43b1f7	TCGA-OV.97311d8d-2d1e-4076-8e65-0039a0b7d473.ascat3.allelic_specific.seg.txt	TCGA-13-1487	Primary Tumor	ASCAT3
+5e176c42-34c2-4a3c-8e4e-2c9de01487c9	TCGA-OV.1e7d7cbc-8e20-4f54-971d-09a1264d0401.ascat3.allelic_specific.seg.txt	TCGA-25-1627	Blood Derived Normal	ASCAT3
+dbdb6dda-2982-4aa7-a09c-d6ef1f359d80	TCGA-OV.b37b89ba-4a07-4bc7-85ae-932db8485ef0.ascat3.allelic_specific.seg.txt	TCGA-61-1722	Primary Tumor	ASCAT3
+ffa96327-f11a-4d5b-bebf-8bd151ee35d3	TCGA-OV.1f92e42b-0684-4c2d-b4b4-353d83d7a891.ascat3.allelic_specific.seg.txt	TCGA-29-1697	Primary Tumor	ASCAT3
+60ae1d6f-379c-425b-b925-d9c7ee95967a	TCGA-OV.3d33275f-9562-43c1-8f6b-1a5ace3895e8.ascat3.allelic_specific.seg.txt	TCGA-24-1603	Blood Derived Normal	ASCAT3
+434f1a6d-ea17-4382-8e80-e2ce1208cd5d	TCGA-OV.19411d88-5575-4dbb-bdf2-1d0018c6a964.ascat3.allelic_specific.seg.txt	TCGA-WR-A838	Blood Derived Normal	ASCAT3
+d2ff63d3-17d4-406e-b552-e03f894177c0	TCGA-OV.978e5657-d510-4704-971e-7f5241638216.ascat3.allelic_specific.seg.txt	TCGA-42-2587	Blood Derived Normal	ASCAT3
+1d6a8c60-8533-4aa7-b085-b4d6543be631	TCGA-OV.d204c18a-05e0-46d3-a340-51ba48ea31a7.ascat3.allelic_specific.seg.txt	TCGA-04-1525	Primary Tumor	ASCAT3
+984c7e6c-3358-4300-b6d2-01b4a5a0affe	TCGA-OV.bf3ced77-b793-484a-8bfa-7ffabbf491cf.ascat3.allelic_specific.seg.txt	TCGA-24-1431	Primary Tumor	ASCAT3
+f67e57f3-499d-4aa4-8dd5-3ee67fda00cf	TCGA-OV.00014f01-24a5-4226-9ed6-4b9cabacd074.ascat3.allelic_specific.seg.txt	TCGA-09-0366	Blood Derived Normal	ASCAT3
+45fced36-a9f7-4a32-a561-b591b43b743f	TCGA-OV.e4d8afcf-21af-4406-bc25-ff15f9c85107.ascat3.allelic_specific.seg.txt	TCGA-30-1892	Blood Derived Normal	ASCAT3
+a8b83453-831c-4dce-9f4d-0a9c5ac1025b	TCGA-OV.aa165d1a-3a7a-47ee-91af-0db54af08ca2.ascat3.allelic_specific.seg.txt	TCGA-23-2641	Primary Tumor	ASCAT3
+0fd901ba-2634-4c5c-a2b3-c8301c4d24e3	TCGA-OV.149d892e-9687-4e7b-a825-7375f6c1704d.ascat3.allelic_specific.seg.txt	TCGA-31-1955	Primary Tumor	ASCAT3
+2f438813-fc7e-40dd-95b1-8f1cd58cfb8f	TCGA-OV.c65769ca-85bb-4730-a7d7-4fb0776baed8.ascat3.allelic_specific.seg.txt	TCGA-04-1536	Primary Tumor	ASCAT3
+dfec483e-dc98-4abf-ad88-54fc5fa04f9b	TCGA-OV.9d058d5f-d55f-4286-87cb-5654b838ee4e.ascat3.allelic_specific.seg.txt	TCGA-23-1031	Primary Tumor	ASCAT3
+88221255-5958-42ec-a835-870c5ba427ab	TCGA-OV.6bdeb0dd-6cac-446a-9bb8-e9946ea0342c.ascat3.allelic_specific.seg.txt	TCGA-29-2427	Primary Tumor	ASCAT3
+0d7941d9-283d-4a63-a74a-43776d84355d	TCGA-OV.bb7d6126-2bf6-41ab-b657-da66ba7abd8c.ascat3.allelic_specific.seg.txt	TCGA-57-1993	Primary Tumor	ASCAT3
+0d8d0823-5852-4c6e-905e-d083c7db5b1a	TCGA-OV.194452cf-0dd6-42a4-91c6-117d476501d0.ascat3.allelic_specific.seg.txt	TCGA-36-2537	Primary Tumor	ASCAT3
+16a860a8-7aa6-48b6-84da-c9901350f2f4	TCGA-OV.b51f1b66-75c2-4878-91b0-4293f81097ea.ascat3.allelic_specific.seg.txt	TCGA-29-1711	Blood Derived Normal	ASCAT3
+3c891d6d-3eaa-45a5-8845-6517999a8cec	TCGA-OV.f20b8655-d80d-4b0a-9df6-c8e1e534a710.ascat3.allelic_specific.seg.txt	TCGA-59-2372	Blood Derived Normal	ASCAT3
+742c4bf6-15b0-4d5f-8a86-c505551275d3	TCGA-OV.501f96cc-6600-48c6-bb6f-3bd38b1d4d09.ascat3.allelic_specific.seg.txt	TCGA-24-2035	Blood Derived Normal	ASCAT3
+16a12bb8-49c8-406d-bd37-b8611b40cb37	TCGA-OV.17d5600b-8927-444b-96b2-82a3c8a81001.ascat3.allelic_specific.seg.txt	TCGA-24-1474	Primary Tumor	ASCAT3
+fe3a995e-17c7-4e14-aec2-ffaf5c5306d6	TCGA-OV.1d325c54-f0d1-4a78-a803-95239abbf8e1.ascat3.allelic_specific.seg.txt	TCGA-24-1103	Primary Tumor	ASCAT3
+90e20768-b99c-4b09-bd71-610492597867	TCGA-OV.ab0cc4c2-aa3b-4c0c-904e-090c5ce00162.ascat3.allelic_specific.seg.txt	TCGA-25-1312	Blood Derived Normal	ASCAT3
+dda1d183-82ca-45d1-848c-b383081a5d85	TCGA-OV.12975196-6e03-4f58-ab1d-ddbf2f9e9d15.ascat3.allelic_specific.seg.txt	TCGA-13-1498	Blood Derived Normal	ASCAT3
+ab65d86d-e833-4a13-ae98-7e1c253b07fb	TCGA-OV.30477fb0-3b9b-4b2e-aeff-69d84d2b2647.ascat3.allelic_specific.seg.txt	TCGA-24-1556	Blood Derived Normal	ASCAT3
+f6dfdcea-6cf9-46c8-b4ab-ba2ad4d9f76e	TCGA-OV.c34d9a57-203a-4bec-ab64-32e86784a143.ascat3.allelic_specific.seg.txt	TCGA-13-0890	Primary Tumor	ASCAT3
+c4b15efb-4ae7-4b97-b8de-870b493460e1	TCGA-OV.9b968b89-9c5c-47eb-8402-e33a4161f42e.ascat3.allelic_specific.seg.txt	TCGA-25-1628	Blood Derived Normal	ASCAT3
+f8eac9a1-ac49-42bc-9d38-b2d017f13b40	TCGA-OV.27599998-8559-4f7e-8288-6fdf8586e61a.ascat3.allelic_specific.seg.txt	TCGA-24-1423	Blood Derived Normal	ASCAT3
+775f6667-c716-4ebb-a3fe-7eb72faa0b83	TCGA-OV.9b610217-9f59-46d7-ba9d-9d460c659802.ascat3.allelic_specific.seg.txt	TCGA-24-1422	Blood Derived Normal	ASCAT3
+f200b1ca-9e9f-4c13-8d1f-5015384106dd	TCGA-OV.4d1b7d5b-3060-48ed-8a7c-1b51741719b1.ascat3.allelic_specific.seg.txt	TCGA-61-1915	Primary Tumor	ASCAT3
+b8ecc16b-4565-459a-acd5-19930ede546e	TCGA-OV.637af986-3c73-4b1a-927a-d0c6ed7acf56.ascat3.allelic_specific.seg.txt	TCGA-13-0904	Primary Tumor	ASCAT3
+f7bdfd08-ee3a-453f-8b54-221450a29335	TCGA-OV.3ea2b821-8f7a-4430-9b27-16bdc5f0b4d4.ascat3.allelic_specific.seg.txt	TCGA-25-1633	Primary Tumor	ASCAT3
+13db7c42-0bc6-478d-8ade-73b27b636942	TCGA-OV.0631dead-bc69-486f-a288-dc1eb1d382f1.ascat3.allelic_specific.seg.txt	TCGA-29-2436	Blood Derived Normal	ASCAT3
+9fbbd8ec-7e84-49bc-a73f-aab8b952685a	TCGA-OV.0b5247be-fdf5-4d54-84fb-12e5387b5a30.ascat3.allelic_specific.seg.txt	TCGA-24-1567	Blood Derived Normal	ASCAT3
+8c77634d-5b5f-4108-885e-6914142c9669	TCGA-OV.98468e98-0f7c-42ab-8271-97b2fb98d206.ascat3.allelic_specific.seg.txt	TCGA-13-0901	Primary Tumor	ASCAT3
+d70419c3-bad1-48b1-999f-e4565d71f5c5	TCGA-OV.6b7cbe78-6513-49e6-b623-dd6ae19a0298.ascat3.allelic_specific.seg.txt	TCGA-04-1367	Blood Derived Normal	ASCAT3
+98bf4a93-11f0-4796-b720-3f39a1c1f2f8	TCGA-OV.386c8c8b-eba1-4840-b292-1b923029a5d5.ascat3.allelic_specific.seg.txt	TCGA-36-2552	Primary Tumor	ASCAT3
+b465687b-f1e0-4826-b362-f5f130f3de99	TCGA-OV.f9aacc4e-2615-4434-a61b-664886f92289.ascat3.allelic_specific.seg.txt	TCGA-24-1464	Primary Tumor	ASCAT3
+92521348-ee83-48f7-ab2d-ad157382042f	TCGA-OV.a4fd7722-6def-42c0-a910-239b48cee2bd.ascat3.allelic_specific.seg.txt	TCGA-25-2401	Blood Derived Normal	ASCAT3
+07915a80-7a4d-4b45-adf6-8c9384f6ff77	TCGA-OV.7fe61c56-4c2b-497d-b9b4-55e57b3e634e.ascat3.allelic_specific.seg.txt	TCGA-13-1497	Primary Tumor	ASCAT3
+61cd9dd8-84b3-438d-9824-713083fbaff1	TCGA-OV.e6d4da43-aa9e-4f0c-9cfd-c281e41ac0ea.ascat3.allelic_specific.seg.txt	TCGA-30-1860	Blood Derived Normal	ASCAT3
+96b27269-153c-45eb-ae27-0e71d4ec762a	TCGA-OV.475be2f7-8c12-45c1-9aa4-c94758d0a5cb.ascat3.allelic_specific.seg.txt	TCGA-13-0912	Primary Tumor	ASCAT3
+9980b35b-97ac-4fc0-a5ee-b5852a38edae	TCGA-OV.644ce6b1-1823-4eb8-bc5d-029b3f51fe2f.ascat3.allelic_specific.seg.txt	TCGA-24-1604	Blood Derived Normal	ASCAT3
+258a8560-ce03-4c98-a52b-c7d2f13ad133	TCGA-OV.5c792ad1-9591-4cb6-adce-4c09c75aa9c3.ascat3.allelic_specific.seg.txt	TCGA-13-0793	Primary Tumor	ASCAT3
+c458bedb-3297-4bcb-8a15-b1b9c603b89e	TCGA-OV.8e98ecf8-ef07-43bf-8dc3-9410eca8ab79.ascat3.allelic_specific.seg.txt	TCGA-30-1862	Primary Tumor	ASCAT3
+1a87d70b-c1d3-478d-bf15-3291192fd7e0	TCGA-OV.a01002c1-8053-41b0-b055-ce45f4091349.ascat3.allelic_specific.seg.txt	TCGA-25-2397	Primary Tumor	ASCAT3
+e42a075f-b03b-4ae0-a6a6-f5a2caf05f8a	TCGA-OV.bfed3408-33c3-40cd-9382-0bcf1b91af89.ascat3.allelic_specific.seg.txt	TCGA-13-1507	Blood Derived Normal	ASCAT3
+d703273e-d6ad-455d-881c-94ec0e11948a	TCGA-OV.e60603fe-0486-4ab6-8ae2-de80564bd5f3.ascat3.allelic_specific.seg.txt	TCGA-13-0888	Primary Tumor	ASCAT3
+e85d64ee-c1d2-41de-bdb7-5677c175dc93	TCGA-OV.61e9dfe5-0e48-498b-ab8d-075ed75a8bdc.ascat3.allelic_specific.seg.txt	TCGA-57-1994	Solid Tissue Normal	ASCAT3
+a6927734-085d-4e84-9f46-81fe48af9363	TCGA-OV.3ea8c102-7d7b-49a5-893b-a1ea2fdbe6ae.ascat3.allelic_specific.seg.txt	TCGA-23-1113	Primary Tumor	ASCAT3
+d1a6be56-a73b-4389-a057-ccde5a263bec	TCGA-OV.279a61c4-12e9-4a4f-88bd-2cd122c43dea.ascat3.allelic_specific.seg.txt	TCGA-24-1436	Blood Derived Normal	ASCAT3
+f57d9086-3b96-4a48-bd91-715cd0c0c203	TCGA-OV.ae92c485-b80f-452c-b45d-013c366a9e89.ascat3.allelic_specific.seg.txt	TCGA-24-2023	Primary Tumor	ASCAT3
+9beadd92-5d0f-44c5-a598-33e7bea1b332	TCGA-OV.00f502c5-55b4-4a1b-987e-263ef1b9c3d6.ascat3.allelic_specific.seg.txt	TCGA-13-0897	Blood Derived Normal	ASCAT3
+d768127a-9d3c-43aa-83e3-5de45df3f162	TCGA-OV.9b0d1252-3106-4bec-b8ff-35098deca4d5.ascat3.allelic_specific.seg.txt	TCGA-24-1434	Blood Derived Normal	ASCAT3
+36fc177e-6033-41c0-a251-abce890f8dbb	TCGA-OV.51555091-fa54-411f-9492-216557340bac.ascat3.allelic_specific.seg.txt	TCGA-36-2542	Blood Derived Normal	ASCAT3
+835378f3-641a-4469-b652-cc21824db04b	TCGA-OV.8a0d15e0-9f45-4ec6-a19d-d4aa0c3bbf28.ascat3.allelic_specific.seg.txt	TCGA-25-1321	Primary Tumor	ASCAT3
+06bc4484-2a61-4327-a746-e8a7b2d52c44	TCGA-OV.b2a05747-aa38-4968-8fb8-1f27a40a4181.ascat3.allelic_specific.seg.txt	TCGA-10-0938	Solid Tissue Normal	ASCAT3
+b7ccf281-f97c-481d-885d-40bfcde761fe	TCGA-OV.fd1d363e-fef7-4b4e-b8cf-581dac29eafe.ascat3.allelic_specific.seg.txt	TCGA-23-1110	Primary Tumor	ASCAT3
+51409c98-9851-409e-aec0-c569aebceb24	TCGA-OV.8f021990-860f-4883-ba30-e2d7f1956280.ascat3.allelic_specific.seg.txt	TCGA-24-1845	Blood Derived Normal	ASCAT3
+7320cfea-6d7c-43f7-8d14-31ea5c5d37cf	TCGA-OV.2430260f-1a0f-477e-83a4-4b18babf2a98.ascat3.allelic_specific.seg.txt	TCGA-13-0903	Primary Tumor	ASCAT3
+3b01a77d-49a1-490f-8be7-c836c138b32d	TCGA-OV.e9bba0c4-8491-438b-838b-d52ef50cfdf7.ascat3.allelic_specific.seg.txt	TCGA-09-1662	Primary Tumor	ASCAT3
+c712fe90-2ce8-4004-80a2-0a3ed8dc9f4c	TCGA-OV.41399846-fdce-43f6-80fa-25f214c43933.ascat3.allelic_specific.seg.txt	TCGA-09-0367	Blood Derived Normal	ASCAT3
+2811eb3c-30a3-4968-b266-ec8f7cf4820f	TCGA-OV.0cf0722f-55bc-438b-92fd-d7f65d6b4ef4.ascat3.allelic_specific.seg.txt	TCGA-29-1703	Blood Derived Normal	ASCAT3
+966d1638-175c-4788-a77b-32c3d4d5c20c	TCGA-OV.e1aceff8-11e2-404b-ba6d-bdad05a7116b.ascat3.allelic_specific.seg.txt	TCGA-5X-AA5U	Blood Derived Normal	ASCAT3
+53c42849-5746-483f-8985-3f594fe3a32f	TCGA-OV.fb4e1a8b-c686-4c4e-966c-8659c4f91852.ascat3.allelic_specific.seg.txt	TCGA-13-1408	Primary Tumor	ASCAT3
+8f9f02a1-2904-4f88-b970-9e7a28dbd319	TCGA-OV.e6262f58-9f82-48e5-958a-5762789f35e6.ascat3.allelic_specific.seg.txt	TCGA-04-1638	Primary Tumor	ASCAT3
+b9e48ea7-d853-4e25-a09c-7f54118ec641	TCGA-OV.7af29da0-5b60-4b08-9fed-074550dc5d1b.ascat3.allelic_specific.seg.txt	TCGA-13-0792	Blood Derived Normal	ASCAT3
+b5f0187f-a71a-4868-98f1-39a5ae257bc2	TCGA-OV.786c5533-6c42-469a-a7eb-9a3feefdfdcb.ascat3.allelic_specific.seg.txt	TCGA-59-2354	Solid Tissue Normal	ASCAT3
+4258580b-25bc-4d6f-a8d1-a8ed678388f9	TCGA-OV.c59f2d68-22fb-496c-831a-17d42785f815.ascat3.allelic_specific.seg.txt	TCGA-36-1581	Blood Derived Normal	ASCAT3
+a825d2b9-cc08-4e70-841e-efe7559cb943	TCGA-OV.69a7fc68-d6f9-4804-87d1-693346e176e8.ascat3.allelic_specific.seg.txt	TCGA-13-1481	Primary Tumor	ASCAT3
+5c5c499d-5885-46e8-a246-63a8529fd48c	TCGA-OV.ee042cbd-47c0-4909-87eb-d168bc10e3f2.ascat3.allelic_specific.seg.txt	TCGA-13-0889	Blood Derived Normal	ASCAT3
+fae8d47a-a8cf-4e9a-b9e0-b656ca58b07e	TCGA-OV.abd8131a-d16a-4a5f-9bca-2f0f1fede65d.ascat3.allelic_specific.seg.txt	TCGA-20-0996	Primary Tumor	ASCAT3
+34571802-88c4-4a74-9ada-26ed4ae9d505	TCGA-OV.1b6ac59f-1dcb-4473-9af6-27d0d869f05e.ascat3.allelic_specific.seg.txt	TCGA-13-1496	Blood Derived Normal	ASCAT3
+92633ac8-2b34-48bd-a6a9-64be58eff5ff	TCGA-OV.1987530a-49d4-4e7a-aaef-fa30a1aac2d7.ascat3.allelic_specific.seg.txt	TCGA-61-2109	Solid Tissue Normal	ASCAT3
+6cafdc21-044a-48ca-af4b-8f6bd500c01f	TCGA-OV.86b353ef-ba2c-4dd0-91f6-ef700eb3c5d6.ascat3.allelic_specific.seg.txt	TCGA-04-1348	Solid Tissue Normal	ASCAT3
+33f09b89-efe6-4f72-9a6f-6080df9dce1f	TCGA-OV.033073bd-6724-4b79-acd4-74aac34436c3.ascat3.allelic_specific.seg.txt	TCGA-13-1484	Primary Tumor	ASCAT3
+ebbf0586-17f6-48d1-bf6d-0c28c58be8b2	TCGA-OV.496e4773-961e-4a65-8f28-8997bde6290c.ascat3.allelic_specific.seg.txt	TCGA-04-1655	Primary Tumor	ASCAT3
+e9e62d82-6534-4062-a58e-e1e375156e32	TCGA-OV.68b7f950-ef65-40a8-8ead-3c28e800c770.ascat3.allelic_specific.seg.txt	TCGA-23-1123	Blood Derived Normal	ASCAT3
+728a6c9b-0c4a-4c23-9cd4-80d752318d7e	TCGA-OV.aeaf1a10-0085-4701-b3b5-e22f0ee578e3.ascat3.allelic_specific.seg.txt	TCGA-36-2538	Blood Derived Normal	ASCAT3
+57327304-9923-4009-82b8-a55bbc519934	TCGA-OV.299a7405-40f7-467c-9b5b-acb728df2859.ascat3.allelic_specific.seg.txt	TCGA-42-2582	Primary Tumor	ASCAT3
+7a1fda59-3def-4039-bce5-4ac7bf8a48e9	TCGA-OV.e27ac436-4b5b-4ec7-901d-bc17e16da28e.ascat3.allelic_specific.seg.txt	TCGA-24-2029	Primary Tumor	ASCAT3
+cf6b4f46-a608-49d4-a27b-e1acec4b7272	TCGA-OV.d5526f65-7d4a-4182-aa70-f18074413a20.ascat3.allelic_specific.seg.txt	TCGA-59-2349	Solid Tissue Normal	ASCAT3
+e020df43-f612-4070-8cc4-14908f9a094f	TCGA-OV.272b1120-4662-4049-b46a-ef68b8497a60.ascat3.allelic_specific.seg.txt	TCGA-04-1335	Solid Tissue Normal	ASCAT3
+080c835b-9651-4ca0-8fc8-95cec4100e0c	TCGA-OV.72e32531-8d78-4b26-8d89-8a431c4ac509.ascat3.allelic_specific.seg.txt	TCGA-42-2590	Primary Tumor	ASCAT3
+69e268f2-46ee-40ca-bfd2-5a81a0486ea5	TCGA-OV.bed7524f-5148-430a-8c10-deeefa3f408e.ascat3.allelic_specific.seg.txt	TCGA-04-1530	Primary Tumor	ASCAT3
+1bef8774-311e-47fc-87aa-8e043f02ffe7	TCGA-OV.26cb4901-7bc2-4f43-8c4e-fb2d1f3b48ff.ascat3.allelic_specific.seg.txt	TCGA-31-1944	Primary Tumor	ASCAT3
+53afe828-ab3c-40a1-90d8-9cc8f35199bf	TCGA-OV.087e0085-480e-4f55-afa6-d48b2b42a960.ascat3.allelic_specific.seg.txt	TCGA-36-1575	Blood Derived Normal	ASCAT3
+778029ad-c2d3-432d-aac7-983508eebef9	TCGA-OV.0a35f5c8-aad8-45f8-aaf2-94f16c84a273.ascat3.allelic_specific.seg.txt	TCGA-24-2026	Blood Derived Normal	ASCAT3
+19eaeebf-0a99-4298-816a-206d768ad571	TCGA-OV.72a0595a-c9a2-4424-bbfc-1b63c7c21489.ascat3.allelic_specific.seg.txt	TCGA-04-1356	Primary Tumor	ASCAT3
+fae29826-d90e-4fc6-a970-6af134e6bdb5	TCGA-OV.394c6744-3478-4a86-939d-34ec5641067b.ascat3.allelic_specific.seg.txt	TCGA-29-1783	Blood Derived Normal	ASCAT3
+f8392644-41b8-4a3e-bc48-d2a3ed088f00	TCGA-OV.f7c3b854-9d24-4afd-9bae-a24d86227610.ascat3.allelic_specific.seg.txt	TCGA-61-2003	Primary Tumor	ASCAT3
+45f0a7ca-b6ba-495a-b87f-0a1bd6148f1c	TCGA-OV.e758a0be-9dc0-40de-80f6-7f22ce5bbb38.ascat3.allelic_specific.seg.txt	TCGA-23-1107	Primary Tumor	ASCAT3
+c30afa54-8369-419f-ab6a-ab715733d13b	TCGA-OV.75bbf327-ce62-4a7e-b08a-3d8dcf7d95a1.ascat3.allelic_specific.seg.txt	TCGA-13-1510	Primary Tumor	ASCAT3
+c623a7c2-bfc3-4c2d-80e2-bd56a017fa51	TCGA-OV.b1f90a25-d938-416b-948d-f5767460867a.ascat3.allelic_specific.seg.txt	TCGA-13-2057	Blood Derived Normal	ASCAT3
+4e3a5074-7234-4001-b689-88d2a3c8077c	TCGA-OV.4ae6e2e6-c949-4bd2-8258-156075a41920.ascat3.allelic_specific.seg.txt	TCGA-30-1861	Primary Tumor	ASCAT3
+54ba50f2-4dc0-44f7-83b3-8b0a65799afc	TCGA-OV.e55ec846-0a70-46ec-94c1-8be4a58f82f8.ascat3.allelic_specific.seg.txt	TCGA-36-1570	Primary Tumor	ASCAT3
+7a03cf91-d42d-48e4-a9b3-ca63413f8a29	TCGA-OV.008c0e5f-0fd9-447e-a77c-afc20cb109e6.ascat3.allelic_specific.seg.txt	TCGA-23-2643	Blood Derived Normal	ASCAT3
+4938f46f-6d9b-4a0b-ae16-c49239808a94	TCGA-OV.de79be76-863b-4c72-ad38-06d081b65984.ascat3.allelic_specific.seg.txt	TCGA-30-1855	Primary Tumor	ASCAT3
+c6d602ce-a6f1-48ef-803b-31adb792b205	TCGA-OV.fbc1848d-a366-49d3-96f0-befdaa9a2cb1.ascat3.allelic_specific.seg.txt	TCGA-25-1316	Blood Derived Normal	ASCAT3
+ba2111f7-163f-47d6-b25c-3fa038c5fb3e	TCGA-OV.b7573c04-ffcc-4757-833c-afdab85ac718.ascat3.allelic_specific.seg.txt	TCGA-13-0899	Primary Tumor	ASCAT3
+f88ba845-6425-44cf-a3f4-825f6c558fa3	TCGA-OV.d0a0712d-97d3-4301-b693-8c55388dda13.ascat3.allelic_specific.seg.txt	TCGA-20-0987	Primary Tumor	ASCAT3
+2e7157b6-d99c-4749-b52a-be8b9788d31a	TCGA-OV.28fdfe2a-9e7e-465f-8d05-a232d01be466.ascat3.allelic_specific.seg.txt	TCGA-24-1614	Blood Derived Normal	ASCAT3
+d31133eb-387d-489d-bfe0-2c573430695c	TCGA-OV.11cc2243-9785-4894-a8de-52d32cd4e466.ascat3.allelic_specific.seg.txt	TCGA-25-1319	Blood Derived Normal	ASCAT3
+b74f6ecb-677e-441b-9d71-afc371822fbc	TCGA-OV.655c6e8d-4972-44cb-84e1-60197b73fb58.ascat3.allelic_specific.seg.txt	TCGA-29-1776	Primary Tumor	ASCAT3
+0a4a575a-976c-4bc0-84b3-5caf344fbe9c	TCGA-OV.79e63073-7d6d-456b-92c7-a3a7f0216ee7.ascat3.allelic_specific.seg.txt	TCGA-04-1332	Blood Derived Normal	ASCAT3
+0a8a212d-e7b5-43d0-a2d5-bb4d5e1b47f9	TCGA-OV.825d3945-c096-414d-9671-1525b08e6107.ascat3.allelic_specific.seg.txt	TCGA-61-1733	Solid Tissue Normal	ASCAT3
+1337c391-cdf8-47f0-8dc7-42f77c9acaa9	TCGA-OV.ebfb5ea7-457c-49f1-830b-d2ec9e10d930.ascat3.allelic_specific.seg.txt	TCGA-24-1563	Blood Derived Normal	ASCAT3
+61cbb759-bf2e-482f-8d89-a322cdde659e	TCGA-OV.51cd779f-e8f6-4a22-98b3-8a8dd199bcf5.ascat3.allelic_specific.seg.txt	TCGA-13-2071	Blood Derived Normal	ASCAT3
+6bcb6260-309b-4245-b62d-93f95bc5010f	TCGA-OV.5a750811-6d30-463b-8f85-fc062087be51.ascat3.allelic_specific.seg.txt	TCGA-13-A5FU	Primary Tumor	ASCAT3
+730503c3-56d2-4a85-aa9b-0c68c65980b7	TCGA-OV.d6aa4ef8-9bba-4e65-b546-b7a468bffe34.ascat3.allelic_specific.seg.txt	TCGA-24-1418	Blood Derived Normal	ASCAT3
+55f6cf7b-fdb9-4ffc-a4ce-affada30c25d	TCGA-OV.78a6bb48-90a5-4353-8a06-49c2975760a0.ascat3.allelic_specific.seg.txt	TCGA-13-1403	Blood Derived Normal	ASCAT3
+74805c20-674a-4d17-b4e6-e301eb411aef	TCGA-OV.4f64fc1e-d250-4438-bd6d-c1c4b8f50033.ascat3.allelic_specific.seg.txt	TCGA-13-2060	Blood Derived Normal	ASCAT3
+7916c629-f791-4a44-ad83-b1830fc820db	TCGA-OV.e5916941-3135-4a54-a047-35f554a226e7.ascat3.allelic_specific.seg.txt	TCGA-61-1895	Solid Tissue Normal	ASCAT3
+9741ec9c-64e5-4594-872b-a93580169e6f	TCGA-OV.aea4673c-80e9-4ef8-a833-cf71ace574a7.ascat3.allelic_specific.seg.txt	TCGA-61-1728	Primary Tumor	ASCAT3
+7c754ebe-6c3f-4724-8662-46099da2b4c9	TCGA-OV.9f35633c-a588-4469-8103-108308f76323.ascat3.allelic_specific.seg.txt	TCGA-29-1785	Primary Tumor	ASCAT3
+a59b3e93-fd71-4639-9fa5-d52a34447356	TCGA-OV.2dd5f72c-3f5e-4cf5-85c1-7a550e69578f.ascat3.allelic_specific.seg.txt	TCGA-09-1668	Primary Tumor	ASCAT3
+655acb64-9b37-4309-99fa-e0fbe70936d0	TCGA-OV.0ae9f973-4f93-48f0-a214-35d671d46fef.ascat3.allelic_specific.seg.txt	TCGA-09-0369	Blood Derived Normal	ASCAT3
+eb257cd1-c191-4b82-94e3-05be222d2ea2	TCGA-OV.ecf278dc-02fe-48ca-82ac-14f7a013aba1.ascat3.allelic_specific.seg.txt	TCGA-61-1741	Solid Tissue Normal	ASCAT3
+8d47738e-5120-4fea-bca2-d3771d890db4	TCGA-OV.ca5be9a0-c15f-48c3-aaf0-f55d75a0ebca.ascat3.allelic_specific.seg.txt	TCGA-13-0805	Primary Tumor	ASCAT3
+e1cfd486-d711-419e-ae4f-7ae516d9e2ca	TCGA-OV.b18710e4-2d8f-4f32-8ba1-c526d43d4d0e.ascat3.allelic_specific.seg.txt	TCGA-24-1466	Primary Tumor	ASCAT3
+b114424b-b686-4f3f-84f6-33ad68b7b299	TCGA-OV.20b9a875-71ea-4849-8942-a9dc2728836d.ascat3.allelic_specific.seg.txt	TCGA-13-0885	Primary Tumor	ASCAT3
+cdf5dd62-8ae0-42a6-8733-5ca6b562a431	TCGA-OV.e33a75e9-bfad-4575-8b7f-46c7bdef6df2.ascat3.allelic_specific.seg.txt	TCGA-09-1674	Primary Tumor	ASCAT3
+b0cdef3f-8545-4e37-ac0a-34032883400e	TCGA-OV.4302237f-ebcb-49bb-93e0-17c4130b47c7.ascat3.allelic_specific.seg.txt	TCGA-24-1847	Blood Derived Normal	ASCAT3
+6b51f6b8-3c9f-482b-aefe-894fc6c86339	TCGA-OV.666293a2-e6f7-4c1e-b299-de0fb8776c1b.ascat3.allelic_specific.seg.txt	TCGA-61-2088	Primary Tumor	ASCAT3
+0aa57a6a-312f-4da3-97cd-ee83411d16b1	TCGA-OV.6ff06087-e0a3-4c0c-90d4-f30437d25f15.ascat3.allelic_specific.seg.txt	TCGA-25-1630	Blood Derived Normal	ASCAT3
+466264cc-2b93-4362-b85e-23257ede06ce	TCGA-OV.a741d476-65cd-4424-9612-3118190d7bba.ascat3.allelic_specific.seg.txt	TCGA-13-0717	Blood Derived Normal	ASCAT3
+e4df06e5-639e-41a2-aa94-bc6f6edae0ec	TCGA-OV.02e34699-d3cd-4dba-b8ab-9038ca6a14a5.ascat3.allelic_specific.seg.txt	TCGA-23-2081	Primary Tumor	ASCAT3
+889786b6-edd5-4a75-b479-42204b3a8b4b	TCGA-OV.cccc4e19-6828-4a2a-bc10-5458f4221229.ascat3.allelic_specific.seg.txt	TCGA-31-1950	Primary Tumor	ASCAT3
+d1ee6d2f-54eb-4f45-b348-c92a469bf7c1	TCGA-OV.18f46108-26bb-42a2-802f-2205ae194d39.ascat3.allelic_specific.seg.txt	TCGA-36-1576	Primary Tumor	ASCAT3
+932c1726-4249-474e-bd9c-70cc2134becc	TCGA-OV.61640eb0-8af4-4f10-99aa-f4fc652f7a36.ascat3.allelic_specific.seg.txt	TCGA-24-1467	Primary Tumor	ASCAT3
+e8e424b2-b73a-4c6a-b3b4-b0d4ac2d3982	TCGA-OV.6fda2b13-621a-4bd6-8a0b-38b140751163.ascat3.allelic_specific.seg.txt	TCGA-09-1666	Primary Tumor	ASCAT3
+c1a31847-b53f-4147-b5ce-07e313cc0e08	TCGA-OV.89a06d96-e657-4d09-89c4-3e0a679ba9ac.ascat3.allelic_specific.seg.txt	TCGA-24-2281	Blood Derived Normal	ASCAT3
+96e78276-deaf-4202-9877-02e08e5b666b	TCGA-OV.2aa36c4f-8057-498b-832c-127ecff9cb03.ascat3.allelic_specific.seg.txt	TCGA-04-1369	Solid Tissue Normal	ASCAT3
+128129be-c682-4eda-b2db-a0e0ae473aa1	TCGA-OV.a176e8f9-e8b2-4133-bed2-2a7d63e5d2e6.ascat3.allelic_specific.seg.txt	TCGA-09-0365	Primary Tumor	ASCAT3
+044b6468-1f8e-4686-bfaf-d89da057363c	TCGA-OV.4bb77e15-5968-45a8-ba4d-4be38a34661b.ascat3.allelic_specific.seg.txt	TCGA-09-1672	Blood Derived Normal	ASCAT3
+0eb97d73-7d81-478d-924f-2def9702b4e0	TCGA-OV.992da2f8-f307-4a6c-8cfd-97b1129621fe.ascat3.allelic_specific.seg.txt	TCGA-04-1644	Primary Tumor	ASCAT3
+523b2856-4244-4b75-9443-037ff58ef364	TCGA-OV.d5aabe0b-7274-49da-9d1a-558f1ef71877.ascat3.allelic_specific.seg.txt	TCGA-04-1342	Primary Tumor	ASCAT3
+78aab8a6-e51d-4db4-b095-c9c02d821f96	TCGA-OV.0c5f4350-1f10-498c-bd92-e3db1a2492bd.ascat3.allelic_specific.seg.txt	TCGA-25-1631	Blood Derived Normal	ASCAT3
+80242461-9c7e-4d32-a7ca-333c07c833e7	TCGA-OV.0e7ef489-ce94-4404-8506-31d4b6cd02b9.ascat3.allelic_specific.seg.txt	TCGA-13-1511	Blood Derived Normal	ASCAT3
+f1ff336b-fb1b-4c57-a784-69eb01392842	TCGA-OV.22e5525a-26b5-4140-968f-0be63cb751d2.ascat3.allelic_specific.seg.txt	TCGA-29-1771	Blood Derived Normal	ASCAT3
+68e8b9c4-ce09-4094-ba9f-b8c178f2901f	TCGA-OV.265af9ca-8abd-4c8a-b657-88ae76237368.ascat3.allelic_specific.seg.txt	TCGA-10-0937	Primary Tumor	ASCAT3
+e98a1719-3b2f-4453-b883-497524c5439d	TCGA-OV.49faae6b-279a-4dec-af44-25fd7e00a8e9.ascat3.allelic_specific.seg.txt	TCGA-29-2431	Primary Tumor	ASCAT3
+bda05ad0-57ee-407d-8cd1-9882a456c3e3	TCGA-OV.5f315a27-e7d5-4c73-86d6-f377d6debab6.ascat3.allelic_specific.seg.txt	TCGA-36-2530	Blood Derived Normal	ASCAT3
+3c2670c5-bfc9-477e-81f4-97c4b3122246	TCGA-OV.6f43196c-f5bd-473e-8212-acbdd3a7f02d.ascat3.allelic_specific.seg.txt	TCGA-61-2110	Solid Tissue Normal	ASCAT3
+bb4be5c4-41b6-4847-bbe1-ad580bad4e3c	TCGA-OV.30fd69a7-2999-4688-a8fd-94924b2dbc9d.ascat3.allelic_specific.seg.txt	TCGA-23-1117	Primary Tumor	ASCAT3
+749f6fa4-b74f-4004-913f-8fb5ba1c7e54	TCGA-OV.0dc98f7b-7321-4599-a587-1f71e53db3ed.ascat3.allelic_specific.seg.txt	TCGA-29-1696	Primary Tumor	ASCAT3
+0c45feeb-5738-4272-8775-bec44c2870b0	TCGA-OV.797c5f18-5c06-4bf6-ae32-63b9a2a27150.ascat3.allelic_specific.seg.txt	TCGA-13-0795	Primary Tumor	ASCAT3
+11f35383-e941-4ac5-8b67-f692e298d038	TCGA-OV.83e7fa41-7dc6-4b03-a8c0-ad6dcb166a2c.ascat3.allelic_specific.seg.txt	TCGA-61-2094	Solid Tissue Normal	ASCAT3
+96b3f855-af3a-4b05-83db-d4eb8eb9af4a	TCGA-OV.5b4bb383-e1cd-46a4-a623-a6c7883237dd.ascat3.allelic_specific.seg.txt	TCGA-23-1024	Blood Derived Normal	ASCAT3
+309e718f-5d99-40e7-bbe4-28596faf3f7e	TCGA-OV.504b5d05-7e0b-40ff-ad58-fcb5ce50edb3.ascat3.allelic_specific.seg.txt	TCGA-20-1683	Blood Derived Normal	ASCAT3
+d23524fd-98e8-4fbb-9157-17b13de4b9b9	TCGA-OV.e601f5e7-56ad-440a-873e-34e99749e92b.ascat3.allelic_specific.seg.txt	TCGA-10-0933	Primary Tumor	ASCAT3
+013936f0-a6d8-4d16-b920-b071485cd2ad	TCGA-OV.57bcc405-f49e-4201-afff-dcd766946ce0.ascat3.allelic_specific.seg.txt	TCGA-09-1661	Blood Derived Normal	ASCAT3
+c8ef3030-a64f-4049-9dc9-60b225e7061e	TCGA-OV.997c7fe1-5f90-4aeb-983d-6d36bac3b03b.ascat3.allelic_specific.seg.txt	TCGA-3P-A9WA	Primary Tumor	ASCAT3
+970fbc25-412e-480c-a61a-a3a90a60ba38	TCGA-OV.6f7cae3d-aa66-4b4e-8e4d-78378952f19e.ascat3.allelic_specific.seg.txt	TCGA-13-0924	Primary Tumor	ASCAT3
+29801af8-a03c-4c38-b756-20c356865588	TCGA-OV.1ff55131-13df-46a0-b7c1-e885389eff3b.ascat3.allelic_specific.seg.txt	TCGA-13-1407	Blood Derived Normal	ASCAT3
+c44398ab-95f4-4be4-bfaa-01304c393ae9	TCGA-OV.1f85cffd-00d3-4063-90c5-ccf48b0bb014.ascat3.allelic_specific.seg.txt	TCGA-36-2545	Primary Tumor	ASCAT3
+b6ddf267-ac3c-41c9-a225-cc02c4ee675f	TCGA-OV.934ee741-d185-47f2-860c-74e90af24b4e.ascat3.allelic_specific.seg.txt	TCGA-04-1357	Solid Tissue Normal	ASCAT3
+3baf5816-aced-4d15-8bb6-077662cf40ce	TCGA-OV.b16a8ed4-36b0-48b4-b5de-b48d6d4fb99d.ascat3.allelic_specific.seg.txt	TCGA-23-1032	Blood Derived Normal	ASCAT3
+5fafe5c8-5abd-4dd9-8b16-0d50b3cfb173	TCGA-OV.4d5e8e9e-46a0-4b04-ba87-edb5d1c79347.ascat3.allelic_specific.seg.txt	TCGA-24-2280	Blood Derived Normal	ASCAT3
+fd4635f2-26c3-4c69-b12c-26f5d792d19d	TCGA-OV.9eacb9f9-40d8-4ff0-803c-c93b169e7d9b.ascat3.allelic_specific.seg.txt	TCGA-23-1023	Blood Derived Normal	ASCAT3
+184d4728-56dd-4e06-bbe4-54d5e1a70d3d	TCGA-OV.8c4197c4-c7bd-49e2-8efa-c6c5ea968e69.ascat3.allelic_specific.seg.txt	TCGA-29-2425	Primary Tumor	ASCAT3
+4b524bfd-a42a-445d-ac09-7bf28b1299f3	TCGA-OV.bd52755a-499d-40c7-9f23-7aec08e3e558.ascat3.allelic_specific.seg.txt	TCGA-13-1489	Blood Derived Normal	ASCAT3
+c820dc21-d3da-4d1d-93b6-2a6c691e3511	TCGA-OV.8b66a23d-b6c1-46bc-9ac2-eee368762059.ascat3.allelic_specific.seg.txt	TCGA-57-1992	Solid Tissue Normal	ASCAT3
+e08e69c9-e47b-4510-9589-78fb3e6238c3	TCGA-OV.50416b2c-b491-47c0-995e-9236e27c2c3d.ascat3.allelic_specific.seg.txt	TCGA-09-2049	Primary Tumor	ASCAT3
+d64147df-9029-4659-8472-08a81050e01b	TCGA-OV.9f90944b-ee3c-4f43-93b1-e2bf5829a325.ascat3.allelic_specific.seg.txt	TCGA-29-1770	Blood Derived Normal	ASCAT3
+459bbb92-2c3b-43c5-8fd8-a6b4d7ab51b0	TCGA-OV.cfb6aa16-69ca-422f-b5c3-cf546d4964f5.ascat3.allelic_specific.seg.txt	TCGA-13-0791	Primary Tumor	ASCAT3
+8aa87f5d-c2c5-410e-aca5-0dba7007a5b6	TCGA-OV.f18ae0f5-b5bf-48d6-afb0-10a7c816c8fa.ascat3.allelic_specific.seg.txt	TCGA-23-1116	Primary Tumor	ASCAT3
+db8913a0-7521-4c1a-8eec-cf81238d278e	TCGA-OV.e6d40df2-a74c-4a7e-903a-fdcb488457af.ascat3.allelic_specific.seg.txt	TCGA-29-1781	Blood Derived Normal	ASCAT3
+1b8bde63-f7e1-4d1d-8584-400073f7ce8b	TCGA-OV.f9ef779b-0228-4ef1-a6c4-824dff5460d2.ascat3.allelic_specific.seg.txt	TCGA-61-1903	Solid Tissue Normal	ASCAT3
+7ebf7c75-9fb7-4801-b2fc-32c56d50f03c	TCGA-OV.d17bcbde-2313-4553-9017-297ef7900b81.ascat3.allelic_specific.seg.txt	TCGA-59-2351	Primary Tumor	ASCAT3
+14790a36-dee7-4c05-a34f-a8735998782f	TCGA-OV.5d9486c6-7129-4a67-9e77-cf33b58252f0.ascat3.allelic_specific.seg.txt	TCGA-61-2087	Primary Tumor	ASCAT3
+f5231f3c-73d9-4776-8df7-47aa57a8b6ee	TCGA-OV.2a426242-071d-4ac0-b8d4-a01ee8aa11d2.ascat3.allelic_specific.seg.txt	TCGA-13-0908	Blood Derived Normal	ASCAT3
+77b92d1f-fdab-451d-9743-07a80cf7679e	TCGA-OV.e226211e-4a19-4406-b6e8-45fab717d9c8.ascat3.allelic_specific.seg.txt	TCGA-24-2027	Blood Derived Normal	ASCAT3
+38909ed4-fce2-4664-9c5e-78481528a931	TCGA-OV.eeb37d58-b09e-4a3b-a134-1f553c22127a.ascat3.allelic_specific.seg.txt	TCGA-29-1704	Primary Tumor	ASCAT3
+b584e1dc-b7cb-4e8e-96ed-3ff9c21e01e7	TCGA-OV.0f0a599b-d0df-44be-811c-d79bbfa918cf.ascat3.allelic_specific.seg.txt	TCGA-25-2400	Blood Derived Normal	ASCAT3
+4fa1c607-e90a-46d8-9dfc-ba16970f61e3	TCGA-OV.93d96010-3670-4f45-97dc-90437772e893.ascat3.allelic_specific.seg.txt	TCGA-61-1725	Solid Tissue Normal	ASCAT3
+45c7d14d-9525-4caa-aeca-ad50b2e45a6c	TCGA-OV.69614804-5f34-4b8e-ac15-a4466ceb880b.ascat3.allelic_specific.seg.txt	TCGA-24-1546	Blood Derived Normal	ASCAT3
+b912f64b-b1be-40e8-acee-407a8d57fb01	TCGA-OV.254728bc-a38b-4133-8995-663648738957.ascat3.allelic_specific.seg.txt	TCGA-VG-A8LO	Blood Derived Normal	ASCAT3
+476ab23b-9152-4663-9a45-a5075965c5ac	TCGA-OV.05a360b5-04ea-4f1b-be78-86470c58cb80.ascat3.allelic_specific.seg.txt	TCGA-13-1477	Primary Tumor	ASCAT3
+effb7cea-fc5d-464a-8c86-3e4183c35d9a	TCGA-OV.570200ec-cb6e-48a2-8c86-612593ce4c76.ascat3.allelic_specific.seg.txt	TCGA-61-1917	Solid Tissue Normal	ASCAT3
+838ccd46-2cf1-4e83-a5be-2aec07364ecf	TCGA-OV.bf4172d6-d044-4dca-9e8b-a44a7a24ab4a.ascat3.allelic_specific.seg.txt	TCGA-25-2399	Blood Derived Normal	ASCAT3
+7a0baf54-92f2-4708-96af-e9a30fad2418	TCGA-OV.abf2071b-b577-4dce-9e96-8ee1dcc83236.ascat3.allelic_specific.seg.txt	TCGA-59-2348	Solid Tissue Normal	ASCAT3
+de9ebd47-e889-412d-8649-b7e42b712fb8	TCGA-OV.3a8b9a57-2f04-40bd-85e7-2385fa37a913.ascat3.allelic_specific.seg.txt	TCGA-23-1022	Blood Derived Normal	ASCAT3
+2a41797c-1d06-4ed0-bd5c-c6786dafe9ec	TCGA-OV.20c43493-7383-4650-a5f2-4a24759b53cb.ascat3.allelic_specific.seg.txt	TCGA-61-1721	Primary Tumor	ASCAT3
+8940af89-a627-465d-b974-60c0be8049e0	TCGA-OV.ad7b6bfa-58a2-47ef-8dea-981ccd71b872.ascat3.allelic_specific.seg.txt	TCGA-25-1635	Blood Derived Normal	ASCAT3
+73091e2b-1b54-47b6-b571-80e4f270665d	TCGA-OV.71165841-5984-4594-a722-cefc62ccf65f.ascat3.allelic_specific.seg.txt	TCGA-23-2072	Primary Tumor	ASCAT3
+5ffe6516-9d68-4c4c-be5e-efaadfcc14a0	TCGA-OV.fcfc7f2d-e53d-43e1-9838-fcc8c6525a6a.ascat3.allelic_specific.seg.txt	TCGA-29-2428	Primary Tumor	ASCAT3
+6440850e-b1c0-4b6e-a72b-83f184b32f6b	TCGA-OV.fc832eea-a988-4f59-bf1c-3df2b37f3e32.ascat3.allelic_specific.seg.txt	TCGA-36-2534	Blood Derived Normal	ASCAT3
+84986d42-8c0d-4cec-adb2-9020067a52fa	TCGA-OV.71d66a83-6c0b-4d65-bfc1-39c00b4d09cf.ascat3.allelic_specific.seg.txt	TCGA-31-1959	Blood Derived Normal	ASCAT3
+59659f54-7ad3-4792-8c15-85a3eb35ecf6	TCGA-OV.ac9b9cbc-04ee-47e8-aaf3-9166bb74b52a.ascat3.allelic_specific.seg.txt	TCGA-31-1953	Primary Tumor	ASCAT3
+c8eb5077-ee70-46c1-9c29-1198e15596be	TCGA-OV.a399002a-41d4-4159-b13b-a3d13a44617e.ascat3.allelic_specific.seg.txt	TCGA-09-2044	Primary Tumor	ASCAT3
+70dc6fa3-5988-4cb1-9271-61d1a247ab5f	TCGA-OV.3037de81-f2ec-4f7c-ad35-649743bfdb2f.ascat3.allelic_specific.seg.txt	TCGA-24-1416	Blood Derived Normal	ASCAT3
+36e1ba32-690d-4a45-8e23-0c63837dcb0a	TCGA-OV.32f2ebdc-08fd-4130-a2b2-8a3b054846c4.ascat3.allelic_specific.seg.txt	TCGA-31-1951	Blood Derived Normal	ASCAT3
+5d4274e6-9465-4f83-aa67-145237ff7961	TCGA-OV.3a5d57c7-62f9-48cc-9b9e-b8d437d7c86d.ascat3.allelic_specific.seg.txt	TCGA-30-1714	Blood Derived Normal	ASCAT3
+1d502d71-5f78-419c-9f4f-e1b15e42ac3a	TCGA-OV.d846aadd-9cf1-41a8-8fa4-c55b666d0a37.ascat3.allelic_specific.seg.txt	TCGA-13-1506	Primary Tumor	ASCAT3
+8542089d-f251-48a1-b2ae-157c77f6ea15	TCGA-OV.f7833173-18ff-44f8-97cb-148e73842517.ascat3.allelic_specific.seg.txt	TCGA-09-1673	Primary Tumor	ASCAT3
+ab1451df-ce4e-4b40-b5a6-8ad4172215e9	TCGA-OV.a3ec404c-0806-48eb-b3ac-2a5e759748b1.ascat3.allelic_specific.seg.txt	TCGA-09-1659	Primary Tumor	ASCAT3
+f05f03d5-0d41-452f-8f69-6c1a97de7dfe	TCGA-OV.d86ee094-af3a-4be2-9ac6-35f6cc825ebb.ascat3.allelic_specific.seg.txt	TCGA-25-1870	Primary Tumor	ASCAT3
+a644cb90-986f-4acb-8e5b-655514b14dc8	TCGA-OV.9ee784ec-de14-4b73-b0eb-94f4ff4defcf.ascat3.allelic_specific.seg.txt	TCGA-04-1350	Solid Tissue Normal	ASCAT3
+0d53347f-3616-4944-ae47-178ea317ae6a	TCGA-OV.9cc09b82-8dd1-4e93-a49e-fef483c29709.ascat3.allelic_specific.seg.txt	TCGA-04-1516	Solid Tissue Normal	ASCAT3
+9a427a98-c8eb-4479-b761-1d2827f20508	TCGA-OV.4ca2c9fb-cff8-45b6-8a58-5b5926996519.ascat3.allelic_specific.seg.txt	TCGA-29-1769	Blood Derived Normal	ASCAT3
+aa217486-2c51-4936-a5e0-6ff1ebe74f92	TCGA-OV.604f0e46-eff5-4389-9197-27b7399b2ad9.ascat3.allelic_specific.seg.txt	TCGA-61-2101	Solid Tissue Normal	ASCAT3
+751c6435-e808-429d-9713-c9a71454094d	TCGA-OV.abe2d46a-0cd4-420d-9194-8e3588f3e696.ascat3.allelic_specific.seg.txt	TCGA-23-1111	Primary Tumor	ASCAT3
+aa6379bd-069b-4983-828e-310a1bc4a2dd	TCGA-OV.e058bfd2-dc21-4951-98df-ee2ce1f579a1.ascat3.allelic_specific.seg.txt	TCGA-24-1920	Blood Derived Normal	ASCAT3
+b0aceaa5-ed34-4e27-9320-d5b10a5facc1	TCGA-OV.52fce37e-fd7f-4b44-81ae-b2a3253f8699.ascat3.allelic_specific.seg.txt	TCGA-24-2290	Primary Tumor	ASCAT3
+dc84229a-0ee1-4267-9709-bf2672c4ce07	TCGA-OV.75cbdc12-abdd-44a0-ac21-0ad30e6c5628.ascat3.allelic_specific.seg.txt	TCGA-13-0916	Blood Derived Normal	ASCAT3
+8ff83b4f-6051-4012-82d5-27be4ba41eee	TCGA-OV.358465d0-302b-4c00-bf6a-bf7fe703ed3f.ascat3.allelic_specific.seg.txt	TCGA-13-1404	Blood Derived Normal	ASCAT3
+4403e30c-8597-4094-a958-05b1734397b1	TCGA-OV.8568dd65-84a3-45e4-8a68-dd75afa5a8bc.ascat3.allelic_specific.seg.txt	TCGA-13-0794	Primary Tumor	ASCAT3
+e5e27c1f-2984-4779-b36b-56c13c739ca7	TCGA-OV.eddece9c-b67d-4628-bf3a-5f419574bd6a.ascat3.allelic_specific.seg.txt	TCGA-24-2260	Primary Tumor	ASCAT3
+eaa2ced7-a602-4fea-ad4c-c36d6771e8f4	TCGA-OV.e610d760-7a91-41f9-aac6-4981ce6e54eb.ascat3.allelic_specific.seg.txt	TCGA-36-2532	Primary Tumor	ASCAT3
+85e0439f-6811-4b9b-9a98-71921a8c7a7f	TCGA-OV.41902ab1-665f-40dd-88f6-89d3efdbf897.ascat3.allelic_specific.seg.txt	TCGA-23-2079	Blood Derived Normal	ASCAT3
+4d50174d-807f-411a-97c6-64ad5ebb26f7	TCGA-OV.eaa038ef-a98e-4cae-a8b2-11d6afd9991c.ascat3.allelic_specific.seg.txt	TCGA-61-1918	Solid Tissue Normal	ASCAT3
+fac589fd-f7d0-4ec8-b9dc-e76d3a3f10e6	TCGA-OV.d71d3446-dc5c-491c-a2a8-930aeb4c256e.ascat3.allelic_specific.seg.txt	TCGA-61-1737	Primary Tumor	ASCAT3
+1f9e3384-af1d-43b7-b948-29557fb049fe	TCGA-OV.41b84231-a3ed-464c-8dbf-e8164042de6a.ascat3.allelic_specific.seg.txt	TCGA-61-1995	Primary Tumor	ASCAT3
+3a586362-324e-4654-b163-d1518b38dd67	TCGA-OV.dbe990e4-3dac-451c-85ec-6975ee9a6140.ascat3.allelic_specific.seg.txt	TCGA-23-2645	Blood Derived Normal	ASCAT3
+52a09f3e-44be-4c44-80d1-817f0a9852a4	TCGA-OV.ae4de736-1f04-4b8d-bc66-f8389cc74b9f.ascat3.allelic_specific.seg.txt	TCGA-29-1775	Primary Tumor	ASCAT3
+4bbb47cc-a59e-4ac9-b475-8ca97b9ab965	TCGA-OV.f5e1743a-9f6f-4dd5-9ff4-d87e87417699.ascat3.allelic_specific.seg.txt	TCGA-24-1470	Blood Derived Normal	ASCAT3
+af71a8eb-6d6f-4db0-882d-cd7094e446da	TCGA-OV.c908d760-4c66-4be4-9e87-66ab733a7be6.ascat3.allelic_specific.seg.txt	TCGA-24-2267	Primary Tumor	ASCAT3
+69538ee6-f644-4330-a369-686ca9c9a7b6	TCGA-OV.05b48ec8-6422-490b-b587-c376cb7d0475.ascat3.allelic_specific.seg.txt	TCGA-29-2434	Primary Tumor	ASCAT3
+f9475e6b-2c98-4cb9-8409-32efa0b6481e	TCGA-OV.958cb1b0-38bf-42d1-a4de-fac9901717b9.ascat3.allelic_specific.seg.txt	TCGA-24-2295	Blood Derived Normal	ASCAT3
+dad7181e-801e-4c3f-bb54-e093b4203cf4	TCGA-OV.ef194766-b0df-43cd-ba19-677605132446.ascat3.allelic_specific.seg.txt	TCGA-24-1923	Blood Derived Normal	ASCAT3
+8f002410-36a5-4fee-80c4-784ec34f23e8	TCGA-OV.59734a4a-9daf-4a2f-b772-443dc12a9100.ascat3.allelic_specific.seg.txt	TCGA-24-1558	Primary Tumor	ASCAT3
+ad65efde-7779-41ea-a159-166db0a79c63	TCGA-OV.e8b27e1d-a6b3-4afd-b8fc-f8a77374697f.ascat3.allelic_specific.seg.txt	TCGA-24-1545	Blood Derived Normal	ASCAT3
+1d6f9423-4f90-4d55-8ba7-14c5a8e8062f	TCGA-OV.f729e6d0-2adf-4c44-b25e-99b5aff0b85f.ascat3.allelic_specific.seg.txt	TCGA-30-1857	Blood Derived Normal	ASCAT3
+279a9893-ff57-4b11-96e2-29de864d7aaf	TCGA-OV.66ce7bbf-1056-41e4-afb5-2bd052df849e.ascat3.allelic_specific.seg.txt	TCGA-24-1469	Blood Derived Normal	ASCAT3
+6a495aaa-b548-4587-b7c9-ce799be61dd9	TCGA-OV.7e9a894d-11d2-49b6-af84-e8d9723942e8.ascat3.allelic_specific.seg.txt	TCGA-61-2611	Recurrent Tumor	ASCAT3
+6f6401a2-452b-420f-b874-b5def4090458	TCGA-OV.80d9db35-2359-48a5-b716-c9b291eac51b.ascat3.allelic_specific.seg.txt	TCGA-24-1426	Primary Tumor	ASCAT3
+0c80afd2-a106-4e01-96bb-986317d3aafd	TCGA-OV.7092999f-069f-439e-a1fb-dcfaff2b8292.ascat3.allelic_specific.seg.txt	TCGA-29-2432	Primary Tumor	ASCAT3
+8056b9f8-6916-4077-ba46-70ab2dab06ba	TCGA-OV.700b28ed-9160-4ab7-be99-2202ac1ca694.ascat3.allelic_specific.seg.txt	TCGA-09-1667	Primary Tumor	ASCAT3
+3778a39a-5539-48bb-ad64-ed0bad72f9ef	TCGA-OV.e5155eb2-5577-4e7a-9549-2ca02076e56d.ascat3.allelic_specific.seg.txt	TCGA-24-1417	Primary Tumor	ASCAT3
+3406f0e1-63e2-46a8-b9ca-0a6828467e39	TCGA-OV.292ddf98-fc4e-4f92-8d5b-638de30cb924.ascat3.allelic_specific.seg.txt	TCGA-24-0982	Blood Derived Normal	ASCAT3
+aa3c6b18-b3ef-4c53-a765-e00e310537e1	TCGA-OV.ed1cf8c6-d594-49f7-9aa5-9a13cafc0f4a.ascat3.allelic_specific.seg.txt	TCGA-25-2392	Blood Derived Normal	ASCAT3
+6a74eaba-e125-49c9-a298-c4c193705bdb	TCGA-OV.948a6d77-e8ca-4114-add3-77e7db75b3b3.ascat3.allelic_specific.seg.txt	TCGA-13-A5FT	Primary Tumor	ASCAT3
+1aae023b-cb51-46ba-9f64-5e962282c927	TCGA-OV.7117504b-bdff-41de-8ca0-581fa89ee376.ascat3.allelic_specific.seg.txt	TCGA-61-2000	Solid Tissue Normal	ASCAT3
+269af9f8-307a-4f90-b8e4-61e5d13087a9	TCGA-OV.ba4acff6-1f39-4b71-9016-1138025e3165.ascat3.allelic_specific.seg.txt	TCGA-30-1866	Primary Tumor	ASCAT3
+3d04a96c-8f8f-4bc4-b583-ed74b9e4b548	TCGA-OV.d346cd40-dcdc-4a57-8a9d-b20544c87d5f.ascat3.allelic_specific.seg.txt	TCGA-04-1542	Primary Tumor	ASCAT3
+a420b47c-a600-4bc1-b862-931fb10885b0	TCGA-OV.cf6b6185-cf35-43b2-a7f2-8544fadccedf.ascat3.allelic_specific.seg.txt	TCGA-61-2613	Primary Tumor	ASCAT3
+c17b8c8c-7f81-4114-b438-45dafd9de758	TCGA-OV.55792c9d-411b-4188-8681-7febc219f995.ascat3.allelic_specific.seg.txt	TCGA-24-1562	Blood Derived Normal	ASCAT3
+5b808b65-fd38-4712-a7dd-19bc4b28f971	TCGA-OV.03d26103-3b2a-41e4-a9bb-1d34807b1c1f.ascat3.allelic_specific.seg.txt	TCGA-36-1569	Blood Derived Normal	ASCAT3
+093d4649-2678-4bff-968a-a6e96b2f21f8	TCGA-OV.5ce5aabb-61c2-484f-9fd2-be3da4e1242f.ascat3.allelic_specific.seg.txt	TCGA-04-1651	Solid Tissue Normal	ASCAT3
+f170a132-e5a1-4205-b20d-d0a66b0be8fa	TCGA-OV.634da42b-ae78-42e0-8115-37a735e4e057.ascat3.allelic_specific.seg.txt	TCGA-04-1648	Solid Tissue Normal	ASCAT3
+d287c100-ffa6-4adc-b3c3-48807b159c61	TCGA-OV.674cc1fd-0abf-4b98-97a0-ef3870382296.ascat3.allelic_specific.seg.txt	TCGA-23-1030	Blood Derived Normal	ASCAT3
+027082de-8028-43cd-ac40-a0f40e0aced6	TCGA-OV.e93181c8-807e-41c7-99a1-93c3eead37f7.ascat3.allelic_specific.seg.txt	TCGA-29-A5NZ	Primary Tumor	ASCAT3
+7934831a-f017-4e62-bdab-1f0ad36f7691	TCGA-OV.c26c83eb-091f-4940-ae98-62e16254cc05.ascat3.allelic_specific.seg.txt	TCGA-13-0768	Blood Derived Normal	ASCAT3
+8c986209-8d65-419c-9bc4-474c4a4b54c2	TCGA-OV.153cbdd2-f7cd-4eff-8e91-20feba468aa1.ascat3.allelic_specific.seg.txt	TCGA-25-2398	Primary Tumor	ASCAT3
+a5011377-6d42-4b4c-83b3-b7b5618d5bfe	TCGA-OV.5876f156-ec7c-496e-9b1d-97d3824a239f.ascat3.allelic_specific.seg.txt	TCGA-13-1819	Blood Derived Normal	ASCAT3
+29a9aa60-d3ab-491c-a59b-355eb0df9e3e	TCGA-OV.b4f7c70b-4262-4fa7-8a9d-8239ed3f8363.ascat3.allelic_specific.seg.txt	TCGA-61-2096	Primary Tumor	ASCAT3
+ff59904a-da0d-402f-8ffa-e58b2e4bf813	TCGA-OV.bfd6404a-1c99-45ca-b16b-4cf449308043.ascat3.allelic_specific.seg.txt	TCGA-29-2429	Blood Derived Normal	ASCAT3
+763315f8-8b4e-4369-bf25-fda23fbde7d4	TCGA-OV.8e634032-9206-4635-a1d9-faeaef6c3fbb.ascat3.allelic_specific.seg.txt	TCGA-24-2036	Blood Derived Normal	ASCAT3
+e4c24c2d-47ab-412c-8282-78580e5637e7	TCGA-OV.e8242e31-e8eb-4cf6-81db-27f5be5294e4.ascat3.allelic_specific.seg.txt	TCGA-36-2539	Blood Derived Normal	ASCAT3
+1363377b-4463-4b15-a03b-218a849f0506	TCGA-OV.c848015b-7d16-4074-9253-1d4dcc070a70.ascat3.allelic_specific.seg.txt	TCGA-29-1705	Blood Derived Normal	ASCAT3
+754a8f60-712e-4339-95d5-27a4c2268369	TCGA-OV.2471a056-c835-4330-ac57-a98b31d44bbe.ascat3.allelic_specific.seg.txt	TCGA-25-1315	Blood Derived Normal	ASCAT3
+781f2ea2-9fae-4117-964b-d6695bd6cff3	TCGA-OV.1cddea11-beb7-443f-9faa-f13824cc3e35.ascat3.allelic_specific.seg.txt	TCGA-61-2097	Solid Tissue Normal	ASCAT3
+b95da26e-b5bc-4ec4-8311-b7bf18f796d7	TCGA-OV.3746895b-2ff1-4dcb-9001-6023ebe66a34.ascat3.allelic_specific.seg.txt	TCGA-61-2113	Solid Tissue Normal	ASCAT3
+1b01c847-3734-4de3-93a9-92d605e94058	TCGA-OV.f3bf0766-203a-4cef-9b0f-d9e84bfcfb38.ascat3.allelic_specific.seg.txt	TCGA-59-2355	Blood Derived Normal	ASCAT3
+885cc6c1-2ef4-4d8e-9ac0-c7850a7bae08	TCGA-OV.99ebcf7b-cbb1-421f-b4a8-7d3ab443ccd1.ascat3.allelic_specific.seg.txt	TCGA-24-0975	Primary Tumor	ASCAT3
+e67f84b9-430d-49ea-86ee-2bba0d7d55f7	TCGA-OV.d51d1aba-7551-440d-b917-0ed23c8224dd.ascat3.allelic_specific.seg.txt	TCGA-61-1904	Solid Tissue Normal	ASCAT3
+51abb5e2-9ff0-404a-8a09-7c667d784915	TCGA-OV.a6156dc4-597b-42ca-8e1a-258cebaa24fd.ascat3.allelic_specific.seg.txt	TCGA-24-1424	Primary Tumor	ASCAT3
+be29f0f4-befb-4c66-8200-9c181151bd92	TCGA-OV.d40bb484-46c5-48dd-8394-7e503053f1a1.ascat3.allelic_specific.seg.txt	TCGA-24-1844	Primary Tumor	ASCAT3
+03b9580e-1e25-4943-adee-dd2782e75751	TCGA-OV.5528ed94-763e-4543-acda-16194c6172cd.ascat3.allelic_specific.seg.txt	TCGA-42-2589	Blood Derived Normal	ASCAT3
+632e427b-a67a-47a5-976e-8422f10e9a6f	TCGA-OV.dfcb305a-ff38-4426-9baf-9e8154cd6e1b.ascat3.allelic_specific.seg.txt	TCGA-29-1762	Primary Tumor	ASCAT3
+0f90cbf8-4d9a-4070-b975-667a18b727cc	TCGA-OV.7fb66d68-7abc-4303-926a-8e6058705623.ascat3.allelic_specific.seg.txt	TCGA-24-1425	Primary Tumor	ASCAT3
+c7371efe-7648-41c6-8121-f787ea37b3f0	TCGA-OV.6a4eb92b-ed80-40ce-8275-922cfcd1b1f2.ascat3.allelic_specific.seg.txt	TCGA-23-1122	Blood Derived Normal	ASCAT3
+dff468d0-62c2-48ae-9398-03cf67405db2	TCGA-OV.d94a3067-cc80-4110-91a3-3fe91a0b3d7f.ascat3.allelic_specific.seg.txt	TCGA-24-1105	Primary Tumor	ASCAT3
+8d7ebbfa-e3a7-4d5a-9eed-8c91372e2a10	TCGA-OV.40e41ce7-8a6b-440d-be49-8502f20b1c96.ascat3.allelic_specific.seg.txt	TCGA-24-0970	Blood Derived Normal	ASCAT3
+7bd9edfa-14f3-41de-b456-964eb4356702	TCGA-OV.b71494e2-1f72-45de-bf6b-2f5ae0b0c1f8.ascat3.allelic_specific.seg.txt	TCGA-25-2404	Primary Tumor	ASCAT3
+3e2dba8e-d543-4be1-8f36-6eee8d8844d7	TCGA-OV.0e3ff01f-4ce1-469b-9890-3040157b5976.ascat3.allelic_specific.seg.txt	TCGA-13-1509	Primary Tumor	ASCAT3
+e279fe35-5342-4a17-bcfd-83b92bf946a2	TCGA-OV.736806c4-db62-4e8f-8f4c-ec723295ea84.ascat3.allelic_specific.seg.txt	TCGA-04-1349	Primary Tumor	ASCAT3
+de3699ff-9c9b-43b2-a8a9-24636cfc982a	TCGA-OV.8fcdd3d0-8a62-49aa-b7e2-5b06cb390d40.ascat3.allelic_specific.seg.txt	TCGA-04-1362	Primary Tumor	ASCAT3
+89c73116-dc18-4109-9c04-9a0520264ada	TCGA-OV.efc9ea53-2994-4a8e-abe2-b4dd7faf65f5.ascat3.allelic_specific.seg.txt	TCGA-24-2030	Primary Tumor	ASCAT3
+b5658abf-3429-4930-a390-c8d629c2fe1c	TCGA-OV.c1508580-23b1-433b-adbb-70473a7105e6.ascat3.allelic_specific.seg.txt	TCGA-13-0800	Primary Tumor	ASCAT3
+b90d7774-d2aa-475b-82f6-13a183cc6a02	TCGA-OV.b3877e46-6cd0-4123-9909-2698a8f627ce.ascat3.allelic_specific.seg.txt	TCGA-61-1913	Primary Tumor	ASCAT3
+fff7dba7-7bc8-4f4c-81fb-b4e9f0bba53f	TCGA-OV.a42c583f-320d-4082-bd9f-c1961aef2127.ascat3.allelic_specific.seg.txt	TCGA-36-1574	Primary Tumor	ASCAT3
+76893b30-aa54-4191-bafe-fd58a692d2ed	TCGA-OV.5cbc430f-495b-44e2-ac1c-5bcab1e43d22.ascat3.allelic_specific.seg.txt	TCGA-24-1557	Blood Derived Normal	ASCAT3
+41a1e78f-8254-4931-9948-264d966472df	TCGA-OV.39807bf8-d0a9-4817-9094-2577dd21157b.ascat3.allelic_specific.seg.txt	TCGA-29-1710	Blood Derived Normal	ASCAT3
+2cb13998-6638-46f2-92bf-24372740be26	TCGA-OV.794b6a48-f610-4711-8b1a-4736252c8bea.ascat3.allelic_specific.seg.txt	TCGA-09-2056	Solid Tissue Normal	ASCAT3
+34c4356a-6d9d-4c57-9a16-31f5d9521ae4	TCGA-OV.c5dc8961-d6a6-495f-a6c3-51b5ca3ff874.ascat3.allelic_specific.seg.txt	TCGA-61-1734	Primary Tumor	ASCAT3
+dcc21e00-ef29-4956-afd7-80923abee67e	TCGA-OV.64f9f41e-43ea-4193-a30d-3dd6b7863800.ascat3.allelic_specific.seg.txt	TCGA-04-1360	Solid Tissue Normal	ASCAT3
+cb172ea4-9568-4d96-b85b-ba74d589a59f	TCGA-OV.355408fe-aef5-4207-964d-34ec652840f5.ascat3.allelic_specific.seg.txt	TCGA-61-1916	Recurrent Tumor	ASCAT3
+2c36790f-16bc-46ed-a7a3-9546d926550c	TCGA-OV.17a8210b-98fd-4bca-9c8a-059b573a5911.ascat3.allelic_specific.seg.txt	TCGA-09-1675	Blood Derived Normal	ASCAT3
+23a24837-eef4-4a17-bfba-dc6f3e6df488	TCGA-OV.019358e7-9795-4e8f-9751-3dfffe99c5ab.ascat3.allelic_specific.seg.txt	TCGA-13-2059	Blood Derived Normal	ASCAT3
+fc30a7ed-9783-4bdf-9652-106cfdf13f12	TCGA-OV.055ce18b-41ec-4faf-baa4-863faef9be68.ascat3.allelic_specific.seg.txt	TCGA-13-0913	Blood Derived Normal	ASCAT3
+1d1a485e-6c06-4d93-81b3-2fd3d7625043	TCGA-OV.715a71ed-ca25-4124-8273-0bf88e69d5cb.ascat3.allelic_specific.seg.txt	TCGA-61-2008	Primary Tumor	ASCAT3
+9bfddfab-0c8e-4f22-b325-b6b4a486c7f9	TCGA-OV.1945210f-1564-43d1-9590-2ff9f0700e82.ascat3.allelic_specific.seg.txt	TCGA-61-1727	Primary Tumor	ASCAT3
+35ed3af6-f3a6-4288-8d9a-3434aa76de69	TCGA-OV.81983782-4b6f-4b83-937d-e4ac8676a0f0.ascat3.allelic_specific.seg.txt	TCGA-25-2396	Blood Derived Normal	ASCAT3
+596d43d1-0fc1-40e2-b08e-5671d7e84656	TCGA-OV.66d09ec6-b2a5-49ae-ad0c-ebf8a7e61112.ascat3.allelic_specific.seg.txt	TCGA-42-2591	Primary Tumor	ASCAT3
+77acf6cb-2bef-43cd-a1e2-879172070b46	TCGA-OV.3f7272d0-dda4-4232-a079-d77f1567d529.ascat3.allelic_specific.seg.txt	TCGA-24-1104	Blood Derived Normal	ASCAT3
+2438935a-d5c2-4c1b-8645-2e70fa532659	TCGA-OV.c7844e0a-4d80-4c61-902d-5600c23eebd1.ascat3.allelic_specific.seg.txt	TCGA-13-1495	Blood Derived Normal	ASCAT3
+90d412e5-ca74-44a8-a849-6bd4e0a14910	TCGA-OV.945daa6e-1ec8-404a-a69e-3a3e79f0fa71.ascat3.allelic_specific.seg.txt	TCGA-13-1491	Blood Derived Normal	ASCAT3
+00c82421-1e97-4f62-82d1-05e7352a86b6	TCGA-OV.18004841-99c3-4b9d-910e-63a47d4287d9.ascat3.allelic_specific.seg.txt	TCGA-04-1652	Primary Tumor	ASCAT3
+dfc7d163-cee5-41d1-9765-27afd159c977	TCGA-OV.f2a87dfd-48e3-4ca8-be68-808d869dbfec.ascat3.allelic_specific.seg.txt	TCGA-61-1736	Primary Tumor	ASCAT3
+27e3b37c-270f-4717-9d20-f8f62bd316f3	TCGA-OV.aab18c3a-4453-43e9-aa21-1abcfe39f526.ascat3.allelic_specific.seg.txt	TCGA-23-1027	Blood Derived Normal	ASCAT3
+371609c6-3e32-4a62-bc0f-3dbf7d8b5011	TCGA-OV.47a40c55-6066-499f-a0ab-127555f66481.ascat3.allelic_specific.seg.txt	TCGA-61-1911	Primary Tumor	ASCAT3
+994ea010-9933-468a-beb3-b7508f45b450	TCGA-OV.7de5c913-6a77-47fc-8cac-af0c89b34e81.ascat3.allelic_specific.seg.txt	TCGA-13-0884	Primary Tumor	ASCAT3
+699cb625-2f1b-4a54-8267-faf69c8ae639	TCGA-OV.95cdd81f-7ef1-4d35-b210-da86727a610a.ascat3.allelic_specific.seg.txt	TCGA-09-2053	Blood Derived Normal	ASCAT3
+7c3b3c07-314e-4800-9185-33af0e134b71	TCGA-OV.7cce06da-3bb9-44e1-b971-e87ea08505d0.ascat3.allelic_specific.seg.txt	TCGA-24-1544	Primary Tumor	ASCAT3
+c68f9852-9024-4218-a902-da26abef9f6c	TCGA-OV.04cab715-bbc8-48ab-b059-1ebcf740e3c3.ascat3.allelic_specific.seg.txt	TCGA-13-1485	Primary Tumor	ASCAT3
+32bce929-6250-4bc6-81a7-6de83fc02d13	TCGA-OV.a936f935-1d08-4408-a115-beaa5313f7c7.ascat3.allelic_specific.seg.txt	TCGA-61-2016	Primary Tumor	ASCAT3
+a0736c65-9f4d-4ff8-aebf-648c40fa09d0	TCGA-OV.7d0cc9f7-b9ad-4338-a6ea-2d815502dbfe.ascat3.allelic_specific.seg.txt	TCGA-61-2102	Solid Tissue Normal	ASCAT3
+d1d6d91a-49d1-4182-9744-797666e9c583	TCGA-OV.8426d54f-4075-4012-a5e6-59d4237db996.ascat3.allelic_specific.seg.txt	TCGA-24-1846	Primary Tumor	ASCAT3
+76f96217-28d0-455d-a71a-8665fb8c016e	TCGA-OV.2a2cad37-1da4-4b68-b16d-6d2ba3ce6ab8.ascat3.allelic_specific.seg.txt	TCGA-24-1930	Primary Tumor	ASCAT3
+a91790bd-3686-427c-9778-8950ecdaaa72	TCGA-OV.a8594369-1e61-444b-a8f9-d47ca065010d.ascat3.allelic_specific.seg.txt	TCGA-59-2352	Blood Derived Normal	ASCAT3
+75b72b33-a8c6-48ea-80fe-811dad3cdb52	TCGA-OV.18d87466-bae2-4006-bed7-2657e9f070d3.ascat3.allelic_specific.seg.txt	TCGA-61-2111	Solid Tissue Normal	ASCAT3
+2f67da64-0089-490f-a349-fa2bd2c9af4f	TCGA-OV.eeb3061c-910c-407b-a949-a65bf1b74689.ascat3.allelic_specific.seg.txt	TCGA-24-2033	Blood Derived Normal	ASCAT3
+d32ea536-278f-4dbb-bcc9-cda9421fad92	TCGA-OV.ad6d5939-7ddd-41e6-b5a5-f45e8e2f94ea.ascat3.allelic_specific.seg.txt	TCGA-36-2549	Blood Derived Normal	ASCAT3
+2c0ec184-3773-4409-96de-df20d8a0b537	TCGA-OV.0e1c9ec4-1b65-4dd9-ab99-2abc8fdea3ba.ascat3.allelic_specific.seg.txt	TCGA-61-2009	Primary Tumor	ASCAT3
+1fdd59a0-c1e4-488f-b220-412e69de7acc	TCGA-OV.a2f4000b-1021-4696-8f3c-ed7de514cb2f.ascat3.allelic_specific.seg.txt	TCGA-13-0920	Primary Tumor	ASCAT3
+8d39a8b6-7d97-4da3-a1f3-754ee1fbf268	TCGA-OV.42496ce6-0aae-4ae4-a70b-6f339b5b7e62.ascat3.allelic_specific.seg.txt	TCGA-13-1488	Primary Tumor	ASCAT3
+08954887-d249-468e-bd89-ea958f1e8cb7	TCGA-OV.ad900317-46f7-4681-8fb1-692f07f48e38.ascat3.allelic_specific.seg.txt	TCGA-24-2254	Blood Derived Normal	ASCAT3
+d4b041dd-7c89-4ff6-bce6-c7eb67624bc6	TCGA-OV.da529340-25e3-4b3d-8b36-3142a24c06ef.ascat3.allelic_specific.seg.txt	TCGA-13-0799	Primary Tumor	ASCAT3
+1e946c83-0f59-4353-849f-48fc86a6e5d9	TCGA-OV.6655a8af-6e09-4618-83a0-aa2db334795b.ascat3.allelic_specific.seg.txt	TCGA-25-1322	Primary Tumor	ASCAT3
+0cca3d8d-2bd9-4bed-a700-74d18a3b690d	TCGA-OV.bdda429f-5053-4937-8488-19a21aa95048.ascat3.allelic_specific.seg.txt	TCGA-13-2066	Primary Tumor	ASCAT3
+e726cefb-fc49-4854-acea-8f834008484e	TCGA-OV.84ee91f1-d11b-4c5b-abee-47cd61945bc4.ascat3.allelic_specific.seg.txt	TCGA-61-2612	Solid Tissue Normal	ASCAT3
+e42a276a-f9ad-4844-94a0-2229c5b9b8b9	TCGA-OV.ef885a49-a605-4f56-8d82-08eddf0a0850.ascat3.allelic_specific.seg.txt	TCGA-24-2261	Primary Tumor	ASCAT3
+166e6c08-d478-49ce-a475-486ca85b2cc0	TCGA-OV.e52a7802-fd03-4d83-b0ec-b06cd7a1aedc.ascat3.allelic_specific.seg.txt	TCGA-13-1410	Primary Tumor	ASCAT3
+6726b95e-41b9-4f9a-bc8f-ecf22205c248	TCGA-OV.4e94ed63-34bb-45d8-9db6-6ed589f9585c.ascat3.allelic_specific.seg.txt	TCGA-13-0906	Blood Derived Normal	ASCAT3
+576f4441-6efb-493a-9670-6edb13b04235	TCGA-OV.576a7db4-0c37-4d05-a4ed-cee6c88bc73c.ascat3.allelic_specific.seg.txt	TCGA-13-1482	Primary Tumor	ASCAT3
+2253834a-33f0-4448-8f25-9f7afe1268bb	TCGA-OV.877c9240-32e0-43f3-9dfd-b4466e054bc7.ascat3.allelic_specific.seg.txt	TCGA-31-1946	Blood Derived Normal	ASCAT3
+80f4c140-150c-405e-84ad-94486fbc6c0d	TCGA-OV.c0cc1915-31e9-4ed6-bfc9-405b6a8d2f10.ascat3.allelic_specific.seg.txt	TCGA-30-1859	Primary Tumor	ASCAT3
+ff24af1c-a088-4ef4-b654-37498c15d7fe	TCGA-OV.236d5b82-7332-40a1-aadc-158e8302b923.ascat3.allelic_specific.seg.txt	TCGA-36-1578	Blood Derived Normal	ASCAT3
+f251ef7b-f9de-4a7e-bd27-8fece59d4828	TCGA-OV.89ba5753-d63d-4a87-9f18-078d2dd315ee.ascat3.allelic_specific.seg.txt	TCGA-04-1646	Solid Tissue Normal	ASCAT3
+5220121d-1cea-4aff-b78d-8c1a98142928	TCGA-OV.0905aeaa-d338-426f-ac9b-9550cdbd54d8.ascat3.allelic_specific.seg.txt	TCGA-13-0801	Blood Derived Normal	ASCAT3
+d0a61f73-6d3e-4a6b-9b9c-93516ceaa137	TCGA-OV.5c90d04e-2693-49ce-bf06-79de908598d9.ascat3.allelic_specific.seg.txt	TCGA-24-1927	Blood Derived Normal	ASCAT3
+7cee6d42-ec80-46bc-ab78-2fe3d1b72ee5	TCGA-OV.7de81bd9-018a-46cc-9ca5-e1726b2ce951.ascat3.allelic_specific.seg.txt	TCGA-36-2547	Blood Derived Normal	ASCAT3
+894cb227-6870-4b74-a5fe-9a7b69e1fe60	TCGA-OV.91d90e5d-92a7-43f2-88e5-e2a861b1d6a9.ascat3.allelic_specific.seg.txt	TCGA-13-1494	Blood Derived Normal	ASCAT3
+ed3a530f-18b2-4581-bab1-7084a93181c7	TCGA-OV.c3f1fd36-fc3e-48f9-9d09-14d678126742.ascat3.allelic_specific.seg.txt	TCGA-23-1021	Primary Tumor	ASCAT3
+41967aea-8072-423b-a8a0-902932c01858	TCGA-OV.1a7b8587-9482-43e4-a07f-0d49b9ec78d1.ascat3.allelic_specific.seg.txt	TCGA-13-1500	Blood Derived Normal	ASCAT3
+c0a9eb7a-6c84-4991-84e3-a12bd0ed8c99	TCGA-OV.246c6949-4565-4f69-8744-02e05764a274.ascat3.allelic_specific.seg.txt	TCGA-23-2647	Blood Derived Normal	ASCAT3
+55a61e15-6423-428f-8c8f-61ba96264661	TCGA-OV.8a64e2fc-7ca4-47da-9985-c2a06052518f.ascat3.allelic_specific.seg.txt	TCGA-29-1763	Primary Tumor	ASCAT3
+727a0887-56d4-4f48-be6d-50f3727a9e1f	TCGA-OV.1b33cc7d-0965-441d-8853-2b6f37ca2bce.ascat3.allelic_specific.seg.txt	TCGA-20-1682	Primary Tumor	ASCAT3
+e2af8420-05d3-48e8-98d2-65918d6fe93b	TCGA-OV.3d12d22b-4400-4141-9ee8-111bd81681ab.ascat3.allelic_specific.seg.txt	TCGA-30-1891	Blood Derived Normal	ASCAT3
+aee45c0b-a8a0-43f7-9e51-29aaf64d5cf7	TCGA-OV.9f0b16d5-3947-49d3-87cf-86a67627ad66.ascat3.allelic_specific.seg.txt	TCGA-13-1492	Blood Derived Normal	ASCAT3
+fed2b5ea-936a-412c-98aa-90216e9d9ee3	TCGA-OV.5fc24346-0d8a-4f26-9b42-f52d5fbd94e4.ascat3.allelic_specific.seg.txt	TCGA-23-1124	Blood Derived Normal	ASCAT3
+b1495f36-c4b7-4a14-8c32-7c79602c4b4a	TCGA-OV.33185003-e0a6-4c8e-bf25-4623b5c7ef82.ascat3.allelic_specific.seg.txt	TCGA-57-1585	Primary Tumor	ASCAT3
+8a85ba36-bb74-4eaa-b8df-fd923990b513	TCGA-OV.2e61de9d-84bb-4b14-aa7c-17ad72c258db.ascat3.allelic_specific.seg.txt	TCGA-24-1551	Blood Derived Normal	ASCAT3
+08d68f72-8c05-40b0-9461-7365682c9b77	TCGA-OV.bbfeaa5c-22e3-4948-bcb9-db40a8e1f737.ascat3.allelic_specific.seg.txt	TCGA-23-1109	Blood Derived Normal	ASCAT3
+9cb40684-d383-461d-bdf4-3d8a406cbfb2	TCGA-OV.d27694d2-11bd-4504-9546-564c20cb6832.ascat3.allelic_specific.seg.txt	TCGA-30-1853	Primary Tumor	ASCAT3
+690d7297-d3d9-47a3-bfc4-5fcec2333479	TCGA-OV.f523d8fe-3bc7-4bcf-b5c1-6210c642442b.ascat3.allelic_specific.seg.txt	TCGA-04-1336	Primary Tumor	ASCAT3
+5d1b53af-1bdd-440a-8296-c306c3e828cb	TCGA-OV.a8a0d815-8d32-4735-a550-cac3a9bfc703.ascat3.allelic_specific.seg.txt	TCGA-29-1692	Primary Tumor	ASCAT3
+b7b5aff1-37f9-434c-a801-5e5e479389ab	TCGA-OV.a8a9d81b-94c8-47b7-a261-4611c6fbabe0.ascat3.allelic_specific.seg.txt	TCGA-24-2293	Primary Tumor	ASCAT3
+92b02308-7265-446b-b3c0-28ef308fc467	TCGA-OV.ae9f95e1-e3d0-4752-86b1-ca9fe03bbdd8.ascat3.allelic_specific.seg.txt	TCGA-42-2593	Blood Derived Normal	ASCAT3
+4e362caf-913d-4c80-917b-f7411efd512e	TCGA-OV.a8f002eb-8a8f-4d7f-a93e-5b7b6fdeb975.ascat3.allelic_specific.seg.txt	TCGA-61-1906	Solid Tissue Normal	ASCAT3
+f9d2cb86-66f7-4257-ac1b-2ab92c3bec00	TCGA-OV.e7acdc39-9016-45df-bb67-56626afa7fe3.ascat3.allelic_specific.seg.txt	TCGA-25-2409	Primary Tumor	ASCAT3
+9b4da781-a1bc-48d3-a8a5-12c0315d4dc3	TCGA-OV.9d3f40aa-e8d4-4031-b41b-6ccb637a8b66.ascat3.allelic_specific.seg.txt	TCGA-24-0966	Primary Tumor	ASCAT3
+08247e15-43ca-4814-9748-0a44ed9a0e6f	TCGA-OV.edb2fee4-9451-49ea-b330-f11eb396a51e.ascat3.allelic_specific.seg.txt	TCGA-61-2017	Blood Derived Normal	ASCAT3
+82f57bf3-129d-4ed9-8961-b1dbe7af12fd	TCGA-OV.eb5241b3-941e-499b-8753-6a0e2eb474e8.ascat3.allelic_specific.seg.txt	TCGA-59-2363	Blood Derived Normal	ASCAT3
+3291bd8a-78a4-46e8-b988-d20d84e519ff	TCGA-OV.d0c4dcaa-e4f3-453a-bff5-accc4edaf5dc.ascat3.allelic_specific.seg.txt	TCGA-25-1878	Blood Derived Normal	ASCAT3
+3f666360-6d8a-4530-b3bd-2baabdbb6694	TCGA-OV.643bcd2e-3b7a-4834-9050-bfc9bf6f2fcb.ascat3.allelic_specific.seg.txt	TCGA-13-0766	Primary Tumor	ASCAT3
+38dd7c82-ce69-4099-b27e-cb7bd3aa03ba	TCGA-OV.f14c674a-b25b-4929-b28b-4ba9ff78eb17.ascat3.allelic_specific.seg.txt	TCGA-36-1580	Blood Derived Normal	ASCAT3
+5415308b-6494-4111-b796-770b658f6058	TCGA-OV.e9050a41-d803-4991-b9b6-0aafbfa90480.ascat3.allelic_specific.seg.txt	TCGA-04-1337	Solid Tissue Normal	ASCAT3
+d66c2940-5ce0-41d2-a9da-6248d1182620	TCGA-OV.ca3115ed-9f4b-4831-aa71-7321a71295d2.ascat3.allelic_specific.seg.txt	TCGA-61-1907	Primary Tumor	ASCAT3
+dd58016a-26f5-4603-83ec-e385fceb9845	TCGA-OV.55fae161-727b-441c-97ad-8bbc71cfdc32.ascat3.allelic_specific.seg.txt	TCGA-13-1499	Primary Tumor	ASCAT3
+366caa68-a16c-4fa5-82d8-204443b8f662	TCGA-OV.3b931696-b77d-417d-b187-50aef6ece607.ascat3.allelic_specific.seg.txt	TCGA-13-0894	Primary Tumor	ASCAT3
+0ea82acd-b46e-446e-9f6a-43ad86761bbf	TCGA-OV.e77f1b20-4c6a-4a79-999f-7caa799d2476.ascat3.allelic_specific.seg.txt	TCGA-25-2391	Primary Tumor	ASCAT3
+37c32012-0968-4a44-ab29-26ba7ef8503d	TCGA-OV.7fa92667-c84b-4b05-ab4f-4813e5a2e956.ascat3.allelic_specific.seg.txt	TCGA-09-1665	Primary Tumor	ASCAT3
+46adef23-ff3b-48c9-847b-39e88f4e9e98	TCGA-OV.e210eee4-4d99-4bc0-bbe4-09f143bc1f2c.ascat3.allelic_specific.seg.txt	TCGA-13-1504	Blood Derived Normal	ASCAT3
+86a1d3c3-0bfc-4d38-90ac-814b64e8c674	TCGA-OV.f2104888-eb63-43d0-afae-a6ebedc57db5.ascat3.allelic_specific.seg.txt	TCGA-29-1693	Primary Tumor	ASCAT3
+ee2c6ccc-79da-4e62-9ac4-f2967af2dce5	TCGA-OV.2a358871-990f-478b-ab36-a50f66506f0e.ascat3.allelic_specific.seg.txt	TCGA-04-1649	Solid Tissue Normal	ASCAT3
+b987c02d-60d8-4a2c-890a-62df2bc3bbef	TCGA-OV.bd6da330-a14d-424a-8bb6-ac244273969e.ascat3.allelic_specific.seg.txt	TCGA-25-1317	Primary Tumor	ASCAT3
+9173ae97-4686-47d9-9d95-32494768de3f	TCGA-OV.2ba3a197-86fc-466a-a9be-54e24daba3a4.ascat3.allelic_specific.seg.txt	TCGA-25-1632	Blood Derived Normal	ASCAT3
+722f98b1-cd50-4cd9-b508-8ec6e8777527	TCGA-OV.5b959054-e2d3-415a-98c1-123174cb3733.ascat3.allelic_specific.seg.txt	TCGA-13-1412	Blood Derived Normal	ASCAT3
+5664aa79-1fd4-44f4-b78b-5f402eb1d20d	TCGA-OV.0c197459-f7e7-4097-9294-d7037c5f129d.ascat3.allelic_specific.seg.txt	TCGA-23-1118	Blood Derived Normal	ASCAT3
+b98c6f1f-613d-4fd5-8075-c21c1a0dce0c	TCGA-OV.fa0c4583-eb33-4be7-9d29-a9587b4eeefe.ascat3.allelic_specific.seg.txt	TCGA-10-0931	Solid Tissue Normal	ASCAT3
+2ca453a3-0fb0-463a-8b44-2967ee5f8f9d	TCGA-OV.8fe6c12e-d500-468e-ae71-1ccbe71457a3.ascat3.allelic_specific.seg.txt	TCGA-25-1625	Primary Tumor	ASCAT3
+a78aee6b-35ac-4008-903a-89b6e17c440f	TCGA-OV.0f187781-18d6-4a79-8d57-e0076abf1440.ascat3.allelic_specific.seg.txt	TCGA-23-1114	Blood Derived Normal	ASCAT3
+384cea44-9435-49fd-abca-b0036b1d0dc5	TCGA-OV.70af5fdb-fd28-4671-9532-38438ac83d75.ascat3.allelic_specific.seg.txt	TCGA-24-1553	Blood Derived Normal	ASCAT3
+c8880050-fbce-45cf-a04b-386e537a4bbc	TCGA-OV.dec54b8f-0a64-47c3-acd7-cec92f30e0ef.ascat3.allelic_specific.seg.txt	TCGA-25-1871	Primary Tumor	ASCAT3
+29953ab4-aa60-4f68-a8a7-3bfb71fd904f	TCGA-OV.ea0d83ca-b20e-426b-aca5-9ba06a936d89.ascat3.allelic_specific.seg.txt	TCGA-24-0980	Primary Tumor	ASCAT3
