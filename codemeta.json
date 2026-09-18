@@ -1,0 +1,19 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "hrdscope",
+  "description": "Open, reproducible homologous recombination deficiency (HRD) triage from routine H&E whole-slide images in ovarian cancer.",
+  "version": "0.1.0",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/nico-alvz/hrdscope",
+  "identifier": "https://doi.org/10.5281/zenodo.22827123",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.10+",
+  "keywords": ["computational pathology", "ovarian cancer", "homologous recombination deficiency", "PARP inhibitors", "whole slide images", "open science"],
+  "author": [{"@type": "Person", "givenName": "Nicolás Alfredo", "familyName": "Álvarez Díaz", "@id": "https://orcid.org/0009-0000-0253-9999"}],
+  "dateCreated": "2026-09-18",
+  "datePublished": "2026-09-18",
+  "applicationCategory": "Bioinformatics",
+  "developmentStatus": "active",
+  "isPartOf": "https://zenodo.org/records/22827124"
+}
