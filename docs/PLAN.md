@@ -53,7 +53,7 @@ RTX 3070 with 8 GB (about 3.5 GB free while other services run), 20 CPU threads,
 
 | Step | Estimate |
 |---|---|
-| Download 470 GB of TCGA slides | 2-4 days wall-clock, streamed |
+| Download 470 GB of TCGA slides | measured 2.6 MB/s single stream from GDC: ~50 h; parallel range requests used to shorten it |
 | Tiling + embedding, ~2,000-6,000 tiles/slide, ~1,500 slides | ~1-2 s per 100 tiles fp16 -> 1-2 GPU days |
 | MIL training, 15 models | < 2 hours |
 | PTRC-HGSOC embedding | ~ 1 day |
@@ -73,7 +73,7 @@ Total: about one week of unattended machine time.
 | # | Deliverable | Status |
 |---|---|---|
 | M1 | Open TCGA-OV HRD label table + scar module + tests | done |
-| M2 | Streaming WSI pipeline (download, tile, embed) validated on 3 slides | next |
+| M2 | Streaming WSI pipeline (download, tile, embed), MIL, tuning, benchmark and predict commands with tests | done (code); GPU run pending |
 | M3 | Embeddings for TCGA-OV FFPE (107 slides) + first CV results | |
 | M4 | Embeddings for TCGA-OV frozen + PTRC-HGSOC; benchmark table | |
 | M5 | `hrdscope predict` CLI, report, Docker, CPU path, weights on Zenodo/HF | |

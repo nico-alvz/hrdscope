@@ -8,8 +8,16 @@ Status: early development. See `docs/PLAN.md` for the research plan and `docs/PR
 
 ## What works today
 
-* `hrdscope labels` downloads the open-access GDC ASCAT3 allele-specific copy-number profiles for TCGA-OV and computes the three genomic scar scores (HRD-LOH, NtAI, LST) and HRD-sum for 555 patients, with binary labels at the 33 / 42 / 63 thresholds. On the 168 patients that overlap with the published Knijnenburg et al. 2018 table the Pearson correlation is 0.96.
-* `hrdscope score file.seg.txt` scores any allele-specific segment file in GDC format.
+| command | what it does |
+|---|---|
+| `hrdscope labels` | downloads the open GDC ASCAT3 allele-specific copy-number profiles for TCGA-OV and computes HRD-LOH, NtAI, LST and HRD-sum for 555 patients, with binary labels at the 33 / 42 / 63 thresholds. Pearson r = 0.96 against the published Knijnenburg et al. 2018 scores on the 168 shared patients. |
+| `hrdscope score file.seg.txt` | scores any allele-specific segment file in GDC format |
+| `hrdscope splits` | writes the fixed, stratified, patient-level 5-fold splits used by the benchmark (`data/splits/`) |
+| `hrdscope embed slide.svs` | tissue detection, 224 px tiles at 0.5 micron/px, embeddings with an open-weight pathology foundation model (Midnight-12k MIT by default; Hibou-B, H-optimus-0 Apache-2.0) to HDF5 |
+| `hrdscope stream` | downloads GDC slides one at a time (prefetching the next), embeds, deletes; keeps disk use under a few GB |
+| `hrdscope tune` | nested Optuna search of the aggregator hyper-parameters on the inner folds only |
+| `hrdscope benchmark` | cross-validated gated-attention MIL with HRD-sum regression and per-threshold heads; AUROC with bootstrap CIs, rule-out / rule-in triage operating points, out-of-fold predictions |
+| `hrdscope predict slide.svs` | embeds a new slide, runs the ensemble of cross-validated models, writes JSON with probabilities, uncertainty and an attention heatmap PNG |
 
 ## Install
 
