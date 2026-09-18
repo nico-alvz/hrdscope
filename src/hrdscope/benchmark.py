@@ -48,7 +48,9 @@ def triage_points(y: np.ndarray, p: np.ndarray, sens_target: float = 0.95, ppv_t
 
 
 def run_cv(feature_dir: Path, label_path: Path, split_path: Path, out_dir: Path, seeds: tuple[int, ...] = (0, 1, 2),
-           max_tiles: int = 4000, device: str | None = None, epochs: int = 40) -> dict:
+           max_tiles: int = 4000, device: str | None = None, epochs: int = 40, params_path: Path | None = None) -> dict:
+    """``params_path`` is the ``best_params.json`` written by ``hrdscope tune`` (per outer fold)."""
+    tuned = json.load(open(params_path)) if params_path else {}
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
     feats = index_features(feature_dir)
     labels = read_labels(label_path)
@@ -70,12 +72,15 @@ def run_cv(feature_dir: Path, label_path: Path, split_path: Path, out_dir: Path,
             val_fold = (f + 1) % len(folds)
             val = [r["patient"] for r in splits if int(r["fold"]) == val_fold]
             train = [p for p in rest if p not in set(val)]
-            model = GatedAttentionMIL(in_dim)
+            cfg = tuned.get(str(f), {}).get("params", {})
+            model = GatedAttentionMIL(in_dim, cfg.get("hidden", 256), cfg.get("attn", 128), cfg.get("dropout", 0.25))
+            reg_scale = cfg.get("reg_scale", 50.0)
             model, info = train_one(model, [bags[p] for p in train], [bags[p] for p in val], epochs=epochs,
-                                    device=device, seed=seed * 100 + f)
+                                    lr=cfg.get("lr", 2e-4), weight_decay=cfg.get("weight_decay", 1e-2),
+                                    device=device, reg_scale=reg_scale, seed=seed * 100 + f)
             torch.save(model.state_dict(), out_dir / f"abmil_seed{seed}_fold{f}.pt")
             for p in test:
-                pr = predict(model, bags[p][0], device)
+                pr = predict(model, bags[p][0], device, reg_scale)
                 oof[p]["hrd_sum_pred"].append(pr["hrd_sum_pred"])
                 for t in THRESHOLDS:
                     oof[p][f"ge{t}"].append(pr["prob"][f"ge{t}"])

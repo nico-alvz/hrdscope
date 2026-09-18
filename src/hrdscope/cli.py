@@ -111,8 +111,16 @@ def cmd_benchmark(args: argparse.Namespace) -> None:
     from .benchmark import run_cv
 
     report = run_cv(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir),
-                    seeds=tuple(args.seeds), max_tiles=args.max_tiles, device=args.device, epochs=args.epochs)
+                    seeds=tuple(args.seeds), max_tiles=args.max_tiles, device=args.device, epochs=args.epochs,
+                    params_path=Path(args.params) if args.params else None)
     print(json.dumps(report, indent=2))
+
+
+def cmd_tune(args: argparse.Namespace) -> None:
+    from .tune import tune
+
+    tune(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir), n_trials=args.trials,
+         device=args.device, epochs=args.epochs)
 
 
 def _add_embed_args(s: argparse.ArgumentParser) -> None:
@@ -170,7 +178,18 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--max-tiles", type=int, default=4000)
     s.add_argument("--epochs", type=int, default=40)
     s.add_argument("--device", default=None)
+    s.add_argument("--params", default=None, help="best_params.json from hrdscope tune")
     s.set_defaults(func=cmd_benchmark)
+
+    s = sub.add_parser("tune", help="nested Optuna search of aggregator hyper-parameters on the inner folds")
+    s.add_argument("--features", default=str(DATA / "features" / "midnight"))
+    s.add_argument("--labels", default=str(DATA / "labels" / "tcga_ov_hrd.tsv"))
+    s.add_argument("--splits", default=str(DATA / "splits" / "tcga_ov_dx_folds.tsv"))
+    s.add_argument("--out-dir", default="runs/tune_dx_midnight")
+    s.add_argument("--trials", type=int, default=30)
+    s.add_argument("--epochs", type=int, default=40)
+    s.add_argument("--device", default=None)
+    s.set_defaults(func=cmd_tune)
 
     args = p.parse_args(argv)
     args.func(args)
