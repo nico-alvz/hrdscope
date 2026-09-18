@@ -53,9 +53,13 @@ def cmd_embed(args: argparse.Namespace) -> None:
 
 
 def cmd_stream(args: argparse.Namespace) -> None:
-    """Download slides from a GDC manifest one at a time, embed them, delete the slide."""
+    """Download slides from a GDC manifest, embed them, delete the slide.
+
+    The next slide is downloaded in a background thread while the current one
+    is being embedded, so the GPU rarely waits for the network."""
     import csv
     import json
+    import threading
     import urllib.request
 
     from .embed import Backbone, embed_slide
@@ -71,56 +75,53 @@ def cmd_stream(args: argparse.Namespace) -> None:
     out_dir, tmp_dir = Path(args.out_dir) / bb.name, Path(args.tmp_dir)
     tmp_dir.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
+    rows = [r for r in rows if not (out_dir / (Path(r["file_name"]).stem + ".h5")).exists()]
     log = open(Path(args.out_dir) / f"stream_{bb.name}.jsonl", "a")
-    for i, r in enumerate(rows):
-        out = out_dir / (Path(r["file_name"]).stem + ".h5")
-        if out.exists():
-            continue
+
+    def download(r: dict) -> Path:
         slide = tmp_dir / r["file_name"]
+        if slide.exists() and slide.stat().st_size == int(r.get("file_size", -1)):
+            return slide
+        part = slide.with_suffix(".part")
+        with urllib.request.urlopen("https://api.gdc.cancer.gov/data/" + r["file_id"], timeout=600) as resp, open(part, "wb") as fh:
+            while chunk := resp.read(1 << 22):
+                fh.write(chunk)
+        part.rename(slide)
+        return slide
+
+    class Prefetch(threading.Thread):
+        def __init__(self, r):
+            super().__init__(daemon=True); self.r, self.path, self.error = r, None, None
+        def run(self):
+            try:
+                self.path = download(self.r)
+            except Exception as exc:  # reported by the consumer
+                self.error = exc
+
+    nxt = Prefetch(rows[0]) if rows else None
+    if nxt:
+        nxt.start()
+    for i, r in enumerate(rows):
+        cur, nxt = nxt, (Prefetch(rows[i + 1]) if i + 1 < len(rows) else None)
+        cur.join()
+        if nxt:
+            nxt.start()
+        out = out_dir / (Path(r["file_name"]).stem + ".h5")
+        slide = cur.path
         try:
-            if not slide.exists() or slide.stat().st_size != int(r.get("file_size", -1)):
-                with urllib.request.urlopen("https://api.gdc.cancer.gov/data/" + r["file_id"], timeout=600) as resp, open(slide, "wb") as fh:
-                    while chunk := resp.read(1 << 22):
-                        fh.write(chunk)
+            if cur.error:
+                raise cur.error
             info = embed_slide(slide, out, bb, tile_px=args.tile_px, tile_mpp=args.tile_mpp,
                                batch_size=args.batch_size, max_tiles=args.max_tiles)
             info.update(patient=r.get("patient"), file_id=r["file_id"], i=i, n=len(rows))
         except Exception as exc:  # keep going, record the failure
             info = {"slide": r["file_name"], "error": repr(exc), "i": i, "n": len(rows)}
         finally:
-            if slide.exists() and not args.keep:
+            if slide and slide.exists() and not args.keep:
                 slide.unlink()
         print(json.dumps(info), flush=True)
         log.write(json.dumps(info) + "\n")
         log.flush()
-
-
-def cmd_splits(args: argparse.Namespace) -> None:
-    from .splits import make_folds
-
-    for domain in ("dx", "ts"):
-        rows = make_folds(Path(args.labels), DATA / "splits" / f"tcga_ov_{domain}_folds.tsv", domain=domain,
-                          n_folds=args.folds, seed=args.seed, threshold=args.threshold)
-        pos = sum(int(r[f"hrd_ge{args.threshold}"]) for r in rows)
-        print(f"{domain}: {len(rows)} patients, {pos} HRD-high at >= {args.threshold}, {args.folds} folds")
-
-
-def cmd_benchmark(args: argparse.Namespace) -> None:
-    import json
-
-    from .benchmark import run_cv
-
-    report = run_cv(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir),
-                    seeds=tuple(args.seeds), max_tiles=args.max_tiles, device=args.device, epochs=args.epochs,
-                    params_path=Path(args.params) if args.params else None)
-    print(json.dumps(report, indent=2))
-
-
-def cmd_tune(args: argparse.Namespace) -> None:
-    from .tune import tune
-
-    tune(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir), n_trials=args.trials,
-         device=args.device, epochs=args.epochs)
 
 
 def _add_embed_args(s: argparse.ArgumentParser) -> None:
@@ -190,6 +191,16 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--epochs", type=int, default=40)
     s.add_argument("--device", default=None)
     s.set_defaults(func=cmd_tune)
+
+    s = sub.add_parser("predict", help="embed one slide, run the trained ensemble, write JSON and attention heatmap")
+    s.add_argument("slide")
+    s.add_argument("--run-dir", default="runs/dx_midnight")
+    s.add_argument("--out-dir", default="predictions")
+    s.add_argument("--backbone", default="midnight", choices=["midnight", "hibou-b", "h-optimus"])
+    s.add_argument("--device", default=None)
+    s.add_argument("--batch-size", type=int, default=16)
+    s.add_argument("--mpp", type=float, default=None)
+    s.set_defaults(func=cmd_predict)
 
     args = p.parse_args(argv)
     args.func(args)
