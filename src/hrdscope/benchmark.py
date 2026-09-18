@@ -30,7 +30,8 @@ def triage_points(y: np.ndarray, p: np.ndarray, sens_target: float = 0.95, ppv_t
     order = np.argsort(-p)
     ys, ps = y[order], p[order]
     out = {}
-    tp = np.cumsum(ys); n_pos = ys.sum()
+    tp = np.cumsum(ys)
+    n_pos = ys.sum()
     sens = tp / max(1, n_pos)
     k = np.searchsorted(sens, sens_target)
     if k < len(ps):

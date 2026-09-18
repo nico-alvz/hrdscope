@@ -30,7 +30,7 @@ hrdscope = "hrdscope.cli:main"
 where = ["src"]
 
 [tool.ruff]
-line-length = 110
+line-length = 125
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]

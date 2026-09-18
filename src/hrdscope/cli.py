@@ -94,7 +94,8 @@ def cmd_stream(args: argparse.Namespace) -> None:
 
     class Prefetch(threading.Thread):
         def __init__(self, r):
-            super().__init__(daemon=True); self.r, self.path, self.error = r, None, None
+            super().__init__(daemon=True)
+            self.r, self.path, self.error = r, None, None
         def run(self):
             try:
                 self.path = download(self.r)
@@ -161,7 +162,8 @@ def cmd_predict(args: argparse.Namespace) -> None:
     from .predict import heatmap_png, predict_features
 
     slide = Path(args.slide)
-    out_dir = Path(args.out_dir); out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
     h5 = out_dir / (slide.stem + ".h5")
     if not h5.exists():
         from .embed import Backbone, embed_slide

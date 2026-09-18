@@ -9,7 +9,8 @@ from hrdscope.predict import predict_features
 
 
 def test_predict_features_ensemble(tmp_path):
-    run = tmp_path / "run"; run.mkdir()
+    run = tmp_path / "run"
+    run.mkdir()
     for seed in (0, 1):
         torch.save(GatedAttentionMIL(8).state_dict(), run / f"abmil_seed{seed}_fold0.pt")
     with h5py.File(tmp_path / "s.h5", "w") as h5:

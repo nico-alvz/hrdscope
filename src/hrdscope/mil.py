@@ -76,7 +76,9 @@ def train_one(model: GatedAttentionMIL, bags: list[tuple[torch.Tensor, float, np
             x = x.to(device)
             pr, pb, _ = model(x)
             loss = ((pr - y_reg / reg_scale) ** 2) + bce(pb, torch.tensor(y_bin, dtype=torch.float32, device=device))
-            opt.zero_grad(); loss.backward(); opt.step()
+            opt.zero_grad()
+            loss.backward()
+            opt.step()
         vl = evaluate_loss(model, val, device, reg_scale)
         if vl < best - 1e-4:
             best, bad = vl, 0

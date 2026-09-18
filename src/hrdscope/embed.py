@@ -25,7 +25,8 @@ from .wsi import grid_tiles, open_slide, read_tile, slide_mpp
 BACKBONES = {
     "midnight": {"hf": "kaiko-ai/midnight", "dim": 1536, "mean": (0.5, 0.5, 0.5), "std": (0.5, 0.5, 0.5)},
     "hibou-b": {"hf": "histai/hibou-b", "dim": 768, "mean": (0.7068, 0.5755, 0.7220), "std": (0.1950, 0.2316, 0.1816)},
-    "h-optimus": {"hf": "bioptimus/H-optimus-0", "dim": 1536, "mean": (0.7076, 0.5814, 0.7038), "std": (0.2118, 0.2305, 0.1855)},
+    "h-optimus": {"hf": "bioptimus/H-optimus-0", "dim": 1536, "mean": (0.7076, 0.5814, 0.7038),
+                  "std": (0.2118, 0.2305, 0.1855)},
 }
 
 
@@ -39,7 +40,8 @@ class Backbone:
         self.dtype = dtype if self.device == "cuda" else torch.float32
         if name == "h-optimus":
             import timm
-            self.model = timm.create_model("hf_hub:bioptimus/H-optimus-0", pretrained=True, init_values=1e-5, dynamic_img_size=False)
+            self.model = timm.create_model("hf_hub:bioptimus/H-optimus-0", pretrained=True, init_values=1e-5,
+                                           dynamic_img_size=False)
             self._forward = self._forward_timm
         else:
             from transformers import AutoModel

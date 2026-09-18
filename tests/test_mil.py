@@ -26,17 +26,22 @@ def test_triage_points_perfect_classifier():
 
 
 def test_run_cv_smoke(tmp_path):
-    feat = tmp_path / "feat"; feat.mkdir()
+    feat = tmp_path / "feat"
+    feat.mkdir()
     rng = np.random.default_rng(0)
     pats = [f"TCGA-00-{i:04d}" for i in range(20)]
     with open(tmp_path / "labels.tsv", "w", newline="") as fh, open(tmp_path / "folds.tsv", "w", newline="") as fs:
-        wl = csv.writer(fh, delimiter="\t"); ws = csv.writer(fs, delimiter="\t")
-        wl.writerow(["patient", "hrd_sum", "hrd_ge33", "hrd_ge42", "hrd_ge63"]); ws.writerow(["patient", "fold"])
+        wl = csv.writer(fh, delimiter="\t")
+        ws = csv.writer(fs, delimiter="\t")
+        wl.writerow(["patient", "hrd_sum", "hrd_ge33", "hrd_ge42", "hrd_ge63"])
+        ws.writerow(["patient", "fold"])
         for i, p in enumerate(pats):
             hrd = 20 + 60 * (i % 2)
             x = rng.normal(loc=(i % 2), size=(30, 8)).astype(np.float16)
             with h5py.File(feat / f"{p}-01Z-00-DX1.h5", "w") as h5:
                 h5.create_dataset("features", data=x)
-            wl.writerow([p, hrd, int(hrd >= 33), int(hrd >= 42), int(hrd >= 63)]); ws.writerow([p, i % 4])
-    rep = run_cv(feat, tmp_path / "labels.tsv", tmp_path / "folds.tsv", tmp_path / "runs", seeds=(0,), epochs=5, device="cpu")
+            wl.writerow([p, hrd, int(hrd >= 33), int(hrd >= 42), int(hrd >= 63)])
+            ws.writerow([p, i % 4])
+    rep = run_cv(feat, tmp_path / "labels.tsv", tmp_path / "folds.tsv", tmp_path / "runs", seeds=(0,), epochs=5,
+                 device="cpu")
     assert rep["n_patients"] == 20 and "ge42" in rep and (tmp_path / "runs" / "oof_predictions.tsv").exists()
