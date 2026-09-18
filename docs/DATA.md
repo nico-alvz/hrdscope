@@ -38,3 +38,7 @@ hrdscope stream --manifest data/manifests/ptrc_hgsoc_slides.tsv --out-dir data/f
 
 * Midnight-12k: `kaiko-ai/midnight` on Hugging Face, MIT, no gating. Downloaded automatically on first use (4.4 GB).
 * Hibou-B (`histai/hibou-b`) and H-optimus-0 (`bioptimus/H-optimus-0`): Apache-2.0, gated; run `huggingface-cli login` after accepting the terms on the model page.
+
+## Data management
+
+This project has no funder and therefore no mandated data management plan. The commitments that such a plan would state are recorded here instead. All inputs are public and are re-downloaded from their primary archives by the commands above rather than redistributed, except for small derived tables (manifests, labels, splits) that are versioned in this repository under MIT. Derived artefacts that are expensive to recompute (tile embeddings per cohort, trained weights, out-of-fold predictions) are deposited on Zenodo with their own DOI at each release and mirrored on Hugging Face for weights. File formats are plain TSV, JSON and HDF5. Patient identifiers are the public TCGA barcodes and the TCIA subject numbers; no additional personal data are collected. Releases are tagged in git, and the Zenodo GitHub integration archives every tagged release automatically.
