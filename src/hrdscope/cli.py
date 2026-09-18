@@ -117,6 +117,53 @@ def cmd_stream(args: argparse.Namespace) -> None:
         log.flush()
 
 
+def cmd_splits(args: argparse.Namespace) -> None:
+    from .splits import make_folds
+
+    for domain in ("dx", "ts"):
+        rows = make_folds(Path(args.labels), DATA / "splits" / f"tcga_ov_{domain}_folds.tsv", domain=domain,
+                          n_folds=args.folds, seed=args.seed, threshold=args.threshold)
+        pos = sum(int(r[f"hrd_ge{args.threshold}"]) for r in rows)
+        print(f"{domain}: {len(rows)} patients, {pos} HRD-high at >= {args.threshold}, {args.folds} folds")
+
+
+def cmd_benchmark(args: argparse.Namespace) -> None:
+    import json
+
+    from .benchmark import run_cv
+
+    report = run_cv(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir),
+                    seeds=tuple(args.seeds), max_tiles=args.max_tiles, device=args.device, epochs=args.epochs,
+                    params_path=Path(args.params) if args.params else None)
+    print(json.dumps(report, indent=2))
+
+
+def cmd_tune(args: argparse.Namespace) -> None:
+    from .tune import tune
+
+    tune(Path(args.features), Path(args.labels), Path(args.splits), Path(args.out_dir), n_trials=args.trials,
+         device=args.device, epochs=args.epochs)
+
+
+def cmd_predict(args: argparse.Namespace) -> None:
+    import json
+
+    from .predict import heatmap_png, predict_features
+
+    slide = Path(args.slide)
+    out_dir = Path(args.out_dir); out_dir.mkdir(parents=True, exist_ok=True)
+    h5 = out_dir / (slide.stem + ".h5")
+    if not h5.exists():
+        from .embed import Backbone, embed_slide
+
+        embed_slide(slide, h5, Backbone(args.backbone, device=args.device), batch_size=args.batch_size, mpp=args.mpp)
+    res = predict_features(h5, Path(args.run_dir), device="cpu")
+    (out_dir / (slide.stem + ".json")).write_text(json.dumps(res, indent=2))
+    heatmap_png(res, slide, out_dir / (slide.stem + "_attention.png"))
+    summary = {k: v for k, v in res.items() if k != "attention"}
+    print(json.dumps(summary, indent=2))
+
+
 def _add_embed_args(s: argparse.ArgumentParser) -> None:
     s.add_argument("--backbone", default="midnight", choices=["midnight", "hibou-b", "h-optimus"])
     s.add_argument("--device", default=None, help="cuda or cpu (default: cuda when available)")
