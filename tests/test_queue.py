@@ -37,9 +37,17 @@ def test_fetch_then_work_offline(tmp_path, monkeypatch):
     monkeypatch.setattr(q, "online", lambda host: True)
 
     def fake_download(url, dest, *a, **k):
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(b"x")
-        return dest
+        assert dest.parent.name.endswith(".partial")
+        return real_download(url, dest, *a, **k)
+
+    real_download = q.download_url
+
+    import hrdscope.download as dl
+
+    def fake_range(url, start, end, retries=6):
+        return b"x" * (end - start + 1)
+
+    monkeypatch.setattr(dl, "_fetch_range", fake_range)
 
     monkeypatch.setattr(q, "download_url", fake_download)
     cache = tmp_path / "cache"

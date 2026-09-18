@@ -73,6 +73,7 @@ def download_url(url: str, dest: Path, expected_size: int | None = None, md5: st
     if dest.exists() and expected_size and dest.stat().st_size == expected_size:
         return dest
     size = expected_size or _size(url)
+    dest.parent.mkdir(parents=True, exist_ok=True)
     part = dest.with_suffix(dest.suffix + ".part")
     with open(part, "wb") as fh:
         fh.truncate(size)
