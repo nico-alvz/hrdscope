@@ -15,7 +15,15 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from .mil import GatedAttentionMIL, THRESHOLDS, evaluate_loss, index_features, load_bag, predict, read_labels, train_one
+from .mil import (
+    THRESHOLDS,
+    GatedAttentionMIL,
+    index_features,
+    load_bag,
+    predict,
+    read_labels,
+    train_one,
+)
 
 SPACE = {
     "hidden": ("cat", [128, 256, 512]),

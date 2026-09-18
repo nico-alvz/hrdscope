@@ -90,7 +90,7 @@ def cmd_stream(args: argparse.Namespace) -> None:
                 if attempt == 2:
                     raise
                 time.sleep(30 * (attempt + 1))
-        raise IOError("unreachable")
+        raise OSError("unreachable")
 
     class Prefetch(threading.Thread):
         def __init__(self, r):

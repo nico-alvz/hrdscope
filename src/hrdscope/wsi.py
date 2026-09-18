@@ -22,7 +22,7 @@ class Tile:
     tissue_frac: float
 
 
-def slide_mpp(slide: "openslide.OpenSlide") -> float:
+def slide_mpp(slide: openslide.OpenSlide) -> float:
     p = slide.properties
     for key in (openslide.PROPERTY_NAME_MPP_X, "aperio.MPP", "openslide.mpp-x"):
         if key in p:
@@ -36,7 +36,7 @@ def slide_mpp(slide: "openslide.OpenSlide") -> float:
     raise ValueError("cannot determine microns per pixel; pass --mpp explicitly")
 
 
-def tissue_mask(slide: "openslide.OpenSlide", target_mpp: float = 16.0,
+def tissue_mask(slide: openslide.OpenSlide, target_mpp: float = 16.0,
                 sat_threshold: int = 20, min_value: int = 30, max_value: int = 230) -> tuple[np.ndarray, float]:
     """Boolean tissue mask on a low-resolution thumbnail plus its downsample factor."""
     mpp0 = slide_mpp(slide)
@@ -56,7 +56,7 @@ def tissue_mask(slide: "openslide.OpenSlide", target_mpp: float = 16.0,
     return mask, real_ds
 
 
-def grid_tiles(slide: "openslide.OpenSlide", tile_px: int = 224, tile_mpp: float = 0.5,
+def grid_tiles(slide: openslide.OpenSlide, tile_px: int = 224, tile_mpp: float = 0.5,
                min_tissue: float = 0.5, mpp: float | None = None) -> tuple[list[Tile], int]:
     """Enumerate non-overlapping tiles covering tissue at ``tile_mpp`` microns per pixel."""
     mpp0 = mpp or slide_mpp(slide)
@@ -74,7 +74,7 @@ def grid_tiles(slide: "openslide.OpenSlide", tile_px: int = 224, tile_mpp: float
     return tiles, size0
 
 
-def read_tile(slide: "openslide.OpenSlide", tile: Tile, tile_px: int = 224) -> Image.Image:
+def read_tile(slide: openslide.OpenSlide, tile: Tile, tile_px: int = 224) -> Image.Image:
     """Read a tile at the best pyramid level and resample to ``tile_px`` square."""
     level = slide.get_best_level_for_downsample(tile.size0 / tile_px)
     ds = slide.level_downsamples[level]
@@ -85,5 +85,5 @@ def read_tile(slide: "openslide.OpenSlide", tile: Tile, tile_px: int = 224) -> I
     return img
 
 
-def open_slide(path: str | Path) -> "openslide.OpenSlide":
+def open_slide(path: str | Path) -> openslide.OpenSlide:
     return openslide.OpenSlide(str(path))

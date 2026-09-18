@@ -11,7 +11,7 @@ import numpy as np
 import torch
 
 from . import __version__
-from .mil import GatedAttentionMIL, THRESHOLDS, predict
+from .mil import THRESHOLDS, GatedAttentionMIL, predict
 
 
 def load_ensemble(run_dir: Path, in_dim: int, device: str = "cpu") -> list[tuple[GatedAttentionMIL, float]]:

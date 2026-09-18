@@ -1,0 +1,9 @@
+{
+  "title": "hrdscope: open, reproducible HRD triage from routine H&E slides in ovarian cancer",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [{"name": "Alvarez, Nico"}],
+  "keywords": ["computational pathology", "ovarian cancer", "homologous recombination deficiency", "PARP inhibitors", "whole slide images", "open science"],
+  "description": "MIT-licensed pipeline and benchmark that derives open HRD labels for TCGA-OV from public allele-specific copy-number data, embeds H&E whole-slide images with open-weight pathology foundation models, trains attention-based multiple-instance models with calibrated triage operating points, and ships a predict command for new slides. Research use only.",
+  "access_right": "open"
+}

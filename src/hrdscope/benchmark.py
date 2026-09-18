@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from .mil import GatedAttentionMIL, THRESHOLDS, index_features, load_bag, predict, read_labels, train_one
+from .mil import THRESHOLDS, GatedAttentionMIL, index_features, load_bag, predict, read_labels, train_one
 
 
 def bootstrap_auc(y: np.ndarray, p: np.ndarray, n: int = 1000, seed: int = 0) -> tuple[float, float, float]:

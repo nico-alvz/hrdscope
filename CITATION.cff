@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "hrdscope: open, reproducible HRD triage from routine H&E slides in ovarian cancer"
+message: "If you use this software, please cite it using these metadata."
+type: software
+authors:
+  - family-names: "Alvarez"
+    given-names: "Nico"
+    alias: nico-alvz
+license: MIT
+repository-code: "https://github.com/nico-alvz/hrdscope"
+version: 0.1.0
+date-released: 2026-09-18
+keywords:
+  - computational pathology
+  - ovarian cancer
+  - homologous recombination deficiency
+  - PARP inhibitors
+  - open science

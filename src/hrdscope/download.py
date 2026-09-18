@@ -22,7 +22,7 @@ def _size(url: str, retries: int = 6) -> int:
             if attempt == retries - 1:
                 raise
             time.sleep(2 ** attempt)
-    raise IOError("unreachable")
+    raise OSError("unreachable")
 
 
 def _fetch_range(url: str, start: int, end: int, retries: int = 6) -> bytes:
@@ -38,7 +38,7 @@ def _fetch_range(url: str, start: int, end: int, retries: int = 6) -> bytes:
             if attempt == retries - 1:
                 raise
         time.sleep(2 ** attempt)
-    raise IOError(f"short read for bytes {start}-{end}")
+    raise OSError(f"short read for bytes {start}-{end}")
 
 
 def download_gdc(file_id: str, dest: Path, expected_size: int | None = None, md5: str | None = None,
@@ -70,7 +70,7 @@ def download_url(url: str, dest: Path, expected_size: int | None = None, md5: st
     finally:
         os.close(fd)
     if got != size:
-        raise IOError(f"downloaded {got} of {size} bytes for {file_id}")
+        raise OSError(f"downloaded {got} of {size} bytes for {file_id}")
     if md5:
         h = hashlib.md5()
         with open(part, "rb") as fh:
@@ -78,6 +78,6 @@ def download_url(url: str, dest: Path, expected_size: int | None = None, md5: st
                 h.update(block)
         if h.hexdigest() != md5:
             part.unlink()
-            raise IOError(f"md5 mismatch for {file_id}")
+            raise OSError(f"md5 mismatch for {file_id}")
     part.rename(dest)
     return dest
