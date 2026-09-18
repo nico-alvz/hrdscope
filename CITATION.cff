@@ -3,8 +3,9 @@ title: "hrdscope: open, reproducible HRD triage from routine H&E slides in ovari
 message: "If you use this software, please cite it using these metadata."
 type: software
 authors:
-  - family-names: "Alvarez"
-    given-names: "Nico"
+  - family-names: "Álvarez Díaz"
+    given-names: "Nicolás Alfredo"
+    orcid: "https://orcid.org/0009-0000-0253-9999"
     alias: nico-alvz
 license: MIT
 repository-code: "https://github.com/nico-alvz/hrdscope"

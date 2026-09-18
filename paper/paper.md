@@ -7,8 +7,8 @@ tags:
   - homologous recombination deficiency
   - multiple instance learning
 authors:
-  - name: Nico Alvarez
-    orcid: 0000-0000-0000-0000
+  - name: Nicolás Alfredo Álvarez Díaz
+    orcid: 0009-0000-0253-9999
     affiliation: 1
 affiliations:
   - name: Independent researcher
