@@ -61,7 +61,7 @@ def cmd_stream(args: argparse.Namespace) -> None:
     import json
     import threading
 
-    from .download import download_gdc
+    from .download import download_url
     from .embed import Backbone, embed_slide
 
     bb = Backbone(args.backbone, device=args.device)
@@ -71,7 +71,7 @@ def cmd_stream(args: argparse.Namespace) -> None:
     if args.patients:
         keep = set(Path(args.patients).read_text().split())
         rows = [r for r in rows if r["patient"] in keep]
-    rows.sort(key=lambda r: int(r.get("file_size", 0)))
+    rows.sort(key=lambda r: int(r.get("file_size", 0) or 0))
     out_dir, tmp_dir = Path(args.out_dir) / bb.name, Path(args.tmp_dir)
     tmp_dir.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -81,9 +81,10 @@ def cmd_stream(args: argparse.Namespace) -> None:
     def download(r: dict) -> Path:
         import time
 
+        url = r.get("url") or "https://api.gdc.cancer.gov/data/" + r["file_id"]
         for attempt in range(3):
             try:
-                return download_gdc(r["file_id"], tmp_dir / r["file_name"], int(r.get("file_size", 0)) or None,
+                return download_url(url, tmp_dir / r["file_name"], int(r.get("file_size", 0) or 0) or None,
                                     r.get("md5") or None, workers=args.workers)
             except Exception:
                 if attempt == 2:
@@ -115,7 +116,7 @@ def cmd_stream(args: argparse.Namespace) -> None:
                 raise cur.error
             info = embed_slide(slide, out, bb, tile_px=args.tile_px, tile_mpp=args.tile_mpp,
                                batch_size=args.batch_size, max_tiles=args.max_tiles)
-            info.update(patient=r.get("patient"), file_id=r["file_id"], i=i, n=len(rows))
+            info.update(patient=r.get("patient"), file_id=r.get("file_id", r.get("image_id")), i=i, n=len(rows))
         except Exception as exc:  # keep going, record the failure
             info = {"slide": r["file_name"], "error": repr(exc), "i": i, "n": len(rows)}
         finally:
@@ -205,7 +206,7 @@ def main(argv: list[str] | None = None) -> None:
 
     s = sub.add_parser("stream", help="download GDC slides one by one, embed, delete")
     s.add_argument("--manifest", default=str(DATA / "manifests" / "tcga_ov_slides.tsv"))
-    s.add_argument("--strategy", default="Diagnostic", help="prefix filter on the manifest strategy column")
+    s.add_argument("--strategy", default="", help="prefix filter on the manifest strategy column (e.g. Diagnostic, Tissue)")
     s.add_argument("--patients", default=None, help="file with patient ids to keep, one per line")
     s.add_argument("--tmp-dir", default=str(DATA / "raw" / "slides"))
     s.add_argument("--keep", action="store_true", help="do not delete slides after embedding")

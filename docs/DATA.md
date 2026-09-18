@@ -18,13 +18,13 @@ Everything below is open access. Nothing requires dbGaP or a data-use agreement.
 
 * 158 patients, 348 FFPE H&E slides (SVS, 20x, 0.5 micron/px), 120 GB, license CC BY 4.0, DOI 10.7937/6RDA-P940.
 * Clinical table (platinum refractory vs sensitive, stage, grade, site, neo-adjuvant): `PTRC-HGSOC_List_clincal_data.xlsx` from the collection page, one row per slide with `File Name`, `Patient ID`, `Tumor response`.
-* Slides are distributed as an IBM Aspera Faspex package. Command line download (Ruby >= 3.1):
+* Slides are served directly by TCIA PathDB over HTTPS with byte-range support (about 16 MB/s per stream). `data/manifests/ptrc_hgsoc_slides.tsv` (348 rows, generated with `tcia_utils.pathdb.getImages("PTRC-HGSOC")` and joined with the clinical table) has the URL, patient, platinum response (91 sensitive, 67 refractory patients), site (FHCRC 156, Mayo 100, UAB 92 slides), stage, grade and pixel size (0.4965 micron/px).
 
 ```bash
-gem install aspera-cli
-ascli conf ascp install
-ascli faspex5 packages receive --url='<link copied from the Download button on the collection page>' --to-folder=data/raw/ptrc
+hrdscope stream --manifest data/manifests/ptrc_hgsoc_slides.tsv --out-dir data/features_ptrc
 ```
+
+* The Aspera Faspex link on the collection page also works with the IBM `ascli` client but is not needed.
 
 * Scar metrics (nTAI, nLST, nLOH, wGII) for the discovery cohort are in Chowdhury et al., Cell 2023, Table S1 (open access on PMC, PMC10414761); download the supplementary xlsx manually from the PMC page because the server blocks scripted downloads.
 * Citation: Chowdhury S et al., Proteogenomic analysis of chemo-refractory high-grade serous ovarian cancer, Cell 2023; plus the TCIA citation (Clark K et al., J Digit Imaging 2013).

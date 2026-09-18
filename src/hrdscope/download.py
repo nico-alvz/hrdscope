@@ -43,7 +43,13 @@ def _fetch_range(url: str, start: int, end: int, retries: int = 6) -> bytes:
 
 def download_gdc(file_id: str, dest: Path, expected_size: int | None = None, md5: str | None = None,
                  workers: int = 8, chunk: int = 16 << 20) -> Path:
-    url = GDC_DATA + file_id
+    return download_url(GDC_DATA + file_id, dest, expected_size, md5, workers, chunk)
+
+
+def download_url(url: str, dest: Path, expected_size: int | None = None, md5: str | None = None,
+                 workers: int = 8, chunk: int = 16 << 20) -> Path:
+    """Parallel range download of any HTTP(S) URL that supports byte ranges (GDC, TCIA PathDB)."""
+    file_id = url.rsplit("/", 1)[-1]
     if dest.exists() and expected_size and dest.stat().st_size == expected_size:
         return dest
     size = expected_size or _size(url)
