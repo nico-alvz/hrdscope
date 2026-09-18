@@ -84,7 +84,9 @@ class Backbone:
 
 def embed_slide(slide_path: str | Path, out_path: str | Path, backbone: Backbone, tile_px: int = 224,
                 tile_mpp: float = 0.5, batch_size: int = 32, max_tiles: int | None = None,
-                mpp: float | None = None, seed: int = 0) -> dict:
+                mpp: float | None = None, seed: int = 0, read_threads: int = 8) -> dict:
+    import concurrent.futures as cf
+
     slide_path, out_path = Path(slide_path), Path(out_path)
     t0 = time.time()
     slide = open_slide(slide_path)
@@ -96,9 +98,16 @@ def embed_slide(slide_path: str | Path, out_path: str | Path, backbone: Backbone
     feats = np.zeros((len(tiles), backbone.out_dim), dtype=np.float16)
     coords = np.array([(t.x, t.y) for t in tiles], dtype=np.int32).reshape(-1, 2)
     fracs = np.array([t.tissue_frac for t in tiles], dtype=np.float32)
-    for i in range(0, len(tiles), batch_size):
-        batch = [read_tile(slide, t, tile_px) for t in tiles[i : i + batch_size]]
-        feats[i : i + len(batch)] = backbone(batch).astype(np.float16)
+    with cf.ThreadPoolExecutor(read_threads) as pool:
+        batches = [tiles[i : i + batch_size] for i in range(0, len(tiles), batch_size)]
+        pending = pool.submit(lambda b: [read_tile(slide, t, tile_px) for t in b], batches[0]) if batches else None
+        for bi, b in enumerate(batches):
+            imgs = pending.result()
+            if bi + 1 < len(batches):
+                nxt = batches[bi + 1]
+                pending = pool.submit(lambda b: list(pool.map(lambda t: read_tile(slide, t, tile_px), b)), nxt)
+            i = bi * batch_size
+            feats[i : i + len(imgs)] = backbone(imgs).astype(np.float16)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with h5py.File(out_path, "w") as h5:
         h5.create_dataset("features", data=feats, compression="gzip")
