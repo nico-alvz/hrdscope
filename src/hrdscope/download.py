@@ -5,20 +5,28 @@ from __future__ import annotations
 import concurrent.futures as cf
 import hashlib
 import os
+import time
 import urllib.request
 from pathlib import Path
 
 GDC_DATA = "https://api.gdc.cancer.gov/data/"
 
 
-def _size(url: str) -> int:
-    req = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        cr = r.headers.get("Content-Range", "")
-        return int(cr.split("/")[-1])
+def _size(url: str, retries: int = 6) -> int:
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return int(r.headers.get("Content-Range", "").split("/")[-1])
+        except Exception:
+            if attempt == retries - 1:
+                raise
+            time.sleep(2 ** attempt)
+    raise IOError("unreachable")
 
 
-def _fetch_range(url: str, start: int, end: int, retries: int = 5) -> bytes:
+def _fetch_range(url: str, start: int, end: int, retries: int = 6) -> bytes:
+    """GDC drops connections under load; back off exponentially (1, 2, 4 ... s) and retry."""
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers={"Range": f"bytes={start}-{end}"})
@@ -29,6 +37,7 @@ def _fetch_range(url: str, start: int, end: int, retries: int = 5) -> bytes:
         except Exception:
             if attempt == retries - 1:
                 raise
+        time.sleep(2 ** attempt)
     raise IOError(f"short read for bytes {start}-{end}")
 
 
