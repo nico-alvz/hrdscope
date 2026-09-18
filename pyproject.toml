@@ -17,7 +17,7 @@ classifiers = [
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
-dependencies = ["numpy>=1.24", "scipy>=1.10", "scikit-learn>=1.3", "optuna>=3.0", "h5py", "torch>=2.1"]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "scikit-learn>=1.3", "optuna>=3.0", "pandas>=2.0", "h5py", "torch>=2.1"]
 
 [project.optional-dependencies]
 slides = ["torch>=2.1", "timm>=0.9", "transformers>=4.40", "huggingface_hub", "openslide-python", "openslide-bin", "h5py", "pillow", "scikit-learn", "tqdm"]
