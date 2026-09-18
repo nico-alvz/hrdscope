@@ -60,8 +60,8 @@ def cmd_stream(args: argparse.Namespace) -> None:
     import csv
     import json
     import threading
-    import urllib.request
 
+    from .download import download_gdc
     from .embed import Backbone, embed_slide
 
     bb = Backbone(args.backbone, device=args.device)
@@ -79,15 +79,8 @@ def cmd_stream(args: argparse.Namespace) -> None:
     log = open(Path(args.out_dir) / f"stream_{bb.name}.jsonl", "a")
 
     def download(r: dict) -> Path:
-        slide = tmp_dir / r["file_name"]
-        if slide.exists() and slide.stat().st_size == int(r.get("file_size", -1)):
-            return slide
-        part = slide.with_suffix(".part")
-        with urllib.request.urlopen("https://api.gdc.cancer.gov/data/" + r["file_id"], timeout=600) as resp, open(part, "wb") as fh:
-            while chunk := resp.read(1 << 22):
-                fh.write(chunk)
-        part.rename(slide)
-        return slide
+        return download_gdc(r["file_id"], tmp_dir / r["file_name"], int(r.get("file_size", 0)) or None,
+                            r.get("md5") or None, workers=args.workers)
 
     class Prefetch(threading.Thread):
         def __init__(self, r):
@@ -160,6 +153,7 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--patients", default=None, help="file with patient ids to keep, one per line")
     s.add_argument("--tmp-dir", default=str(DATA / "raw" / "slides"))
     s.add_argument("--keep", action="store_true", help="do not delete slides after embedding")
+    s.add_argument("--workers", type=int, default=8, help="parallel HTTP range requests per slide")
     _add_embed_args(s)
     s.set_defaults(func=cmd_stream)
 
