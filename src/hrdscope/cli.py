@@ -35,6 +35,75 @@ def cmd_score(args: argparse.Namespace) -> None:
         print(f"{path}\tLOH={s.loh}\tTAI={s.tai}\tLST={s.lst}\tHRD_sum={s.hrd_sum}")
 
 
+def cmd_embed(args: argparse.Namespace) -> None:
+    import json
+
+    from .embed import Backbone, embed_slide
+
+    bb = Backbone(args.backbone, device=args.device)
+    out_dir = Path(args.out_dir)
+    for path in args.slides:
+        out = out_dir / bb.name / (Path(path).stem + ".h5")
+        if out.exists() and not args.overwrite:
+            print(f"skip {out.name} (exists)")
+            continue
+        info = embed_slide(path, out, bb, tile_px=args.tile_px, tile_mpp=args.tile_mpp,
+                           batch_size=args.batch_size, max_tiles=args.max_tiles, mpp=args.mpp)
+        print(json.dumps(info))
+
+
+def cmd_stream(args: argparse.Namespace) -> None:
+    """Download slides from a GDC manifest one at a time, embed them, delete the slide."""
+    import csv
+    import json
+    import urllib.request
+
+    from .embed import Backbone, embed_slide
+
+    bb = Backbone(args.backbone, device=args.device)
+    rows = list(csv.DictReader(open(args.manifest, newline=""), delimiter="\t"))
+    if args.strategy:
+        rows = [r for r in rows if r.get("strategy", "").startswith(args.strategy)]
+    if args.patients:
+        keep = set(Path(args.patients).read_text().split())
+        rows = [r for r in rows if r["patient"] in keep]
+    rows.sort(key=lambda r: int(r.get("file_size", 0)))
+    out_dir, tmp_dir = Path(args.out_dir) / bb.name, Path(args.tmp_dir)
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    log = open(Path(args.out_dir) / f"stream_{bb.name}.jsonl", "a")
+    for i, r in enumerate(rows):
+        out = out_dir / (Path(r["file_name"]).stem + ".h5")
+        if out.exists():
+            continue
+        slide = tmp_dir / r["file_name"]
+        try:
+            if not slide.exists() or slide.stat().st_size != int(r.get("file_size", -1)):
+                with urllib.request.urlopen("https://api.gdc.cancer.gov/data/" + r["file_id"], timeout=600) as resp, open(slide, "wb") as fh:
+                    while chunk := resp.read(1 << 22):
+                        fh.write(chunk)
+            info = embed_slide(slide, out, bb, tile_px=args.tile_px, tile_mpp=args.tile_mpp,
+                               batch_size=args.batch_size, max_tiles=args.max_tiles)
+            info.update(patient=r.get("patient"), file_id=r["file_id"], i=i, n=len(rows))
+        except Exception as exc:  # keep going, record the failure
+            info = {"slide": r["file_name"], "error": repr(exc), "i": i, "n": len(rows)}
+        finally:
+            if slide.exists() and not args.keep:
+                slide.unlink()
+        print(json.dumps(info), flush=True)
+        log.write(json.dumps(info) + "\n")
+        log.flush()
+
+
+def _add_embed_args(s: argparse.ArgumentParser) -> None:
+    s.add_argument("--backbone", default="midnight", choices=["midnight", "hibou-b", "h-optimus"])
+    s.add_argument("--device", default=None, help="cuda or cpu (default: cuda when available)")
+    s.add_argument("--out-dir", default=str(DATA / "features"))
+    s.add_argument("--tile-px", type=int, default=224)
+    s.add_argument("--tile-mpp", type=float, default=0.5)
+    s.add_argument("--batch-size", type=int, default=32)
+    s.add_argument("--max-tiles", type=int, default=None)
+
+
 def main(argv: list[str] | None = None) -> None:
     p = argparse.ArgumentParser(prog="hrdscope", description=__doc__)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -47,6 +116,22 @@ def main(argv: list[str] | None = None) -> None:
     s = sub.add_parser("score", help="compute LOH/TAI/LST/HRD-sum for allele-specific segment files")
     s.add_argument("files", nargs="+")
     s.set_defaults(func=cmd_score)
+
+    s = sub.add_parser("embed", help="tile local slides and write foundation-model embeddings to HDF5")
+    s.add_argument("slides", nargs="+")
+    s.add_argument("--mpp", type=float, default=None, help="override microns per pixel when metadata is missing")
+    s.add_argument("--overwrite", action="store_true")
+    _add_embed_args(s)
+    s.set_defaults(func=cmd_embed)
+
+    s = sub.add_parser("stream", help="download GDC slides one by one, embed, delete")
+    s.add_argument("--manifest", default=str(DATA / "manifests" / "tcga_ov_slides.tsv"))
+    s.add_argument("--strategy", default="Diagnostic", help="prefix filter on the manifest strategy column")
+    s.add_argument("--patients", default=None, help="file with patient ids to keep, one per line")
+    s.add_argument("--tmp-dir", default=str(DATA / "raw" / "slides"))
+    s.add_argument("--keep", action="store_true", help="do not delete slides after embedding")
+    _add_embed_args(s)
+    s.set_defaults(func=cmd_stream)
 
     args = p.parse_args(argv)
     args.func(args)
